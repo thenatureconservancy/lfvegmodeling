@@ -9,6 +9,13 @@ knitr::opts_chunk$set(cache = TRUE)
 ----
 <br>
 
+## How does vegetation vary on the landscape and how do we figure it out? 
+LANDFIRE Biophysical Settings models and descriptions provide a *framework* for exploring these questions, and for testing potential management strategies before trying them on the ground.  
+
+## What will you find on this website?
+
+
+
 
 ```{r, echo=FALSE, fig.height= 1.3}
 knitr::include_graphics("porkPanoBW.jpg")
