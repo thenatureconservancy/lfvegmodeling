@@ -1,0 +1,39 @@
+---
+title: "BpS Models"
+author: "TNC's LANDFIRE team"
+date: "2/26/2020"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+----
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Get to Know LF BpS STM Models and Descriptions
+## What is LANDFIRE and why did they create these models.  Map Zones (map?)
+## What do the models represent (historic)
+## What are they and how are they linked (model and description)
+## Application scale of the models
+
+
+Can use:
+*  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes
+*  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
+
+Also--from bps review site:
+*http://landfirereview.org/models.php*
+Understanding a LANDFIRE model in ST-Sim
+How to link the BpS model and description
+How to find a BpS in ST-Sim
+How to decipher the BpS code
+How to copy/paste a model
+How to edit a model
+How to run a LANDFIRE model
+How to graph results
+Additional Resources
+Modeling Rules
+ST-Sim Wiki
+How to link the BpS model with the spatial data
+

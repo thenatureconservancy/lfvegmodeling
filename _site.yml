@@ -2,8 +2,12 @@ name: R Markdown Websites Tutorial
 navbar:
   title: HOME
   left:
-  - text: Workflow
-    href: workflow.html
+  - text: State and Transition Models
+    href: stms.html
+  - text: LANDFIRE STMs 
+    href: BpSmodels.html
+  - text: Review your LANDFIRE models
+    href: ReviewYourLFmodels.html
 
     
 output_dir: '.'

@@ -14,6 +14,8 @@ LANDFIRE Biophysical Settings models and descriptions provide a *framework* for 
 
 ## What will you find on this website?
 
+## Workflow (a couple sentenses about each tab-Jim can draft)
+
 
 
 
