@@ -8,6 +8,8 @@ navbar:
     href: BpSmodels.html
   - text: Review your LANDFIRE models
     href: ReviewYourLFmodels.html
+  - text: Examples
+    href: Examples.html
 
     
 output_dir: '.'

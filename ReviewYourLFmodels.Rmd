@@ -8,3 +8,10 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## Getting to work
+ 
+1. How to find your model(s)  go to landfirereview.org 
+2. Read the description (do we provide a form or guidance or checklist...help guiden them to the changes they will need to make)
+3. Running the model…do the results match the description?  Video?  Printable instructions?
+4. Use Jim's Potential Modifications document...internal link
+

@@ -11,11 +11,13 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Get to Know LF BpS STM Models and Descriptions
-## What is LANDFIRE and why did they create these models.  Map Zones (map?)
-## What do the models represent (historic)
-## What are they and how are they linked (model and description)
-## Application scale of the models
+## Background knowledge
+### Get to Know LF BpS STM Models and Descriptions
+### What is LANDFIRE and why did they create these models.  Map Zones (map?)
+Maybe a nice looking diagram (would this be where we put an interactive image? This would be an image of a model in syncrosim)
+### What do the models represent (historic)
+### What are they and how are they linked (model and description)
+### Application scale of the models
 
 
 Can use:
