@@ -1,0 +1,16 @@
+name: R Markdown Websites Tutorial
+navbar:
+  title: HOME
+  left:
+  - text: Workflow
+    href: workflow.html
+
+    
+output_dir: '.'
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    lib_dir: site_libs
+    self_contained: no
+
