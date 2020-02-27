@@ -12,30 +12,24 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Background knowledge
+<br>
 ### Get to Know LF BpS STM Models and Descriptions
+<br>
 ### What is LANDFIRE and why did they create these models.  Map Zones (map?)
 Maybe a nice looking diagram (would this be where we put an interactive image? This would be an image of a model in syncrosim)
+<br>
+
 ### What do the models represent (historic)
+<br>
 ### What are they and how are they linked (model and description)
+<br>
 ### Application scale of the models
+<br>
 
 
 Can use:
 *  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes
 *  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
 
-Also--from bps review site:
-*http://landfirereview.org/models.php*
-Understanding a LANDFIRE model in ST-Sim
-How to link the BpS model and description
-How to find a BpS in ST-Sim
-How to decipher the BpS code
-How to copy/paste a model
-How to edit a model
-How to run a LANDFIRE model
-How to graph results
-Additional Resources
-Modeling Rules
-ST-Sim Wiki
-How to link the BpS model with the spatial data
+
 

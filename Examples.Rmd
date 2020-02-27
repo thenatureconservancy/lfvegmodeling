@@ -2,10 +2,14 @@
 title: "Examples"
 author: "TNC's LANDFIRE team"
 date: "2/26/2020"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
+----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-This is where our work goes...and some explanatory text
+## This is where our work goes...and some explanatory text
