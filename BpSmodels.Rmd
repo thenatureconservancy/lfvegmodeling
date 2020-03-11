@@ -5,25 +5,48 @@ date: "2/26/2020"
 output:
   html_document:
     toc: true
-    toc_float: true
+    toc_float: 
+      collapsed: false
+
 ---
 ----
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Background knowledge
+
+Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models.  These products represent ecosystems under natural disturbance regimes, capturing how they "looked" (e.g., structure and composition) and "functioned" (e.g., succession and disturbances).  The descriptions are text; the models are in the software SyncroSim (https://syncrosim.com/).
+
 <br>
-### Get to Know LF BpS STM Models and Descriptions
-<br>
-### What is LANDFIRE and why did they create these models.  Map Zones (map?)
-Maybe a nice looking diagram (would this be where we put an interactive image? This would be an image of a model in syncrosim)
+
+### What is LANDFIRE and why did they create these models.  
+LANDFIRE is a multi-partner program that "provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas" (from www.landfire.gov).  For you, the modeler some important points about LANDFIRE include:
+
+
+```{r  echo=FALSE, out.width='50%', out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics('15Oct19.jpg')
+```
+
+
+
+* covers all lands in the United States including the insular islands
+* delivers products covering "historical" (just prior to major European settlement) and "current" time periods.  
+* not all products cover both time periods-which is why you are here!  The LANDFIRE models only cover historical.  Bringing them up to current might be one of your tasks.
+* Some products are delivered by "Map Zone" (see map).
+
+
 <br>
 
 ### What do the models represent (historic)
+
 <br>
+
 ### What are they and how are they linked (model and description)
+
 <br>
+
 ### Application scale of the models
+
 <br>
 
 
