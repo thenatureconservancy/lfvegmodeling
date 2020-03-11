@@ -4,12 +4,18 @@ navbar:
   left:
   - text: State and Transition Models
     href: stms.html
-  - text: LANDFIRE STMs 
+  - text: LANDFIRE STSMs 
     href: BpSmodels.html
-  - text: Review your LANDFIRE models
+  - text: Reviewing a LANDFIRE model
     href: ReviewYourLFmodels.html
+  - text: Modifying a Model
+    href: modifyModel.html
+  - text: Contacts and Resources
+    href: contactsResources.html
   - text: Examples
     href: Examples.html
+  - text: Perpectives
+    href: perspectives.html
 
     
 output_dir: '.'
