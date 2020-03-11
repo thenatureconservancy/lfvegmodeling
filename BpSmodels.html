@@ -311,6 +311,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -391,10 +397,32 @@ div.tocify {
 <hr />
 <div id="background-knowledge" class="section level2">
 <h2>Background knowledge</h2>
-<p><br> ### Get to Know LF BpS STM Models and Descriptions <br> ### What is LANDFIRE and why did they create these models. Map Zones (map?) Maybe a nice looking diagram (would this be where we put an interactive image? This would be an image of a model in syncrosim) <br></p>
+<p>Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models. These products represent ecosystems under natural disturbance regimes, capturing how they “looked” (e.g., structure and composition) and “functioned” (e.g., succession and disturbances). The descriptions are text; the models are in the software SyncroSim (<a href="https://syncrosim.com/" class="uri">https://syncrosim.com/</a>).</p>
+<p><br></p>
+<div id="what-is-landfire-and-why-did-they-create-these-models." class="section level3">
+<h3>What is LANDFIRE and why did they create these models.</h3>
+<p>LANDFIRE is a multi-partner program that “provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas” (from www.landfire.gov). For you, the modeler some important points about LANDFIRE include:</p>
+<p><img src="15Oct19.jpg" width="50%" style="float:right; padding:10px" /></p>
+<ul>
+<li>covers all lands in the United States including the insular islands</li>
+<li>delivers products covering “historical” (just prior to major European settlement) and “current” time periods.<br />
+</li>
+<li>not all products cover both time periods-which is why you are here! The LANDFIRE models only cover historical. Bringing them up to current might be one of your tasks.</li>
+<li>Some products are delivered by “Map Zone” (see map).</li>
+</ul>
+<p><br></p>
+</div>
 <div id="what-do-the-models-represent-historic" class="section level3">
 <h3>What do the models represent (historic)</h3>
-<p><br> ### What are they and how are they linked (model and description) <br> ### Application scale of the models <br></p>
+<p><br></p>
+</div>
+<div id="what-are-they-and-how-are-they-linked-model-and-description" class="section level3">
+<h3>What are they and how are they linked (model and description)</h3>
+<p><br></p>
+</div>
+<div id="application-scale-of-the-models" class="section level3">
+<h3>Application scale of the models</h3>
+<p><br></p>
 <p>Can use: * <a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" class="uri">https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s</a> which is a Kori/Randy intro, 5 minutes * How to Alter and Run a LANDFIRE Model in ST-Sim, <a href="https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s" class="uri">https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s</a></p>
 </div>
 </div>
@@ -454,7 +482,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
