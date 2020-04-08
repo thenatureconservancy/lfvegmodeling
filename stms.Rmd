@@ -17,5 +17,7 @@ State and Transition Models are frameworks for understanding ecosystems and ecos
 For a primer on STMs, watch this video (13:35 minutes)
 <br>
 
+*** 
+
 [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=ORoyBqogZFs "Everything Is AWESOME")
 
