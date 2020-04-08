@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## What are State and Transition Models?
-State and Transition Models are frameworks for understanding ecosystems and ecosystem processes.  STMs generally split an ecosystem up into succession classes (aka "States") and capture processes (e.g., disturbances, carbon flows) through transitions.  Models often start simply, perhaps as a drawing of states and transitions, and can become complext.  STMs can be conceptual such as those included in USDA Natural Resource Conservation Service Ecological Site Descriptions (see https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043495&ext=pdf), or quantitative such as the LANDFIRE Biophysical Models which are the focus of this site.
+State and Transition Models are frameworks for understanding ecosystems and ecosystem processes.  STMss generally split an ecosystem up into succession classes (aka "States") and capture processes (e.g., disturbances, carbon flows) through transitions.  Models often start simply, perhaps as a drawing of states and transitions, and can become complex.  STMs can be conceptual such as those included in USDA Natural Resource Conservation Service Ecological Site Descriptions (see https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043495&ext=pdf), or quantitative such as the LANDFIRE Biophysical Models which are the focus of this site.
 
 For a primer on STMs, watch this video (13:35 minutes)
 <br>
