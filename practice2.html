@@ -11,7 +11,7 @@
 
 
 
-<title>State and Transition Models</title>
+<title>How to make the perfect cup of coffee</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -251,69 +248,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -321,16 +255,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -380,23 +304,32 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">State and Transition Models</h1>
+<h1 class="title toc-ignore">How to make the perfect cup of coffee</h1>
 
 </div>
 
 
-<hr />
-<div id="what-are-state-and-transition-models" class="section level2">
-<h2>What are State and Transition Models?</h2>
-<p>State and Transition Models are frameworks for understanding ecosystems and ecosystem processes. STMs generally split an ecosystem up into succession classes (aka “States”) and capture processes (e.g., disturbances, carbon flows) through transitions. Models often start simply, perhaps as a drawing of states and transitions, and can become complext. STMs can be conceptual such as those included in USDA Natural Resource Conservation Service Ecological Site Descriptions (see <a href="https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043495&amp;ext=pdf" class="uri">https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043495&amp;ext=pdf</a>), or quantitative such as the LANDFIRE Biophysical Models which are the focus of this site.</p>
-<p>For a primer on STMs, watch this video (13:35 minutes) <br></p>
-<p><a href="https://www.youtube.com/watch?v=ORoyBqogZFs" title="Everything Is AWESOME"><img src="https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg" alt="Everything Is AWESOME" /></a></p>
+<div id="coffee-makes-the-world-go-around" class="section level1">
+<h1><strong>Coffee makes the world go around</strong></h1>
+<div id="dont-you-agree" class="section level2">
+<h2>Don’t you agree?</h2>
+<div id="always-drink-coffee-first-thing-in-the-morning" class="section level3">
+<h3><em>Always drink coffee first thing in the morning</em></h3>
+<div id="repeat-at-about-3-pm" class="section level4">
+<h4><strong>repeat at about 3 pm</strong></h4>
+<div id="learn-how-to-make-the-best-cup-of-coffee-here" class="section level5">
+<h5>Learn how to make the best cup of coffee here</h5>
+</div>
+</div>
+</div>
+</div>
+<div id="section" class="section level2">
+<h2><iframe width="860" height="515" src="https://www.youtube.com/embed/6yItCQB4V9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h2>
+</div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -429,32 +362,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
