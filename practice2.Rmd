@@ -5,10 +5,6 @@ output: html_document
 
 
 # **Coffee makes the world go around see**
-=======
-# **Coffee makes the world go around**
-
-
 
 
 ## Don't you agree?
