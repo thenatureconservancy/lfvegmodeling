@@ -19,13 +19,78 @@ Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development
 
 <br>
 
-### What is LANDFIRE and why did they create these models.  
-LANDFIRE is a multi-partner program that "provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas" (from www.landfire.gov).  For you, the modeler some important points about LANDFIRE include:
+### What is LANDFIRE and why did they create these models?  
+LANDFIRE is a multi-partner program that "provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas" (from www.landfire.gov).  
+
+One of the goals of LANDFIRE was to understand the condition of our ecosystems.  The metric they created for this is called "Vegetation Departure" (VDep), which generally compares current vegetation structure and composition to "reference" structure and composition (see blue Vegetation Departure box below).
+
+Development of reference conditions had these general steps:
+
+1. Classify and define the ecosystems.  LANDFIRE calls the historic ecosystems "Biophysical Settings", and used NatureServe's Ecological Systems classification as the "list".
+2. Hold expert workshops to:
+    * Describe the BpSs, including their nested Succession Classes, up to 5 for each BpS including their canopy height, composition and percent cover. 
+    * Use state and transition modeling techniques to get an estimate of how much of each succession class would have been on the landscape historically, i.e., just prior to European settlement.  The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into the modeling software (just like you will be doing soon!).
+    
+Recently, TNC's LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.  
 
 
-```{r  echo=FALSE, out.width='50%', out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics('15Oct19.jpg')
-```
+We are happy to walk you through the history and methods at any time.  
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+Vegetation Departure (VDep), from www.landfire.gov:
+Vegetation Departure (VDep) indicates how different current vegetation on a landscape is from estimated historical conditions. VDep is based on changes to species composition, structural stage, and canopy closure using methods originally described in the Interagency Fire Regime Condition Class Guidebook (https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf), but is not identical to those methods. LANDFIRE (LF) VDep is based only on departure of current vegetation conditions from reference vegetation conditions, whereas the Guidebook approach includes departure of current fire regimes from those of the reference period.
+
+
+</div>
+
+<br>
+
+###  So what are these descriptions and models?
+
+Each BpS (e.g., North Central Interior Dry-Mesic Oak Forest and Woodland) has 3 associated products:
+
+1. Description
+2. State and transition model
+3. Spatial data (not described here)
+
+ <br>
+
+#### Descriptions
+As you will soon see, a model without a description is rather mysterious.  We generally started the BpS modeling process with collecting information on each BpS including:
+
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+
+</style>
+
+
+<div class="col2">
+* Biophysical Setting Name and Number
+* Map Zones the description covers
+* Descriptive Geographic Range text
+* Biophysical Site Description
+* Disturbance description
+* Descriptions of each succession class
+* Relevant literature
+
+</div>
+ <br>
+
+#### Models
+
+When we refer to "models" we are essentially talking about the information contained in SyncroSim libraries.  What? 
+We'll get to the SyncroSim and library parts soon, but in the meantime models are collections of information on:
+1.  The "states" or succession classes of each BpS.  This information is derived from the descriptions
+2.  
+
 
 
 

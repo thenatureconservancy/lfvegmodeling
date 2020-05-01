@@ -12,10 +12,35 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Getting to work
+## Let's jumpstart your modeling experience
+
+On this page we intend to help you 1) get and 2) explore and 3) understand one or more LANDFIRE models and descriptions as a way to launch your modeling skills.  This will set the stage for you to model the present, and beyond.
+
+## Get a LANDFIRE model and description
+
+First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone.  What is a Map Zone?  It's basically a product delivery and summary polygon.  The polygons are from the National Landcover Database Program (see https://www.mrlc.gov/national-land-cover-database-nlcd-2016).  
+
+### Find your Map Zone of interest here:
+
+Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for.  A tooltip will pop up with that info.  Take note of it for the next step.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "100%", height="900")
+```
+<br>
+
+### Get your LANDFIRE Model Description
+
+Each Biophysical Setting has a description that covers BLAH BLAH BLAH.
+
+
+
+
+
  
 1. How to find your model(s)  go to landfirereview.org 
 2. Read the description (do we provide a form or guidance or checklist...help guiden them to the changes they will need to make)
 3. Running the model…do the results match the description?  Video?  Printable instructions?
 4. Use Jim's Potential Modifications document...internal link
 
+.
