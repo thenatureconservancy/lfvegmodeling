@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -249,6 +252,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -256,6 +322,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -273,16 +349,19 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="stms.html">State and Transition Models</a>
+  <a href="stms.html">STSMs</a>
 </li>
 <li>
   <a href="BpSmodels.html">LANDFIRE STSMs</a>
 </li>
 <li>
-  <a href="ReviewYourLFmodels.html">Reviewing a LANDFIRE model</a>
+  <a href="ReviewYourLFmodels.html">Reviewing</a>
 </li>
 <li>
-  <a href="modifyModel.html">Modifying a Model</a>
+  <a href="modifyModel.html">Modifying</a>
+</li>
+<li>
+  <a href="climateChange.html">Climate Change</a>
 </li>
 <li>
   <a href="contactsResources.html">Contacts and Resources</a>
@@ -312,28 +391,53 @@ $(document).ready(function () {
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<div id="models-models-everywhere" class="section level2">
+<h2>Models, Models Everywhere</h2>
+<p><strong>insert airplane pic with caption</strong></p>
+<p>Models are everywhere—sometimes behind the scenes and sometimes right out front. Weather forecasts are models. Measuring the state of the economy is a model. Assessing the condition of a landscape is a model. Forecasting almost anything (a pandemic for example) is a model. Many things we call “measurements” are actually models, such as Site Index, and on and on and on. Even a “map” is a model.</p>
+<p><strong>insert "Some Models Are Simple</strong> picture, title and caption</p>
+<p><strong>insert "Some Models are Complex</strong> picture, title and caption</p>
+<p>Regardless of their complexity, ALL models are by definition a simplification of reality. Like the model airplane shown above….it “flies” like an airplane but it cannot carry cargo or passengers.</p>
+<p>George Box famously said that all models are wrong, so why do we create and use them? We create and use models because George Box also said they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.</p>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="perspectives_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="developers-vs-users-understanding-the-key-considerations" class="section level2">
+<h2>2. Developers vs Users: Understanding the Key Considerations</h2>
+<p>For the model developer, the key is to balance precision and bias of the outputs with the relevance of the model……hit YOUR application sweet spot (Pochetti figure from francescopochetti.com). The model should provide useful information but must also function for the user, i.e., have the right level of complexity. Complexity should have a purpose……provide more or more refined information, or in some cases provide the same information with more fidelity. Complex models typically require more input information, are more difficult to develop and de-bug, and take longer to run. LANDFIRE BpS models, with their limited number of states and transitions, live near the lower end of the complexity scale and provide relatively few and coarser level outputs than some other models, but are also easier to create and use. Models such as SIMPPLLE and LANDIS II sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost, sometimes too high a cost.</p>
+<p><strong>insert model error vs. complexity photo, title and caption</strong></p>
+<p>The considerations are different for the model user and his/her objectives: the key is to understand the characteristics of the model. What factors/inputs does it include? What factors/inputs does it not include? Can you provide the inputs at the level of accuracy required? What modeling technique was used? How was the model intended to be applied? What is the “scale” of the model? Like all tools, models can be used correctly or incorrectly. Can a modified LANDFIRE BpS model provide the information you need with the right level of quality? Only the user can answer those questions, so it is imperative that you review the documentation. Communicate with the modeler if you have questions. It is your responsibility.</p>
+</div>
+<div id="responsibilites" class="section level2">
+<h2>Responsibilites</h2>
+<p>Models can be useful and even illuminating if used properly. Models can be very harmful, unfortunately very obfuscating if used improperly. It is the modeler’s duty to document the model thoroughly and make that information available to potential users. However, it is the duty of the model user to know what they really need and to review the model and model information to decide for themselves if it is appropriate for their situation or not.</p>
+<p><strong>(Does anyone have the picture of Menakis at a RA workshop for instance—this is not the picture I want to use but collaborative review is what I want to show) I found the three below in the archives. Not sure about quality.</strong></p>
+</div>
+<div id="background-and-recommendations" class="section level2">
+<h2>Background and recommendations</h2>
+<div id="landfire-models" class="section level3">
+<h3>LANDFIRE Models:</h3>
+<ul>
+<li>LF Biophysical Settings models were created using a set of strict rules about allowable states (5 or less) and transitions between states (only historic not current). You are not limited by those rules by the software modeling platform (SyncroSim). You can add new states and transitions. You can modify current states or change transition probabilities. If maintaining compatibility with LANDFIRE models is required that could reduce your modification options. However, we have seen STSM based on LANDFIRE BpS models that had more than 100 states and dozens of transitions. What you include or not is up to you and should be based on your objectives.</li>
+<li>LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.</li>
+</ul>
+<p><strong>insert Map Zone Map</strong></p>
+</div>
+<div id="current-condition-models" class="section level3">
+<h3>Current Condition Models</h3>
+<ul>
+<li>If modeling standards are established, adhere to them. If you do not, comparisons can be confounded, results lose their applicability and future changes become more complicated.</li>
+<li>Have a goal and a plan. Don’t just wing it as that often results in wasted time. I need a STSM for sage-steppe in Nevada that reflects current conditions, contains a Cheatgrass state, and allows for the integration of climate change effects.</li>
+<li>Work through the model changes in a stepwise fashion. Add states and associated transitions one at a time and run the model, say a add Cheatgrass state and associated transitions. Review the results and plan the next steps.</li>
+<li>We strongly encourage you to keep the model as simple as possible. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately. If it doesn’t matter whether Cheatgrass is at 10% or 15% cover, don’t make those separate states.</li>
+<li>Document, document and document some more. Do not expect to remember what you did, or even why you did it later. These models can run so fast you can easily get ahead of yourself.</li>
+<li>Expect the unexpected. If you knew the answer with certainty you probably did not need the model. An answer that seems strange to you may be correct….and indeed illuminating.</li>
+</ul>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -366,6 +470,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

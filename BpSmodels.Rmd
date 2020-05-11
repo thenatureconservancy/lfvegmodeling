@@ -5,14 +5,10 @@ date: "2/26/2020"
 output:
   html_document:
     toc: true
-    toc_float: 
-      collapsed: false
-
+    toc_float: true
 ---
-----
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
+
 ## Background knowledge
 
 Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models.  These products represent ecosystems under natural disturbance regimes, capturing how they "looked" (e.g., structure and composition) and "functioned" (e.g., succession and disturbances).  The descriptions are text; the models are in the software SyncroSim (https://syncrosim.com/).

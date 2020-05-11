@@ -1,22 +1,30 @@
 ---
-title: "How to make the perfect cup of coffee"
+title: "LANDFIRE Powered Modeling"
+author:  "The Nature Conservancy's LANDFIRE team"
 output: html_document
 ---
 
-
-# **Coffee makes the world go around see**
-
-
-## Don't you agree?
+<br>
 
 
+### What is a biophysical model?
+Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as growth rates and disturbance probabilities while simulating their dynamic interplay over time.
+<br>
+<br>
 
-### *Always drink coffee first thing in the morning* 
+### Modeling biophysical models provide a framework for:
+1. simulating disturbances and testing potential management strategies
+2. modeling vegetation characteristics on the landscape
+3. making predictions of future landscape conditions
+<br>
+<br>
 
-#### **repeat at about 3 pm**
+### What will you find on this website?
+We provide brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.
+<br>
+<br>
 
-##### Learn how to make the best cup of coffee here
-
-<iframe width="860" height="515" src="https://www.youtube.com/embed/6yItCQB4V9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
----
+### Get started with SyncroSim and BpS modeling
+<br>
+<iframe width="860" height="515" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

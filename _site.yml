@@ -2,20 +2,24 @@ name: R Markdown Websites Tutorial
 navbar:
   title: HOME
   left:
-  - text: State and Transition Models
+  - text: STSMs
     href: stms.html
   - text: LANDFIRE STSMs 
     href: BpSmodels.html
-  - text: Reviewing a LANDFIRE model
+  - text: Reviewing
     href: ReviewYourLFmodels.html
-  - text: Modifying a Model
+  - text: Modifying
     href: modifyModel.html
+  - text: Climate Change
+    href: climateChange.html
   - text: Contacts and Resources
     href: contactsResources.html
   - text: Examples
     href: Examples.html
   - text: Perpectives
     href: perspectives.html
+
+
 
     
 output_dir: '.'

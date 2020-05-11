@@ -3,55 +3,30 @@ title: "LANDFIRE Powered Modeling"
 author:  "The Nature Conservancy's LANDFIRE team"
 output: html_document
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = TRUE)
-```
 ----
 <br>
 
-## What this website is about
-How does vegetation vary on the landscape? How do we figure it out? LANDFIRE Biophysical Settings models and descriptions provide a *framework* for exploring these questions, and for testing potential management strategies before trying them on the ground.  
+### What is a biophysical model?
+Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as growth rates and disturbance probabilities while simulating their dynamic interplay over time.
+<br>
+<br>
+
+### Modeling biophysical models provide a framework for:
+1. simulating disturbances and testing potential management strategies
+2. modeling vegetation characteristics on the landscape
+3. making predictions of future landscape conditions
+<br>
 <br>
 
 ### What will you find on this website?
-A process and resources that will facilitate use of LANDFIRE BpS models and the free sofware SyncroSim on the following pages:
-
-**State and Transition Models**
-An introduction to state and transition models. This is where you begin if you are not already familiar with State and Transition Models (STSM).
-
-**LANDFIRE STSM**
-What you need to know about LANDFIRE STSM. What are they and what do they represent?
-
-**Reviewing a LANDFIRE STSM**
-Obtain a specific LANDFIRE STSM and understand its components.
-
-**Modifying a Model for Your Use**
-How do you setup, modify and run a model to answer your questions?
-
-**Some Advanced Modeling Options**
-We describe a few examples of additional modeling functionality that might find useful.
-
-**Contacts and Additional resources**
-Find resources and contacts that you may find useful.
-
-**Example Modified Models**
-Examine a suite of LANDFIRE STSM that have been modified to represent current conditions
-
-**Perspectives**
-Let’s explore modeling issues and consider appropriate application.
-
-
-
+We provide brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.
+<br>
 <br>
 
+### Get started with SyncroSim and BpS modeling
 
+RANDY's code for inserting a video
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=ORoyBqogZFs "Everything Is AWESOME")
 
-
-
-
-```{r, echo=FALSE, fig.height= .8}
-knitr::include_graphics("porkPanoBW.jpg")
-```
-
-
-
+<br>
+<iframe width="860" height="515" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

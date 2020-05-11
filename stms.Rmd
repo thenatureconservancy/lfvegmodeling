@@ -5,19 +5,23 @@ output:
     toc: true
     toc_float: true
 ---
-----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## What are State and Transition Models?  MORE CHANGES
-State and Transition Models are frameworks for understanding ecosystems and ecosystem processes.  STMss generally split an ecosystem up into succession classes (aka "States") and capture processes (e.g., disturbances, carbon flows) through transitions.  Models often start simply, perhaps as a drawing of states and transitions, and can become complex.  STMs can be conceptual such as those included in USDA Natural Resource Conservation Service Ecological Site Descriptions (see https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=stelprdb1043495&ext=pdf), or quantitative such as the LANDFIRE Biophysical Models which are the focus of this site.
+## State and Transition Simulation Models
 
-For a primer on STMs, watch this video (13:35 minutes)
-<br>
+A state-and-transition model (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them (Westoby 1989). States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application. Conceptual state-and-transition models, called Environmental Site Descriptions (ESDs), have been developed through a partnership between the US Department of Interior’s Bureau of Land Management and Natural Resources Conservation Service the U.S. Department of Agriculture’s Forest Service, and widely used to monitor, evaluate and mange federal rangelands (RIESM 2010).
 
-*** 
+**Add stm diagram.  Megan's idea:  build this over images...start with a simple diagram then add components with subsequent diagrams.**
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=ORoyBqogZFs "Everything Is AWESOME")
 
+When an STM is built in a software environment with rates of growth between states and probabilities for each transition it is known as a state-and-transition simulation model (STSM; Daniel et al. 2016). An STSM can be used to simulate the dynamics of a system over time and sometimes space. STSMs have been widely applied in natural resource management to estimate historical conditions (Donato et al. 2020, Blankenship et al.2012), simulate the spread of invasive species (Thomas et al. 2019, Jarnevich et al. 2019), test various management scenarios (Low et al. 2010, Costanza et al. 2015a), and forecast future landscape conditions under different climates (Provencher et al. 2016, Swearingen et al. 2015, Costanza et al. 2015b). 
+
+**Add stsm diagram**
+
+## State-and-transition modeling software
+
+LANDFIRE currently uses the SyncroSim software (ST-Sim package) as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free online, and is the latest in a series of related STSM software packages including Path and the Vegetation Dynamics Development Tool (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic and can be run either spatially or non-spatially. 
+
+
+**References**
+Costanza, J.K., A.J. Terando, A.J. Mckerrow, and J.A. Collazo. 2015b. Modeling climate 634change, urbanization, and fire effects on Pinus palustrisecosystems of the southeastern U.S. 635Journal of EnvironmentalManagement151:186–99.

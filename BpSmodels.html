@@ -311,12 +311,6 @@ div.tocify {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
 
@@ -355,16 +349,19 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="stms.html">State and Transition Models</a>
+  <a href="stms.html">STSMs</a>
 </li>
 <li>
   <a href="BpSmodels.html">LANDFIRE STSMs</a>
 </li>
 <li>
-  <a href="ReviewYourLFmodels.html">Reviewing a LANDFIRE model</a>
+  <a href="ReviewYourLFmodels.html">Reviewing</a>
 </li>
 <li>
-  <a href="modifyModel.html">Modifying a Model</a>
+  <a href="modifyModel.html">Modifying</a>
+</li>
+<li>
+  <a href="climateChange.html">Climate Change</a>
 </li>
 <li>
   <a href="contactsResources.html">Contacts and Resources</a>
@@ -394,7 +391,6 @@ div.tocify {
 </div>
 
 
-<hr />
 <div id="background-knowledge" class="section level2">
 <h2>Background knowledge</h2>
 <p>Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models. These products represent ecosystems under natural disturbance regimes, capturing how they “looked” (e.g., structure and composition) and “functioned” (e.g., succession and disturbances). The descriptions are text; the models are in the software SyncroSim (<a href="https://syncrosim.com/" class="uri">https://syncrosim.com/</a>).</p>
@@ -538,7 +534,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = false;
+    options.showAndHide = true;
     options.smoothScroll = true;
 
     // tocify

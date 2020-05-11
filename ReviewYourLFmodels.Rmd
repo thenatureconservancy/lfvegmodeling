@@ -7,11 +7,7 @@ output:
     toc: true
     toc_float: true
 ---
-----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Let's jumpstart your modeling experience
 
 On this page we intend to help you 1) get and 2) explore and 3) understand one or more LANDFIRE models and descriptions as a way to launch your modeling skills.  This will set the stage for you to model the present, and beyond.
