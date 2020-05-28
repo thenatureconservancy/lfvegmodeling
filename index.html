@@ -9,17 +9,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="The Nature Conservancy’s LANDFIRE team" />
+<meta name="author" content="TNC’s LANDFIRE team" />
 
 
-<title>LANDFIRE Powered Modeling</title>
+<title>Biophysical Modeling: a Primer with LANDFIRE</title>
 
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -249,6 +253,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -256,6 +323,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -308,38 +385,43 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">LANDFIRE Powered Modeling</h1>
-<h4 class="author">The Nature Conservancy’s LANDFIRE team</h4>
+<h1 class="title toc-ignore">Biophysical Modeling: a Primer with LANDFIRE</h1>
+<h4 class="author">TNC’s LANDFIRE team</h4>
+<h4 class="date">3/11/2020</h4>
 
 </div>
 
 
-<hr />
-<p><br></p>
-<div id="what-is-a-biophysical-model" class="section level3">
-<h3>What is a biophysical model?</h3>
-<p>Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as growth rates and disturbance probabilities while simulating their dynamic interplay over time. <br> <br></p>
-</div>
-<div id="modeling-biophysical-models-provide-a-framework-for" class="section level3">
-<h3>Modeling biophysical models provide a framework for:</h3>
-<ol style="list-style-type: decimal">
-<li>simulating disturbances and testing potential management strategies</li>
-<li>modeling vegetation characteristics on the landscape</li>
-<li>making predictions of future landscape conditions <br> <br></li>
-</ol>
-</div>
 <div id="what-will-you-find-on-this-website" class="section level3">
 <h3>What will you find on this website?</h3>
-<p>We provide brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections. <br> <br></p>
+<p>Brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.</p>
+<p>LANDFIRE’s state-and-transition simulation models use inputs such as the rates of growth and the probabilities of different disturbances to simulate the dynamics of ecosystem over time. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.</p>
+<p>What is a biophysical model?<br />
+Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as <strong>growth rates</strong> and <strong>disturbance probabilities</strong> while simulating their dynamic interplay over time.</p>
+<p><img src="inputmodel.png" /></p>
 </div>
-<div id="get-started-with-syncrosim-and-bps-modeling" class="section level3">
-<h3>Get started with SyncroSim and BpS modeling</h3>
-<p>RANDY’s code for inserting a video <a href="https://www.youtube.com/watch?v=ORoyBqogZFs" title="Everything Is AWESOME"><img src="https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg" alt="Everything Is AWESOME" /></a></p>
-<p><br> <iframe width="860" height="515" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div id="why-model" class="section level3">
+<h3>Why model?</h3>
+<div id="modeling-biophysical-models-provide-a-framework-for" class="section level4">
+<h4>Modeling biophysical models provide a framework for:</h4>
+<ol style="list-style-type: decimal">
+<li>simulating disturbances and testing potential management strategies<br />
+</li>
+<li>modeling vegetation characteristics on the landscape<br />
+</li>
+<li>making predictions of future landscape conditions <br></li>
+</ol>
+<p>Get started with integrating biophysical settings into your current work</p>
+<p><br></p>
+<iframe width="760" height="415" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -372,6 +454,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

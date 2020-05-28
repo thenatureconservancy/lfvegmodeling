@@ -1,0 +1,32 @@
+---
+title: "LANDFIRE Powered Modeling"
+author:  "The Nature Conservancy's LANDFIRE team"
+output: html_document
+---
+----
+<br>
+
+### What is a biophysical model?
+Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as growth rates and disturbance probabilities while simulating their dynamic interplay over time.
+<br>
+<br>
+
+### Modeling biophysical models provide a framework for:
+1. simulating disturbances and testing potential management strategies
+2. modeling vegetation characteristics on the landscape
+3. making predictions of future landscape conditions
+<br>
+<br>
+
+### What will you find on this website?
+We provide brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.
+<br>
+<br>
+
+### Get started with SyncroSim and BpS modeling
+
+RANDY's code for inserting a video
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=ORoyBqogZFs "Everything Is AWESOME")
+
+<br>
+<iframe width="860" height="515" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
