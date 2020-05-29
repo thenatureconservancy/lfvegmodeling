@@ -11,18 +11,18 @@ output:
 
 ## Models, Models Everywhere
 
-**insert airplane pic with caption**
+![](images/models.png)
 
 Models are everywhere—sometimes behind the scenes and sometimes right out front.  Weather forecasts are models. Measuring the state of the economy is a model. Assessing the condition of a landscape is a model.  Forecasting almost anything (a pandemic for example) is a model. Many things we call “measurements” are actually models, such as Site Index, and on and on and on. Even a “map” is a model.
 
-**insert "Some Models Are Simple** picture, title and caption
-
-**insert "Some Models are Complex** picture, title and caption
+![](images/model-simple-vs-complex1.jpg)
 
 Regardless of their complexity, ALL models are by definition a simplification of reality. Like the model airplane shown above….it “flies” like an airplane but it cannot carry cargo or passengers.
 
-George Box famously said that all models are wrong, so why do we create and use them?  We create and use models because George Box also said they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.
+>"All models are wrong, so why do we create and use them?" - George box
 
+We create and use models because (as George Box also said) they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.
+![](images/balance-relevance.jpg)
 
 ## Developers vs Users: Understanding the Key Considerations
 

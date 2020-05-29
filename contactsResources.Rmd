@@ -1,7 +1,7 @@
 ---
 title: "Contacts and Additional resources"
 author: "TNC's LANDFIRE team"
-date: "3/11/2020"
+date: 
 output:
   html_document:
     toc: true
