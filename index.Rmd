@@ -12,7 +12,7 @@ output:
 
 ### What will you find on this website?
 
-Brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.  
+YES.Brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.  
 
 LANDFIRE’s state-and-transition simulation models use inputs such as the rates of growth and the probabilities of different disturbances to simulate the dynamics of ecosystem over time. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.
 
