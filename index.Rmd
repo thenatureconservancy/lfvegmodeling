@@ -21,6 +21,12 @@ Bps models use quantative simulations of biological and physical inputs to make 
 
 ![](inputmodel.png)
 
+```{r, echo=FALSE, out.width= "55%", out.extra='style="float:right; padding:3px"'}
+knitr::include_graphics("inputmodel.png")
+
+```
+
+
 ### Why model?  
 #### Modeling biophysical models provide a framework for:  
 

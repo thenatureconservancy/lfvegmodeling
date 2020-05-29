@@ -17,38 +17,51 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Getting help
 
 If you need help with LANDFIRE data, contact helpdesk@landfire.gov.
-If you need help with Syncrosim software, try posting a question on the SyncroSim forum.
+If you need help with Syncrosim software, try posting a question on the [SyncroSim forum](https://syncrosim.com/forums/).
 
 ## Important Links
 
-LANDFIRE BpS model download
-LANDFIRE homepage
-LANDFIRE Guides and Tutorials 
-ApexRMS (website for SyncroSim software)
-SyncroSim documentation
-SyncroSim publications
+[LANDFIRE BpS model download](http://www.landfirereview.org/search.php)
+
+[LANDFIRE homepage](https://www.landfire.gov/)
+
+[LANDFIRE Guides and Tutorials](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx)
+
+[ApexRMS](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx) (website for SyncroSim software)
+
+[SyncroSim documentation](http://docs.syncrosim.com/)
+
+[SyncroSim publications](http://docs.stsim.net/publications.html)
 
 ## References and Additional Resources
 
-Blankenship, K., L. Frid, J. L. Smith. 2015. A state-and-transition simulation modeling approach for estimating the historical range of variability. AIMS Environmental Science 2:253-268. 
+Blankenship, K., L. Frid, J. L. Smith. 2015. [A state-and-transition simulation modeling approach for estimating the historical range of variability](https://www.aimspress.com/article/10.3934/environsci.2015.2.253). AIMS Environmental Science 2:253-268. 
 
-<br>
+Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. [Modeling on the grand scale: LANDFIRE lessons learned](https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf). Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.
 
-Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. Modeling on the grand scale: LANDFIRE lessons learned. Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.
-Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. Linking state-and-transition simulation and timber supply models for forest biomass production scenarios. AIMS Environmental Science 2:180-202.
+Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. [Linking state-and-transition simulation and timber supply models for forest biomass production scenarios](https://www.aimspress.com/article/10.3934/environsci.2015.2.180). AIMS Environmental Science 2:180-202.
 
-<br>
+Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. [Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S.](https://www.sciencedirect.com/science/article/pii/S0301479714006112) Journal of Environmental Management 151:186–99. 
 
-Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S. Journal of Environmental Management 151:186–99.   
-Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. Quantifying variance components in ecological models based on expert opinion. Journal of Applied Ecology 48: 736-745. 
-Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. State-and-transition simulation models: a framework for forecasting landscape change. Methods in Ecology and Evolution 7:1413–23.
-Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events. Ecological Applications 30:e02013.
-Jarnevich, C. S., C. Cullinane Thomas, N. E. Young, D. Backer, S. Cline, L. Frid, and P. Grissom. 2019. Developing an expert elicited simulation model to evaluate invasive species and fire management alternatives. Ecosphere 10.
+Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. [Quantifying variance components in ecological models based on expert opinion](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2011.01971.x). Journal of Applied Ecology 48: 736-745. 
+
+Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. [State-and-transition simulation models: a framework for forecasting landscape change](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12597). Methods in Ecology and Evolution 7:1413–23.
+
+Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. [Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2013). Ecological Applications 30:e02013.
+
+Jarnevich, C. S., C. Cullinane Thomas, N. E. Young, D. Backer, S. Cline, L. Frid, and P. Grissom. 2019. [Developing an expert elicited simulation model to evaluate invasive species and fire management alternatives](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730). Ecosphere 10.
+
 Low, G., L. Provencher, and S. L. Abele. 2010. Enhanced conservation action planning: assessing landscape condition and predicting benefits of conservation strategies. Journal of Conservation 6:36-60.
-Provencher, L., L. Frid, C. Czembor, and J. T. Morisette. 2016. State‐and‐transition models: conceptual versus simulation perspectives, usefulness and breadth of use, and land management applications. Pages 371-407 in J. M. Germino, C. J. Chambers, and S. C. Brown, editors. Exotic brome‐grasses in arid and semiarid ecosystems of the western US: causes, consequences, and management implications. Springer International Publishing, Germany.
-RIESM. 2010. Rangeland interagency ecological site manual. First edition. 
-Rollins, M. G. 2009. LANDFIRE: a nationally consistent vegetation, wildland fire, and fuel assessment. International Journal of Wildland Fire 18:235-249.
-Swearingen, A., J. Price, J. Silbernagel, R. Swaty, and N. Miller. 2015. State-and-transition simulation modeling to compare outcomes of alternative management scenarios under two natural disturbance regimes in a forested landscape in northeastern Wisconsin, USA. AIMS Environmental Science 2:737-63.
-Thomas, C.M., Sofaer, H.R., Cline, S.A. and Jarnevich, C.S., 2019. Integrating landscape simulation models with economic and decision tools for invasive species control. Management of Biological Invasions 10:6-22.
+
+Provencher, L., L. Frid, C. Czembor, and J. T. Morisette. 2016. State‐and‐transition models: conceptual versus simulation perspectives, usefulness and breadth of use, and land management applications. Pages 371-407 in J. M. Germino, C. J. Chambers, and S. C. Brown, editors. [Exotic brome‐grasses in arid and semiarid ecosystems of the western US: causes, consequences, and management implications](https://www.springer.com/gp/book/9783319249285). Springer International Publishing, Germany.
+
+RIESM. 2010. [Rangeland interagency ecological site manual](https://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=27123.wba). First edition. 
+
+Rollins, M. G. 2009. [LANDFIRE: a nationally consistent vegetation, wildland fire, and fuel assessment](https://www.publish.csiro.au/wf/WF08088). International Journal of Wildland Fire 18:235-249.
+
+Swearingen, A., J. Price, J. Silbernagel, R. Swaty, and N. Miller. 2015. [State-and-transition simulation modeling to compare outcomes of alternative management scenarios under two natural disturbance regimes in a forested landscape in northeastern Wisconsin, USA](https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf). AIMS Environmental Science 2:737-63.
+
+Thomas, C.M., Sofaer, H.R., Cline, S.A. and Jarnevich, C.S., 2019. [Integrating landscape simulation models with economic and decision tools for invasive species control](https://www.reabic.net/journals/mbi/2019/1/MBI_2019_CullinaneThomas_etal.pdf). Management of Biological Invasions 10:6-22.
+
 Westoby, M., B. Walker, and I. Noy-Meir. 1989. Opportunistic management for rangelands not at equilibrium. Journal of Range Management. 42:266-274.
 
