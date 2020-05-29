@@ -31,9 +31,15 @@ SyncroSim publications
 ## References and Additional Resources
 
 Blankenship, K., L. Frid, J. L. Smith. 2015. A state-and-transition simulation modeling approach for estimating the historical range of variability. AIMS Environmental Science 2:253-268. 
+
+<br>
+
 Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. Modeling on the grand scale: LANDFIRE lessons learned. Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.
 Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. Linking state-and-transition simulation and timber supply models for forest biomass production scenarios. AIMS Environmental Science 2:180-202.
-Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S. Journal of Environmental Management 151:186–99. 
+
+<br>
+
+Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S. Journal of Environmental Management 151:186–99.   
 Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. Quantifying variance components in ecological models based on expert opinion. Journal of Applied Ecology 48: 736-745. 
 Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. State-and-transition simulation models: a framework for forecasting landscape change. Methods in Ecology and Evolution 7:1413–23.
 Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events. Ecological Applications 30:e02013.
