@@ -1,14 +1,13 @@
 ---
 title: "Biophysical Modeling: a Primer with LANDFIRE"
-author: "TNC's LANDFIRE team"
+author:
 date: 
 output:
   html_document:
     toc: true
     toc_float: true
 ---
-Working, needs video editing, formatting, possible content additions
-
+*Working, needs video editing, formatting, possible content additions*
 
 ### What will you find on this website?
 

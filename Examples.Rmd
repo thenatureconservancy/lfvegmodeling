@@ -1,6 +1,6 @@
 ---
 title: "Examples"
-author: "TNC's LANDFIRE team"
+author: 
 date: 
 output:
   html_document:
@@ -8,4 +8,4 @@ output:
     toc_float: true
 ---
 ----
-Working, needs content and graphics
+*Working, needs content and graphics, use one continuous example using the Slick? https://kenwheeler.github.io/slick/* 

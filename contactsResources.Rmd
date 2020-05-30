@@ -1,13 +1,13 @@
 ---
 title: "Contacts and Additional resources"
-author: "TNC's LANDFIRE team"
+author: 
 date: 
 output:
   html_document:
     toc: true
     toc_float: true
 ---
-Working, needs proofing, embedded (existing?) tutorial videos
+*Working, needs proofing, embedded (existing?) tutorial videos*
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

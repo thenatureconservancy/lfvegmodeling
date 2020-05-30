@@ -1,12 +1,13 @@
 ---
 title: "Review Your Models"
-author: "TNC's LANDFIRE team"
+author: 
 date:
 output:
   html_document:
     toc: true
     toc_float: true
 ---
+*Working, formatting needs consistency*
 
 ## Let's jumpstart your modeling experience
 
