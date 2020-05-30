@@ -8,7 +8,7 @@ output:
     toc_float: true
 ---
 
-Working, needs graphics, formatting
+*Working, needs graphics to break up text, formatting for consistency, link to (existing) short videos that summarize some content?*
 
 ## Introduction to Climate Change and STSM Modeling
 
