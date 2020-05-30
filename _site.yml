@@ -6,18 +6,18 @@ navbar:
     href: stms.html
   - text: LANDFIRE STSMs 
     href: BpSmodels.html
+  - text: Climate Change
+    href: climateChange.html
   - text: Reviewing
     href: ReviewYourLFmodels.html
   - text: Modifying
     href: modifyModel.html
-  - text: Climate Change
-    href: climateChange.html
-  - text: Contacts and Resources
-    href: contactsResources.html
-  - text: Examples
-    href: Examples.html
   - text: Perpectives
     href: perspectives.html
+  - text: Examples
+    href: Examples.html
+  - text: Contacts and Resources
+    href: contactsResources.html
 
 
 

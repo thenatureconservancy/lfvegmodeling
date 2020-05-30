@@ -7,7 +7,7 @@ output:
     toc: true
     toc_float: true
 ---
-
+Working, needs proofing, embedded (existing?) tutorial videos
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

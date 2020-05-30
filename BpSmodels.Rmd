@@ -1,13 +1,13 @@
 ---
 title: "BpS Models"
 author: "TNC's LANDFIRE team"
-date: "2/26/2020"
+date: 
 output:
   html_document:
     toc: true
     toc_float: true
 ---
-
+Working - needs graphics, formatting
 
 ## Background knowledge
 

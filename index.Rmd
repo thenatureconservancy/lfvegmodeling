@@ -7,7 +7,7 @@ output:
     toc: true
     toc_float: true
 ---
-
+Working, needs video editing, formatting, possible content additions
 
 
 ### What will you find on this website?
@@ -21,7 +21,7 @@ LANDFIRE’s state-and-transition simulation models use inputs such as the **rat
 Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE's BpS models were created using state and transition models to summarize ecosystem processes such as **growth rates** and **disturbance probabilities** while simulating their dynamic interplay over time. 
 
 ```{r, echo=FALSE, out.width= "75%"} 
-knitr::include_graphics("inputmodel.png")
+knitr::include_graphics("images/inputmodel.png")
 
 ```
 
