@@ -389,50 +389,76 @@ div.tocify {
 </div>
 
 
-<p><em>Working - needs graphics, formatting</em></p>
+<p><em>Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS</em></p>
 <div id="models-models-everywhere" class="section level2">
 <h2>Models, Models Everywhere</h2>
 <p><img src="images/models.png" /></p>
 <p>Models are everywhere—sometimes behind the scenes and sometimes right out front. Weather forecasts are models. Measuring the state of the economy is a model. Assessing the condition of a landscape is a model. Forecasting almost anything (a pandemic for example) is a model. Many things we call “measurements” are actually models, such as Site Index, and on and on and on. Even a “map” is a model.</p>
-<p><img src="images/model-simple-vs-complex1.jpg" width="65%" /></p>
+<p><img src="images/model-simple-vs-complex1.jpg" width="45%" /></p>
 <p>Regardless of their complexity, ALL models are by definition a simplification of reality. Like the model airplane shown above….it “flies” like an airplane but it cannot carry cargo or passengers.</p>
 <blockquote>
-<p>“All models are wrong, so why do we create and use them?” - George box</p>
+<p>“All models are wrong, so why do we create and use them?” - George Box</p>
 </blockquote>
 <p>We create and use models because (as George Box also said) they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.</p>
 <p><img src="images/balance-relevance.jpg" width="55%" /></p>
 </div>
 <div id="developers-vs-users-key-considerations" class="section level2">
 <h2>Developers vs Users: Key Considerations</h2>
-<p>For the model developer, the key is to balance precision and bias of the outputs with the relevance of the model……hit YOUR application sweet spot (Pochetti figure from francescopochetti.com). The model should provide useful information but must also function for the user, i.e., have the right level of complexity. Complexity should have a purpose……provide more or more refined information, or in some cases provide the same information with more fidelity. Complex models typically require more input information, are more difficult to develop and de-bug, and take longer to run. LANDFIRE BpS models, with their limited number of states and transitions, live near the lower end of the complexity scale and provide relatively few and coarser level outputs than some other models, but are also easier to create and use. Models such as SIMPPLLE and LANDIS II sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost, sometimes too high a cost.</p>
+<p>For the model developer, the key is to balance precision and bias of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
 <p><img src="images/model-complexity.png" width="55%" /></p>
-<p>The considerations are different for the model user and his/her objectives: the key is to understand the characteristics of the model. What factors/inputs does it include? What factors/inputs does it not include? Can you provide the inputs at the level of accuracy required? What modeling technique was used? How was the model intended to be applied? What is the “scale” of the model? Like all tools, models can be used correctly or incorrectly. Can a modified LANDFIRE BpS model provide the information you need with the right level of quality? Only the user can answer those questions, so it is imperative that you review the documentation. Communicate with the modeler if you have questions. It is your responsibility.</p>
+<p>Image courtesy: <a href="francescopochetti.com">Francesco Pochetti</a> <br></p>
+<p>The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity. Complex models typically require more input information, are more difficult to develop and de-bug, and take longer to run.</p>
+<blockquote>
+<p>LANDFIRE BpS models, with their limited number of states and transitions, live near the lower end of the complexity scale and provide relatively few and coarser level outputs than some other models, but are also easier to create and use.</p>
+</blockquote>
+<p>Models such as SIMPPLLE and LANDIS II sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost, sometimes too high a cost.</p>
+<p><br></p>
+<div id="understanding-the-characterstics-of-the-model" class="section level3">
+<h3>Understanding the characterstics of the model:</h3>
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="blue">
+<ul>
+<li>What factors/inputs does it include?</li>
+<li>What factors/inputs does it not include?</li>
+<li>Can you provide the inputs at the level of accuracy required?</li>
+<li>What modeling technique was used?</li>
+<li>How was the model intended to be applied? -What is the “scale” of the model?</li>
+</ul>
 </div>
-<div id="responsibilites" class="section level2">
-<h2>Responsibilites</h2>
-<p>Models can be useful and even illuminating if used properly. Models can be very harmful, unfortunately very obfuscating if used improperly. It is the modeler’s duty to document the model thoroughly and make that information available to potential users. However, it is the duty of the model user to know what they really need and to review the model and model information to decide for themselves if it is appropriate for their situation or not.</p>
+<p><br></p>
+<p><em>Like all tools, models can be used correctly or incorrectly. Can a modified LANDFIRE BpS model provide the information you need with the right level of quality? Only the user can answer those questions, so it is imperative that you review the documentation. Communicate with the modeler if you have questions. It is your responsibility.</em></p>
+<p><em>## Responsibilites</em></p>
+<p><em>Models can be useful and even illuminating if used properly. Models can be very harmful, unfortunately very obfuscating if used improperly. It is the modeler’s duty to document the model thoroughly and make that information available to potential users. However, it is the duty of the model user to know what they really need and to review the model and model information to decide for themselves if it is appropriate for their situation or not.</em></p>
 <p><strong>(Does anyone have the picture of Menakis at a RA workshop for instance—this is not the picture I want to use but collaborative review is what I want to show) I found the three below in the archives. Not sure about quality.</strong></p>
+</div>
 </div>
 <div id="background-and-recommendations" class="section level2">
 <h2>Background and recommendations</h2>
 <div id="landfire-models" class="section level3">
 <h3>LANDFIRE Models:</h3>
-<ul>
-<li>LF Biophysical Settings models were created using a set of strict rules about allowable states (5 or less) and transitions between states (only historic not current). You are not limited by those rules by the software modeling platform (SyncroSim). You can add new states and transitions. You can modify current states or change transition probabilities. If maintaining compatibility with LANDFIRE models is required that could reduce your modification options. However, we have seen STSM based on LANDFIRE BpS models that had more than 100 states and dozens of transitions. What you include or not is up to you and should be based on your objectives.</li>
-<li>LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.</li>
-</ul>
+<p>LF Biophysical Settings models were created using a set of strict rules about allowable states (5 or less) and transitions between states (only historic not current). Key considerations:</p>
+<ol style="list-style-type: decimal">
+<li><p>You are not limited by those rules by the software modeling platform (SyncroSim).</p></li>
+<li><p>You can add new states and transitions.</p></li>
+<li><p>You can modify current states or change transition probabilities.</p></li>
+<li><p>If maintaining compatibility with LANDFIRE models is required, your modification options may be reduced. However, we have seen STSM based on LANDFIRE BpS models that had more than 100 states and dozens of transitions.</p></li>
+<li><p>LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.</p></li>
+</ol>
 <p><strong>insert Map Zone Map</strong></p>
 </div>
-<div id="current-condition-models" class="section level3">
-<h3>Current Condition Models</h3>
-<ul>
-<li>If modeling standards are established, adhere to them. If you do not, comparisons can be confounded, results lose their applicability and future changes become more complicated.</li>
-<li>Have a goal and a plan. Don’t just wing it as that often results in wasted time. I need a STSM for sage-steppe in Nevada that reflects current conditions, contains a Cheatgrass state, and allows for the integration of climate change effects.</li>
-<li>Work through the model changes in a stepwise fashion. Add states and associated transitions one at a time and run the model, say a add Cheatgrass state and associated transitions. Review the results and plan the next steps.</li>
-<li>We strongly encourage you to keep the model as simple as possible. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately. If it doesn’t matter whether Cheatgrass is at 10% or 15% cover, don’t make those separate states.</li>
-<li>Document, document and document some more. Do not expect to remember what you did, or even why you did it later. These models can run so fast you can easily get ahead of yourself.</li>
-<li>Expect the unexpected. If you knew the answer with certainty you probably did not need the model. An answer that seems strange to you may be correct….and indeed illuminating.</li>
-</ul>
+<div id="current-condition-model-guide" class="section level3">
+<h3>Current Condition Model Guide</h3>
+<ol style="list-style-type: decimal">
+<li><p>Adhere to established modeling standards.</p></li>
+<li><p>Have a goal and a plan. Don’t just wing it!</p></li>
+<li><p>Work through the model changes in a stepwise fashion. Add states and associated transitions one at a time and run the model.</p></li>
+<li><p>Review the results and plan the next steps.</p></li>
+<li><p>Keep the model as simple as possible. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
+<li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
+</ol>
 </div>
 </div>
 
