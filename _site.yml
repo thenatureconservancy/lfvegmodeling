@@ -6,12 +6,12 @@ navbar:
     href: stms.html
   - text: BpSmodels 
     href: BpSmodels.html
-  - text: Climate Change
-    href: climateChange.html
   - text: Reviewing
     href: ReviewYourLFmodels.html
   - text: Modifying
     href: modifyModel.html
+  - text: Climate Change
+    href: climateChange.html
   - text: Perpectives
     href: perspectives.html
   - text: Examples
