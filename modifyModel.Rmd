@@ -10,9 +10,10 @@ output:
 
 *Working, content, graphics, tutorial video (?)*
 
-Insert examples that demonstrate value of STSM model customization
+## Why modify?
+*INSERT COLLABORATION OR "CHANGE" IMAGE*
+LANDFIRE reference condition models 
 
-Why/how can we use this framework to make decisions?
+## How to make basic modifications
 
-1. resource-wise & projecting into future
-
+## Advanced modifications
