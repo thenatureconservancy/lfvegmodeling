@@ -98,6 +98,8 @@ Key considerations:
 
 ### Current Condition Model Guide
 
+*(make this a circular graphic?)*
+
 1. Adhere to established modeling standards.
 
 2. Have a goal and a plan. Don’t just wing it!

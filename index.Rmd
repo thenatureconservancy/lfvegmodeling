@@ -7,7 +7,7 @@ output:
     toc: true
     toc_float: true
 ---
-*Working, needs video editing, formatting, possible content additions*
+*Working, needs video editing, formatting, possible content additions, move the stms, top, make the intro be more gentle, ease into it, less technical*
 
 ### What will you find on this website?
 

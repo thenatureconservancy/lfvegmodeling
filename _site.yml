@@ -4,7 +4,7 @@ navbar:
   left:
   - text: STSMs
     href: stms.html
-  - text: LANDFIRE STSMs 
+  - text: BpSmodels 
     href: BpSmodels.html
   - text: Climate Change
     href: climateChange.html
@@ -18,6 +18,8 @@ navbar:
     href: Examples.html
   - text: Contacts and Resources
     href: contactsResources.html
+  - text: References
+    href: References.html
 
 
 
