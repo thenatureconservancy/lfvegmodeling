@@ -1,5 +1,5 @@
 ---
-title: "Biophysical Modeling: a Primer with LANDFIRE"
+title: "Welcome"
 author:
 date: 
 output:
@@ -7,32 +7,27 @@ output:
     toc: true
     toc_float: true
 ---
-*Working, needs video editing, formatting, possible content additions, move the stms, top, make the intro be more gentle, ease into it, less technical*
+*Working, delete video at the bottom, or edit heavily to reflect the agreed upon powerpoint that will be woven throughout the website
 
-### What will you find on this website?
+### On this website you will find: 
 
-Brief tutorials on how to use BpS models and the free modeling software, SyncroSim. When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections.  
+1. A guide for using LANDFIRE's biophysical settings models (BpS)
+2. Tutorials on how to use BpS models and the free modeling software, SyncroSim
+3. Examples of how to manipulate the models to suite your specific needs
 
-LANDFIRE’s state-and-transition simulation models use inputs such as the **rates of growth** and the **probabilities of different disturbances** to simulate the **dynamics of ecosystem over time**. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.
+>When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections. 
 
->What is a biophysical model?
+## Why model?  
+### Modeling biophysical models provide a framework for:  
 
-Bps models use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE's BpS models were created using state and transition models to summarize ecosystem processes such as **growth rates** and **disturbance probabilities** while simulating their dynamic interplay over time. 
-
-```{r, echo=FALSE, out.width= "75%"} 
-knitr::include_graphics("images/inputmodel.png")
-
-```
-
-### Why model?  
-#### Modeling biophysical models provide a framework for:  
-
-1. simulating disturbances and testing potential management strategies  
-2. modeling vegetation characteristics on the landscape  
-3. making predictions of future landscape conditions
+1. Simulating disturbances and testing potential management strategies  
+2. Modeling vegetation characteristics on the landscape  
+3. Making predictions of future landscape conditions
 <br>
 
->Get started with integrating biophysical settings into your current work
+
+## Let's get started
+Integrating biophysical settings into your current work
 <br>
 
 <iframe width="760" height="415" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

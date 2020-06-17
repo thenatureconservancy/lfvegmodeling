@@ -11,9 +11,8 @@
 
 
 
-<title>State and Transition Models</title>
+<title>STSMs</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -370,7 +369,7 @@ div.tocify {
   <a href="Examples.html">Examples</a>
 </li>
 <li>
-  <a href="contactsResources.html">Contacts and Resources</a>
+  <a href="contactsResources.html">Resources</a>
 </li>
 <li>
   <a href="References.html">References</a>
@@ -387,12 +386,27 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">State and Transition Models</h1>
+<h1 class="title toc-ignore">STSMs</h1>
 
 </div>
 
 
 <p><em>Working, needs tutorial video</em></p>
+<div id="so-you-want-to-build-a-state-and-transition-model." class="section level2">
+<h2>So you want to build a State and Transition Model.</h2>
+<div id="heres-what-you-need-to-know" class="section level3">
+<h3>(Here’s what you need to know)</h3>
+<blockquote>
+<p><strong>State and transition models</strong> use inputs such as the <strong>rates of growth</strong> and the <strong>probabilities of different disturbances</strong> to simulate the <strong>dynamics of ecosystem over time</strong>. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.</p>
+</blockquote>
+<blockquote>
+<p><strong>Biophysical models</strong> use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE’s BpS models were created using state and transition models to summarize ecosystem processes such as <strong>growth rates</strong> and <strong>disturbance probabilities</strong> while simulating their dynamic interplay over time. Here is a visual depiction of a BpS:</p>
+</blockquote>
+<center>
+<img src="images/inputmodel.png" width="55%" />
+</center>
+</div>
+</div>
 <div id="background" class="section level2">
 <h2>Background</h2>
 <p>A state-and-transition model (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf">(Westoby 1989)</a>. States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application. Conceptual state-and-transition models, called <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/technical/ecoscience/desc/">Environmental Site Descriptions</a> (ESDs), have been developed through a partnership between the US Department of Interior’s Bureau of Land Management and Natural Resources Conservation Service the U.S. Department of Agriculture’s Forest Service, and widely used to monitor, evaluate and mange federal rangelands (<a href="https://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=27123.wba">RIESM 2010</a>).</p>
@@ -403,7 +417,12 @@ div.tocify {
 <blockquote>
 <p>Example STSM: Montane Sagebrush Steppe <img src="images/STSMex.jpg" /></p>
 </blockquote>
-<p>INSERT KORI’S VIDEO (NEED TO ADD CAPTIONS AND INCORPORATE UPDATED GRAPHICS)</p>
+</div>
+<div id="watch-the-demonstration" class="section level2">
+<h2>Watch the demonstration</h2>
+<ul>
+<li>(Kori’s video)</li>
+</ul>
 </div>
 <div id="state-and-transition-modeling-software" class="section level2">
 <h2>State-and-transition modeling software</h2>

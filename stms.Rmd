@@ -1,5 +1,5 @@
 ---
-title: "State and Transition Models"
+title: "STSMs"
 output:
   html_document:
     toc: true
@@ -7,6 +7,22 @@ output:
 ---
 
 *Working, needs tutorial video*
+
+## So you want to build a State and Transition Model.
+### (Here's what you need to know)
+
+
+>**State and transition models** use inputs such as the **rates of growth** and the **probabilities of different disturbances** to simulate the **dynamics of ecosystem over time**. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.
+
+>**Biophysical models** use quantative simulations of biological and physical inputs to make predictions about the future of natural systems. LANDFIRE's BpS models were created using state and transition models to summarize ecosystem processes such as **growth rates** and **disturbance probabilities** while simulating their dynamic interplay over time. Here is a visual depiction of a BpS:
+
+<center>
+```{r, echo=FALSE, out.width= "55%"} 
+knitr::include_graphics("images/inputmodel.png")
+
+```
+</center>
+
 
 ## Background
 
@@ -20,7 +36,8 @@ When a STM is built in a software environment with rates of growth (black arrows
 >Example STSM: Montane Sagebrush Steppe
 ![](images/STSMex.jpg)
 
-INSERT KORI'S VIDEO (NEED TO ADD CAPTIONS AND INCORPORATE UPDATED GRAPHICS)
+## Watch the demonstration 
+- (Kori's video)
 
 
 ## State-and-transition modeling software
