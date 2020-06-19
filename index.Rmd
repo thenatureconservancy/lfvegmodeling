@@ -12,15 +12,17 @@ output:
 ### On this website you will find: 
 
 1. A guide for using LANDFIRE's biophysical settings models (BpS)
+
 2. Tutorials on how to use BpS models and the free modeling software, SyncroSim
+
 3. Examples of how to manipulate the models to suite your specific needs
+<br>
 
->When integrated into state and transition models, this framework can improve and enhance landscape predictions and research projections. 
-
-## Why model?  
-### Modeling biophysical models provide a framework for:  
+### Why model?  
+#### Modeling biophysical models provide a framework for:  
 
 1. Simulating disturbances and testing potential management strategies  
+
 2. Modeling vegetation characteristics on the landscape  
 3. Making predictions of future landscape conditions
 <br>

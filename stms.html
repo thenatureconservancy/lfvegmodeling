@@ -391,11 +391,15 @@ div.tocify {
 </div>
 
 
-<p><em>Working, needs tutorial video</em></p>
-<div id="so-you-want-to-build-a-state-and-transition-model." class="section level2">
-<h2>So you want to build a State and Transition Model.</h2>
-<div id="heres-what-you-need-to-know" class="section level3">
-<h3>(Here’s what you need to know)</h3>
+<p><em>Working, needs tutorial video, maybe move the powerpoin example to the examples page, and Background up on the page</em></p>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>A state-and-transition model (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf">(Westoby 1989)</a>. States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application. Conceptual state-and-transition models, called <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/technical/ecoscience/desc/">Environmental Site Descriptions</a> (ESDs), have been developed through a partnership between the US Department of Interior’s Bureau of Land Management and Natural Resources Conservation Service the U.S. Department of Agriculture’s Forest Service, and widely used to monitor, evaluate and mange federal rangelands (<a href="https://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=27123.wba">RIESM 2010</a>).</p>
+</div>
+<div id="so-you-want-to-build-a-state-and-transition-model" class="section level2">
+<h2>So you want to build a State and Transition Model</h2>
+<div id="heres-what-you-need-to-know" class="section level4">
+<h4>(Here’s what you need to know)</h4>
 <blockquote>
 <p><strong>State and transition models</strong> use inputs such as the <strong>rates of growth</strong> and the <strong>probabilities of different disturbances</strong> to simulate the <strong>dynamics of ecosystem over time</strong>. LANDFIRE uses the models to estimate the historical composition and structure of ecosystems and the frequency and severity of wildfire prior to European-American settlement, but they can be used for a variety of other purposes.</p>
 </blockquote>
@@ -405,18 +409,14 @@ div.tocify {
 <center>
 <img src="images/inputmodel.png" width="55%" />
 </center>
+<p><br> </br></p>
 </div>
 </div>
-<div id="background" class="section level2">
-<h2>Background</h2>
-<p>A state-and-transition model (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf">(Westoby 1989)</a>. States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application. Conceptual state-and-transition models, called <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/technical/ecoscience/desc/">Environmental Site Descriptions</a> (ESDs), have been developed through a partnership between the US Department of Interior’s Bureau of Land Management and Natural Resources Conservation Service the U.S. Department of Agriculture’s Forest Service, and widely used to monitor, evaluate and mange federal rangelands (<a href="https://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=27123.wba">RIESM 2010</a>).</p>
-<blockquote>
-<p>Example STSM: Montane Sagebrush Steppe <img src="images/STSMex1.jpg" /></p>
-</blockquote>
+<div id="state-and-transition-model-example" class="section level2">
+<h2>State and Transition Model Example:</h2>
+<p><br> </br> #### Montane Sagebrush Steppe <img src="images/STSMex1.jpg" /></p>
 <p>When a STM is built in a software environment with rates of growth (black arrows below) between states and probabilities for each transition (red and yellow arrows below) it is known as a state-and-transition simulation model (STSM; <a href="https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12597">Daniel et al. 2016</a>). A STSM can be used to simulate the dynamics of a system over time and sometimes space. STSMs have been widely applied in natural resource management to estimate historical conditions (<a href="https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.2013">Donato et al. 2020</a>, <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf">Blankenship et al.2012</a>), simulate the spread of invasive species (<a href="https://www.reabic.net/journals/mbi/2019/1/MBI_2019_CullinaneThomas_etal.pdf">Thomas et al. 2019</a>, <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730">Jarnevich et al. 2019</a>), test various management scenarios (<a href="https://www.conservationgateway.org/Documents/Enhanced%20conservation%20action%20planning_assessing%20landscape%20condition.pdf">Low et al. 2010</a>, <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180">Costanza et al. 2015a</a>), and forecast future landscape conditions under different climates (<a href="https://www.springer.com/gp/book/9783319249285">Provencher et al. 2016</a>, <a href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf">Swearingen et al. 2015</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0301479714006112">Costanza et al. 2015b</a>).</p>
-<blockquote>
-<p>Example STSM: Montane Sagebrush Steppe <img src="images/STSMex.jpg" /></p>
-</blockquote>
+<p><img src="images/STSMex.jpg" /></p>
 </div>
 <div id="watch-the-demonstration" class="section level2">
 <h2>Watch the demonstration</h2>
@@ -424,8 +424,8 @@ div.tocify {
 <li>(Kori’s video)</li>
 </ul>
 </div>
-<div id="state-and-transition-modeling-software" class="section level2">
-<h2>State-and-transition modeling software</h2>
+<div id="syncrosim-modeling-software" class="section level2">
+<h2>SyncroSim Modeling software</h2>
 <p>LANDFIRE currently uses the <a href="https://syncrosim.com/">SyncroSim software</a> (ST-Sim package) as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including <a href="https://essa.com/explore-essa/tools/vddt/">Path and the Vegetation Dynamics Development Tool</a> (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic and can be run either spatially or non-spatially.</p>
 <blockquote>
 <p><strong>Getting started in SyncroSim</strong> <br> The native environment of LANDFIRE BpS models is SyncroSim. If you want to explore or use the BpS models you will want to familiarize yourself with and download the software:</p>
