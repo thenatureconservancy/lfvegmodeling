@@ -15,9 +15,9 @@ output:
 The goal of this section is to help you identify questions that the LANDFIRE BpS models, with their built-in simplifications, strengths, and constraints, are best suited to help you explore.
 
 ### Background 
-Directional changes in climate factors, such as increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates, are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed changes, in addition to ecological theory, allow us to generate hypotheses on how these changes may play out. As noted in a [previous sections] (link to Modeling perspectives), all models are a simplification of reality, and there are many different aspects of climate change that you might be interested in exploring with a model.
+Directional changes in climate factors, such as **increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates,** are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed changes, in addition to ecological theory, allow us to generate hypotheses on how these changes may play out. As noted in a [previous sections] (link to Modeling perspectives), all models are a simplification of reality, and there are many different aspects of climate change that you might be interested in exploring with a model.
 
-Climate drivers like temperature and moisture availability play critical roles in shaping the life history of plants and associated species in terrestrial ecosystems. As anthropogenic factors have acted to accelerate the rate of climate change, we are seeing a wide array of responses in plants, and other species that strongly influence vegetation dynamics. 
+Climate drivers like **temperature** and **moisture availability** play critical roles in shaping the life history of plants and associated species in terrestrial ecosystems. As anthropogenic factors have acted to accelerate the rate of climate change, we are seeing a wide array of responses in plants, and other species that strongly influence vegetation dynamics. 
 
 > The most frequently documented responses to climate change include changes in phenology (the timing of seasonal events, such as budburst), spatial shifts in range boundaries, and shifts in density patterns within a species’ range due to changes in recruitment or mortality as site conditions change. 
 
@@ -59,42 +59,47 @@ In other vegetation classes with higher tree species diversity, such as mixed ha
 
 The “sweet spot” for LANDFIRE BpS models in a climate change context is exploring **how climate change can influence disturbance regimes,** and as a result influence the relative proportion of each ecosystem state over time. These tools allow users to consider time periods much longer than human experience (i.e., hundreds or thousands of years) and “illuminate” (link to Jim’s overview) how events with a range of different frequencies can interact to shape the distribution of vegetation classes on the landscape. However, remember that while the impacts of climate change on ecological systems are complex, this does not mean you should try to capture the full range of complexity in your model.  
 
-For example, the interaction between drought, insect outbreaks, and fire is an example of a multi-factor, climate-related driver of change in forested ecosystem, especially notable now in the western U.S. While you could take an existing BpS model and add a drought factor, modify the current fire disturbances, and add an insect pest factor, if in effect these three drivers tend to operate together, we suggest at least starting your modeling work by treating this complex of drivers as one disturbance, potentially starting with the one for which you have the best information on rates (this might be fire regime).  As you gain experience and insight, you can consider what additional things you might learn by trying to tease apart these interacting factors – for example by bringing in insect outbreaks as a separate factor, but with rates that recognize the role of drought conditions in both disturbance pathways (fire and insects).  In the bulleted sections below, we link climate-related changes to how you would model them in the BpS-in-SyncroSim platform, moving from the basics to more specific hypotheses of change. 
+For example, the interaction between **drought**, **insect outbreaks**, and **fire** is an example of a multi-factor, climate-related driver of change in forested ecosystem, especially notable now in the western U.S. 
+
+>While you could take an existing BpS model and add a drought factor, modify the current fire disturbances, and add an insect pest factor, if in effect these three drivers tend to operate together, we suggest at least starting your modeling work by treating this complex of drivers as **one disturbance**, potentially starting with the one for which you have the best information on rates (this might be fire regime). 
+
 
 **Placeholder: insert slide with insect invasion added, and possible more perturbations introduced OR reflective of the fire regime comment**
 
+As you gain experience and insight, you can consider what additional things you might learn by trying to tease apart these interacting factors – for example by bringing in insect outbreaks as a separate factor, but with rates that recognize the role of drought conditions in both disturbance pathways (fire and insects). In the bulleted sections below, we link climate-related changes to how you would model them in the BpS-in-SyncroSim platform, moving from the basics to more specific hypotheses of change. 
+
 ### Altering disturbances
+
+* Adding or removing a type of disturbance (see below)
+* Modifying the intensity, or distribution across intensity levels (e.g., low, med, high)
+* Changing the rate (probability) – with the caveat that the models are aspatial, so if spread of the disturbance across the landscape is a process you want to understand, you will likely want to complement your work with additional tools
+* Incorporating a rate multiplier, which allows the probability of a disturbance to change over time
+
 
 ```{r, echo=FALSE, out.width= "35%"} 
 knitr::include_graphics("images/disturbance.jpg")
 
 ```
 
-* Adding or removing a type of disturbance (see above)
-* Modifying the intensity, or distribution across intensity levels (e.g., low, med, high)
-* Changing the rate (probability) – with the caveat that the models are aspatial, so if spread of the disturbance across the landscape is a process you want to understand, you will likely want to complement your work with additional tools
-* Incorporating a rate multiplier, which allows the probability of a disturbance to change over time
-
 ### Altering states
+
+* Adding or removing vegetation classes. This can include adding a new invasive plant species that is favored by some aspect of climate change.
+* Slowing down or speeding up succession to represent a change in growth rates, or slower recovery (see above).
+* Transitioning a vegetation class to a new BpS (? Not sure you want this here??)
 
 ```{r, echo=FALSE, out.width= "100%"} 
 knitr::include_graphics("images/states.jpg")
 
 ```
 
-* Adding or removing vegetation classes. This can include adding a new invasive plant species that is favored by some aspect of climate change.
-* Slowing down or speeding up succession to represent a change in growth rates, or slower recovery (see above).
-* Transitioning a vegetation class to a new BpS (? Not sure you want this here??)
-
-
 ## BpS and climate change examples
 
 #### More intense fires
-Increases in the intensity of fires, a trend that has been observed in forests with high vegetation density, often in combination with drought.  To represent this process, you would increase the probablility of high intensity fires in your model – or potentially add this type of disturbance if it was not already in the model.
+Increases in the intensity of fires, a trend that has been observed in forests with high vegetation density, often in combination with drought.  To represent this process, you would **increase the probablility of high intensity fires** in your model – or potentially add this type of disturbance if it was not already in the model.
 
 #### Longer fire seasons
 
-* [Cattau et al. 2020](https://doi.org/10.1111/geb.13058) examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. Looking at this question would involve increasing the rate of fire return within this modeling platform. 
+* [Cattau et al. 2020](https://doi.org/10.1111/geb.13058) examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. Looking at this question would involve **increasing the fire return interval** within this modeling platform. 
 
 #### Larger fires
 
@@ -102,16 +107,24 @@ Increases in the intensity of fires, a trend that has been observed in forests w
 
 #### Insect outbreaks
 
-* Insect outbreaks that promote a state change in vegetation are not included in the “out of the box” BpS models, but can be added, and then varied, in all of the ways described above for fire.  As warming temperatures increase the overwinter survival of insects, increase the number of generations possible in a single season, and increase growth rates, adding a separate insect outbreak component may be highly relevant, especially if there is evidence to support impacts that are independent of other drivers. In the case of drought-stressed trees contributing to high tree mortality, undertstanding variations in drought risk, for example associated with topography or soil water holding capacity, may allow you to partition out impacts by site conditions (see last bullet). 
+* Insect outbreaks that promote a state change in vegetation are not included in the “out of the box” BpS models. **Insect outbreaks can be added, and then varied, in all of the ways described above for fire.** 
 
-## Transitions in vegetation classes
+  Warming temperatures:
+  
+  * increase the overwinter survival of insects
+  * increase the number of generations possible in a single season
+  * increase insect growth rates
+  
+  Adding a separate insect outbreak component may be highly relevant, especially if there is evidence to support impacts that are independent of other drivers. In the case of drought-stressed trees contributing to high tree mortality, understanding variations in drought risk, for example associated with topography or soil water holding capacity, may allow you to partition out impacts by site conditions (see last bullet). 
 
-* In some vegetation systems, managers have observed that increases in the intensity or extent of fires is leading to a failure of the ecological system to regenerate – reasons may include a loss of organic soil horizons in the intense fire, or a lack of seed sources close to the newly burned area.  This observation could be modeled by adding a new vegetation class (perhaps a grass or shrub class, if the intent is to explore how this shift might drive an ecological transformation), or by increasing the duration of transition from the post-fire seral stage back to forest, to represent slower regrowth of trees, perhaps aided by active seed additions.  
+#### Transitions in vegetation classes
+
+* In some vegetation systems, managers have observed that increases in the intensity or extent of fires is leading to a failure of the ecological system to regenerate – reasons may include a loss of organic soil horizons in the intense fire, or a lack of seed sources close to the newly burned area. This observation could be modeled by **adding a new vegetation class** (perhaps a grass or shrub class, if the intent is to explore how this shift might drive an ecological transformation), or by **increasing the duration of transition from the post-fire seral stage back to forest**, to represent slower regrowth of trees, perhaps aided by active seed additions.  
 Representing variations in climate change exposure, or adaptive capacity within an assessment region
 
-* While BpS models are aspatial, if you have information on how vegetation dynamics might vary within an assessment area, you can capture that variation by developing separate iterations of the same model. For example, topographic factors or soil moisture may strongly influence the sensitivity of a system to a disturbance, the rate of recovery after a disturbance, or the probability that a disturbance will shift a vegetation type to a new class.  
+* While BpS models are aspatial (see below), you can capture that variation by **developing separate iterations of the same model if you have information on how vegetation dynamics might vary within an assessment area.** For example, topographic factors or soil moisture may strongly influence the sensitivity of a system to a disturbance, the rate of recovery after a disturbance, or the probability that a disturbance will shift a vegetation type to a new class.  
 
-The influence of native and non-native insect pests is changing due to climate change, a pattern that can have major impacts on forest health when combined with a change in tree health due to drought exposure.  Like fire, changes in the impact of insects can occur through changes in intensity, and/or duration of exposure (i.e., warmer temperatures are increasing overwinter 
+*(delete this paragraph?)* The influence of native and non-native insect pests is changing due to climate change, a pattern that can have major impacts on forest health when combined with a change in tree health due to drought exposure.  Like fire, changes in the impact of insects can occur through changes in intensity, and/or duration of exposure (i.e., warmer temperatures are increasing overwinter 
 
 ## BpS models are not spatial models
-The structure of the BpS models provides a clear indication of the ecological level at which they operate, and can be applied to address questions about climate change. While range shifts are some of the most studied aspects of climate change responses, these models are not spatial, and tend to “lump” all species within a vegetation class together within a series of states. **This is because...** If you are interested in exploring vegetation responses within what the BpS models consider a “state” – for example, exploring changes in species composition that might occur as a result of changes in tree competitive ability as growing seasons lengthen due to a warming climate – BpS models are likely not the best hammer for that nail! 
+The structure of the BpS models provides a clear indication of the ecological level at which they operate, and can be applied to address questions about climate change. While range shifts are some of the most studied aspects of climate change responses, these models are not spatial, and tend to “lump” all species within a vegetation class together within a series of states. **This is because it would be impossible to use this modeling platform to model the mechanistic relationships between all species within all types of ecosystems...** If you are interested in exploring vegetation responses within what the BpS models consider a “state” – for example, exploring changes in species composition that might occur as a result of changes in tree competitive ability as growing seasons lengthen due to a warming climate – BpS models are likely not the best hammer for that nail! 
