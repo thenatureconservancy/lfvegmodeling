@@ -6,6 +6,7 @@ output:
   html_document:
     toc: true
     toc_float: true
+    toc_depth: 4
 ---
 
 *Working, needs graphics to break up text, formatting for consistency, link to (existing) short videos that summarize some content?*
