@@ -1,0 +1,174 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Welcome page},
+  pdfauthor={Megan Dettenmaier},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{Welcome page}
+\author{Megan Dettenmaier}
+\date{7/6/2020}
+
+\begin{document}
+\maketitle
+
+\begin{your-class}
+
+your content
+
+your content
+
+your content
+
+\end{your-class}
+
+\hypertarget{hello-and-welcome}{%
+\subsection{Hello and Welcome}\label{hello-and-welcome}}
+
+Hello and welcome to the LANDFIRE vegetation modeling site. We created
+this site to help you harness the potential of the modeling framework to
+accomplish your management and restoration objectives. We recognize the
+importance of having the best resources to accomplish your
+goals\ldots and here at LANDFIRE we are continually improving our
+products to get you the data you need.
+
+\hypertarget{so-what-will-you-learn-heres-just-a-sample}{%
+\paragraph{So, what will you learn? Here's just a
+sample:}\label{so-what-will-you-learn-heres-just-a-sample}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  We'll discuss how LANDFIRE historical vegetation models can jumpstart
+  your research, management planning and understanding of both current
+  and future ecosystems
+\item
+  We'll help you navigate the Syncrosim biophysical vegetation modeling
+  framework
+\item
+  And finally, we'll offer real life, on the ground examples of the
+  models in action and demonstrate how modeling perturbations in the
+  environment can inform and direct effective management actions
+\end{enumerate}
+
+\hypertarget{why-integrate-this-into-your-current-work}{%
+\paragraph{Why integrate this into your current
+work?}\label{why-integrate-this-into-your-current-work}}
+
+This framework provides a national baseline for assessing current
+vegetation conditions while accounting for historical ecology.
+Integrating this knowledge with our current projections of climate and
+other factors can has the potential to improve the way we manage land
+while providing some ecological context. This modeling framework can
+help you making predictions about future landscape conditions. For
+example, you may be interested in understanding how an insect invasion
+will impact a specific region, with the right data and a little bit of
+time, this program can help you make predictions and plan for the
+future.
+
+\hypertarget{what-you-will-learn}{%
+\paragraph{What you will learn}\label{what-you-will-learn}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  We'll show you how to accessing the data on landfire.gov
+\item
+  We'll walk you through how to run and adapt the models
+\item
+  And finally we'll show you how to interpret the results
+\end{enumerate}
+
+\hypertarget{lets-get-started}{%
+\paragraph{Let's get started}\label{lets-get-started}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  To get the process rolling you need to install syncrosim on your
+  machine - but before you do that, you need to register with syncrosim,
+  go to - \url{https://syncrosim.com/}
+\item
+  Then you'll go to download (that's emailed to you (RIGHT?)), and find
+  the version of Syncrosim that's appropriate for your hardware.
+\item
+  Next you'll head on over to the LANDFIRE site and download the Master
+  ST-Sim database.
+  \url{https://www.landfire.gov/national_veg_models_op2.php}
+\item
+  And finally, open Syncrosim, go to file, open library, locate the
+  unzipped Master St-Sim database that you just downloaded. Once you do
+  that, you're ready to get started.
+\end{enumerate}
+
+\hypertarget{use-this-website}{%
+\paragraph{Use this website}\label{use-this-website}}
+
+We designed this website as a resource for both new and seasoned BpS
+users. You can skip ahead to the useful videos and sections, or navitate
+through each tab and section as it suites you. We stuck with one example
+in these tutorials to remain consistent and help you follow our model
+``story''. We'll be exploring the Sage Steppe BpS throughout this site.
+
+Either way, we hope you find our website useful and most importantly, we
+hope you use these BpS models to their fullest extent - Your next step
+is to find and organize your model. (insert link)
+
+\end{document}
