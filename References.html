@@ -12,7 +12,7 @@
 <meta name="author" content="" />
 
 
-<title>Review Your Models</title>
+<title>References</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +20,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -252,69 +249,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -322,16 +256,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -387,48 +311,30 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Review Your Models</h1>
+<h1 class="title toc-ignore">References</h1>
 
 </div>
 
 
-<p><em>Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model</em></p>
-<div id="the-basic-process" class="section level2">
-<h2>The basic process</h2>
-<p>Our hope is that LANDFIRE Biophysical Settings models help jumpstart your modeling work. When we work with landscapes we often modify a LANDFIRE reference condition model instead of starting from scratch. To do this (and to learn about the LANDFIRE modeling approach) you will:</p>
-<ol style="list-style-type: decimal">
-<li>Figure out which Map Zone your ecosystem is in</li>
-<li>Get three things: a) the model description, b) software and c) the LANDFIRE model</li>
-<li>Review the description</li>
-<li>Run and explore the model</li>
-<li>Start to document how you need to modify the refernce condition model so that it better represents the ecological and management processes of today (e.g., add fire suppression and thinning)</li>
-</ol>
-<p>We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.</p>
-<div id="find-your-map-zone-of-interest-here" class="section level3">
-<h3>1. Find your Map Zone of interest here:</h3>
-<p>First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It’s basically a product delivery and summary polygon. The polygons are from the National Landcover Database Program (see <a href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016" class="uri">https://www.mrlc.gov/national-land-cover-database-nlcd-2016</a>).</p>
-<p>Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. For our ecosystem of interest we are looking in eastern Oregon, or Map Zone 9.</p>
-<p><iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="900"></iframe> <br></p>
-</div>
-<div id="a.-get-a-landfire-description" class="section level3">
-<h3>2a. Get a LANDFIRE description</h3>
-<p>We have a website (<a href="http://landfirereview.org/search.php" class="uri">http://landfirereview.org/search.php</a>) where you can go to search for and retrieve LANDFIRE BpS model descriptions. For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).</p>
-</div>
-<div id="b.-get-the-software" class="section level3">
-<h3>2b. Get the software</h3>
-<p>We use SyncroSim by Apex RMS (<a href="http://www.apexrms.com/" class="uri">http://www.apexrms.com/</a>) as our modeling software. It’s free to download from <a href="https://syncrosim.com/download/" class="uri">https://syncrosim.com/download/</a>.</p>
-</div>
-<div id="c.-get-the-model-of-interest" class="section level3">
-<h3>2c. Get the model of interest</h3>
-<p>Now that you have the software installed, we will walk you through getting</p>
-<p>.</p>
-</div>
-</div>
+<p>Blankenship, K., L. Frid, J. L. Smith. 2015. <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.253">A state-and-transition simulation modeling approach for estimating the historical range of variability</a>. AIMS Environmental Science 2:253-268.</p>
+<p>Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf">Modeling on the grand scale: LANDFIRE lessons learned</a>. Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.</p>
+<p>Cattau, M.E., C.W. Wessman, A. Mahood, J.K. Balch. 2020. <a href="https://doi.org/10.1111/geb.13058">Anthropogenic and lightening-started fires are becoming larger and more frequent over a longer season length in the U.S.A.</a>. Global Ecology and Biogeography 29:668-681.</p>
+<p>Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180">Linking state-and-transition simulation and timber supply models for forest biomass production scenarios</a>. AIMS Environmental Science 2:180-202.</p>
+<p>Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. <a href="https://www.sciencedirect.com/science/article/pii/S0301479714006112">Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S.</a>. Journal of Environmental Management 151:186–99.</p>
+<p>Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2011.01971.x">Quantifying variance components in ecological models based on expert opinion</a>. Journal of Applied Ecology 48:736-745.</p>
+<p>Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12597">State-and-transition simulation models: a framework for forecasting landscape change</a>. Methods in Ecology and Evolution 7:1413–23.</p>
+<p>Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2013">Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events</a>. Ecological Applications 30:e02013.</p>
+<p>Jarnevich, C. S., C. Cullinane Thomas, N. E. Young, D. Backer, S. Cline, L. Frid, and P. Grissom. 2019. <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730">Developing an expert elicited simulation model to evaluate invasive species and fire management alternatives</a>. Ecosphere 10.</p>
+<p>Low, G., L. Provencher, and S. L. Abele. 2010. Enhanced conservation action planning: assessing landscape condition and predicting benefits of conservation strategies. Journal of Conservation 6:36-60.</p>
+<p>Provencher, L., L. Frid, C. Czembor, and J. T. Morisette. 2016. State‐and‐transition models: conceptual versus simulation perspectives, usefulness and breadth of use, and land management applications. Pages 371-407 in J. M. Germino, C. J. Chambers, and S. C. Brown, editors. <a href="https://www.springer.com/gp/book/9783319249285">Exotic brome‐grasses in arid and semiarid ecosystems of the western US: causes, consequences, and management implications</a>. Springer International Publishing, Germany.</p>
+<p>RIESM. 2010. <a href="https://directives.sc.egov.usda.gov/OpenNonWebContent.aspx?content=27123.wba">Rangeland interagency ecological site manual</a>. First edition.</p>
+<p>Rollins, M. G. 2009. <a href="https://www.publish.csiro.au/wf/WF08088">LANDFIRE: a nationally consistent vegetation, wildland fire, and fuel assessment</a>. International Journal of Wildland Fire 18:235-249.</p>
+<p>Swearingen, A., J. Price, J. Silbernagel, R. Swaty, and N. Miller. 2015. <a href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf">State-and-transition simulation modeling to compare outcomes of alternative management scenarios under two natural disturbance regimes in a forested landscape in northeastern Wisconsin, USA</a>. AIMS Environmental Science 2:737-63.</p>
+<p>Thomas, C.M., Sofaer, H.R., Cline, S.A. and Jarnevich, C.S., 2019. <a href="https://www.reabic.net/journals/mbi/2019/1/MBI_2019_CullinaneThomas_etal.pdf">Integrating landscape simulation models with economic and decision tools for invasive species control</a>. Management of Biological Invasions 10:6-22.</p>
+<p>Westoby, M., B. Walker, and I. Noy-Meir. 1989. Opportunistic management for rangelands not at equilibrium. Journal of Range Management. 42:266-274.</p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -461,32 +367,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

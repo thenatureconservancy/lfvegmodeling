@@ -12,7 +12,7 @@
 <meta name="author" content="" />
 
 
-<title>Review Your Models</title>
+<title>Perspectives</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -387,41 +387,82 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Review Your Models</h1>
+<h1 class="title toc-ignore">Perspectives</h1>
 
 </div>
 
 
-<p><em>Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model</em></p>
-<div id="the-basic-process" class="section level2">
-<h2>The basic process</h2>
-<p>Our hope is that LANDFIRE Biophysical Settings models help jumpstart your modeling work. When we work with landscapes we often modify a LANDFIRE reference condition model instead of starting from scratch. To do this (and to learn about the LANDFIRE modeling approach) you will:</p>
+<p><em>Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS</em></p>
+<div id="models-models-everywhere" class="section level2">
+<h2>Models, Models Everywhere</h2>
+<p><img src="images/models.png" /></p>
+<p>Models are everywhere—sometimes behind the scenes and sometimes right out front. Weather forecasts are models. Measuring the state of the economy is a model. Assessing the condition of a landscape is a model. Forecasting almost anything (a pandemic for example) is a model. Many things we call “measurements” are actually models, such as Site Index, and on and on and on. Even a “map” is a model.</p>
+<p><img src="images/model-simple-vs-complex1.jpg" width="45%" /></p>
+<p>Regardless of their complexity, ALL models are by definition a simplification of reality. Like the model airplane shown above….it “flies” like an airplane but it cannot carry cargo or passengers.</p>
+<blockquote>
+<p>“All models are wrong, so why do we create and use them?” - George Box</p>
+</blockquote>
+<p>We create and use models because (as George Box also said) they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.</p>
+<p><img src="images/balance-relevance.jpg" width="55%" /></p>
+</div>
+<div id="developers-vs-users-key-considerations" class="section level2">
+<h2>Developers vs Users: Key Considerations</h2>
+<p>For the model developer, the key is to balance precision and bias of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
+<p><img src="images/model-complexity.png" width="55%" /></p>
+<p>Image courtesy: <a href="francescopochetti.com">Francesco Pochetti</a> <br></p>
+<p>The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity. Complex models typically require more input information, are more difficult to develop and de-bug, and take longer to run.</p>
+<blockquote>
+<p>LANDFIRE BpS models, with their limited number of states and transitions, live near the lower end of the complexity scale and provide relatively few and coarser level outputs than some other models, but are also easier to create and use.</p>
+</blockquote>
+<p>Models such as SIMPPLLE and LANDIS II sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost, sometimes too high a cost.</p>
+<p><br></p>
+<div id="understanding-the-characterstics-of-the-model" class="section level3">
+<h3>Understanding the characterstics of the model:</h3>
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="blue">
+<ul>
+<li>What factors/inputs does it include?</li>
+<li>What factors/inputs does it not include?</li>
+<li>Can you provide the inputs at the level of accuracy required?</li>
+<li>What modeling technique was used?</li>
+<li>How was the model intended to be applied? -What is the “scale” of the model?</li>
+</ul>
+</div>
+<p><br></p>
+<p><em>Like all tools, models can be used correctly or incorrectly. Can a modified LANDFIRE BpS model provide the information you need with the right level of quality? Only the user can answer those questions, so it is imperative that you review the documentation. Communicate with the modeler if you have questions. It is your responsibility.</em></p>
+<p><em>## Responsibilites</em></p>
+<p><em>Models can be useful and even illuminating if used properly. Models can be very harmful, unfortunately very obfuscating if used improperly. It is the modeler’s duty to document the model thoroughly and make that information available to potential users. However, it is the duty of the model user to know what they really need and to review the model and model information to decide for themselves if it is appropriate for their situation or not.</em></p>
+<p><strong>(Does anyone have the picture of Menakis at a RA workshop for instance—this is not the picture I want to use but collaborative review is what I want to show) I found the three below in the archives. Not sure about quality.</strong></p>
+</div>
+</div>
+<div id="background-and-recommendations" class="section level2">
+<h2>Background and recommendations</h2>
+<div id="landfire-models" class="section level3">
+<h3>LANDFIRE Models:</h3>
+<p>LF Biophysical Settings models were created using a set of strict rules about allowable states (5 or less) and transitions between states (only historic not current). Key considerations:</p>
 <ol style="list-style-type: decimal">
-<li>Figure out which Map Zone your ecosystem is in</li>
-<li>Get three things: a) the model description, b) software and c) the LANDFIRE model</li>
-<li>Review the description</li>
-<li>Run and explore the model</li>
-<li>Start to document how you need to modify the refernce condition model so that it better represents the ecological and management processes of today (e.g., add fire suppression and thinning)</li>
+<li><p>You are not limited by those rules by the software modeling platform (SyncroSim).</p></li>
+<li><p>You can add new states and transitions.</p></li>
+<li><p>You can modify current states or change transition probabilities.</p></li>
+<li><p>If maintaining compatibility with LANDFIRE models is required, your modification options may be reduced. However, we have seen STSM based on LANDFIRE BpS models that had more than 100 states and dozens of transitions.</p></li>
+<li><p>LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.</p></li>
 </ol>
-<p>We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.</p>
-<div id="find-your-map-zone-of-interest-here" class="section level3">
-<h3>1. Find your Map Zone of interest here:</h3>
-<p>First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It’s basically a product delivery and summary polygon. The polygons are from the National Landcover Database Program (see <a href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016" class="uri">https://www.mrlc.gov/national-land-cover-database-nlcd-2016</a>).</p>
-<p>Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. For our ecosystem of interest we are looking in eastern Oregon, or Map Zone 9.</p>
-<p><iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="900"></iframe> <br></p>
+<p><strong>insert Map Zone Map</strong></p>
 </div>
-<div id="a.-get-a-landfire-description" class="section level3">
-<h3>2a. Get a LANDFIRE description</h3>
-<p>We have a website (<a href="http://landfirereview.org/search.php" class="uri">http://landfirereview.org/search.php</a>) where you can go to search for and retrieve LANDFIRE BpS model descriptions. For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).</p>
-</div>
-<div id="b.-get-the-software" class="section level3">
-<h3>2b. Get the software</h3>
-<p>We use SyncroSim by Apex RMS (<a href="http://www.apexrms.com/" class="uri">http://www.apexrms.com/</a>) as our modeling software. It’s free to download from <a href="https://syncrosim.com/download/" class="uri">https://syncrosim.com/download/</a>.</p>
-</div>
-<div id="c.-get-the-model-of-interest" class="section level3">
-<h3>2c. Get the model of interest</h3>
-<p>Now that you have the software installed, we will walk you through getting</p>
-<p>.</p>
+<div id="current-condition-model-guide" class="section level3">
+<h3>Current Condition Model Guide</h3>
+<p><em>(make this a circular graphic?)</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Adhere to established modeling standards.</p></li>
+<li><p>Have a goal and a plan. Don’t just wing it!</p></li>
+<li><p>Work through the model changes in a stepwise fashion. Add states and associated transitions one at a time and run the model.</p></li>
+<li><p>Review the results and plan the next steps.</p></li>
+<li><p>Keep the model as simple as possible. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
+<li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
+</ol>
 </div>
 </div>
 
@@ -471,7 +512,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3,h4",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

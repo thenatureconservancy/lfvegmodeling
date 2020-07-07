@@ -22,18 +22,8 @@ window.initializeCodeFolding = function(show) {
 
     // create a collapsable div to wrap the code in
     var div = $('<div class="collapse r-code-collapse"></div>');
-<<<<<<< HEAD
     show = (show || $(this).hasClass('fold-show')) && !$(this).hasClass('fold-hide');
     if (show) div.addClass('in');
-=======
-<<<<<<< HEAD
-    show = (show || $(this).hasClass('fold-show')) && !$(this).hasClass('fold-hide');
-    if (show) div.addClass('in');
-=======
-    if (show || $(this)[0].classList.contains('fold-show'))
-      div.addClass('in');
->>>>>>> 3bac56c85c787d8756c6cd2f859990a0ceaac76d
->>>>>>> aae2acfe93b16a1107ee5ef53688c4260083fd88
     var id = 'rcode-643E0F36' + currentIndex++;
     div.attr('id', id);
     $(this).before(div);

@@ -3,9 +3,6 @@ title: "Climate Change"
 author: "null"
 date: "null"
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '4'
   html_document:
     toc: yes
     toc_depth: 4
