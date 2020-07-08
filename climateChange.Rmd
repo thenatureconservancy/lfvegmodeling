@@ -1,12 +1,12 @@
 ---
 title: "Climate Change"
-author: 
-date: 
+author: "null"
+date: "null"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
     toc_depth: 4
+    toc_float: yes
 ---
 
 *Working, needs graphics to break up text, formatting for consistency, link to (existing) short videos that summarize some content?*
