@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "LANDFIRE Vegetation Modeling"
 author:
 date: 
 output:
@@ -7,32 +7,26 @@ output:
     toc: true
     toc_float: true
 ---
-*Working, delete video at the bottom, or edit heavily to reflect the agreed upon powerpoint that will be woven throughout the website
+### On this page you will find: 
++ an introduction to biophysical setting models
++ a short video that will provide context for this modeling framework including instructions on registering and downloading SyncroSim
 
-### On this website you will find: 
+## Welcome
+Welcome to the LANDFIRE vegetation modeling site. We created this site to help you harness the potential of the modeling framework to accomplish your management and restoration objectives. We recognize the importance of having the best resources to accomplish your goals. The LANDFIRE team is continually improving the LANDFIRE product suite to help you get the right data.
 
-1. A guide for using LANDFIRE's biophysical settings models (BpS)
+We designed this website as a resource for both new and seasoned BpS users. You can skip ahead to the useful videos and sections, or navitate through each tab and section as it suites you. We stuck with one example in these tutorials to remain consistent and help you follow our model “story”. We’ll be exploring the Montane Sagebush Steppe Ecosystem throughout this site.
 
-2. Tutorials on how to use BpS models and the free modeling software, SyncroSim
 
-3. Examples of how to manipulate the models to suite your specific needs
-<br>
-
-### Why model?  
+## Why model?  
 #### Modeling biophysical models provide a framework for:  
 
-1. Simulating disturbances and testing potential management strategies  
-
+1. Simulating disturbances and testing potential management strategies (before allocating time or money in on the ground operations) 
 2. Modeling vegetation characteristics on the landscape  
 3. Making predictions of future landscape conditions
 <br>
 
 
-## Let's get started
-Integrating biophysical settings into your current work
-<br>
-<delete this video - replace with something else>>
-
-<iframe width="760" height="415" src="https://www.youtube.com/embed/8GLboPfOIJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Start here
+This video will provide some context about biophysical modeling framework and a discussion of the power of using LANDFIRE historical vegetation models in your work. We'll finish with a short demonstration of how to install SyncroSim on your machine, 
 
 
