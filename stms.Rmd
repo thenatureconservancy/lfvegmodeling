@@ -48,7 +48,11 @@ knitr::include_graphics("images/inputmodel.png")
 
 ## Example: Montane Sagebrush Steppe Ecosystem 
 
-insert slick carousel with detailed slides and explanations for self-paced experience
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+htmltools::tags$iframe(title = "My embedded document", src = "kbslick2.html", frameborder = "0", width = "100%", height="900")
+
+```
 
 ## SyncroSim software
 
