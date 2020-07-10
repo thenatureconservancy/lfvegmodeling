@@ -10,7 +10,17 @@ output:
 
 *Working, content, graphics, Randy Video: modifying and inserting disturbances into the model*
 
+<<<<<<< HEAD
+
+=======
 ## Why modify?
+As you've learned the Biophysical Settings models represent a time long long ago.  While valuable as a framework and for context, there's much more to management.  Reasons you may want to modify the BpS models include:
+
+* testing
+>>>>>>> b47ad71935d7c8db9307907a002ce3e223c71c8e
+
+
+
 *INSERT COLLABORATION OR "CHANGE" IMAGE*
 LANDFIRE reference condition models 
 

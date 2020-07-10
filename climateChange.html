@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="null" />
+<meta name="author" content="" />
 
 
 <title>Climate Change</title>
@@ -388,16 +388,21 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Climate Change</h1>
-<h4 class="author">null</h4>
-<h4 class="date">null</h4>
 
 </div>
 
 
-<p><em>Working, needs graphics to break up text, formatting for consistency, link to (existing) short videos that summarize some content?</em></p>
+<div id="on-this-page-you-will-find" class="section level3">
+<h3>On this page you will find:</h3>
+<ul>
+<li>context about climate change and ecosystem impacts</li>
+<li>ways that BpS models can enhance understanding of ecosystems when accounting for climate change</li>
+<li>examples of how to alter disturbances and states to mimic climate change in the BpS modeling framework</li>
+</ul>
+</div>
 <div id="climate-change-and-stsm-modeling" class="section level2">
 <h2>Climate Change and STSM Modeling</h2>
-<p>The goal of this section is to help you identify questions that the LANDFIRE BpS models, with their built-in simplifications, strengths, and constraints, are best suited to help you explore.</p>
+<p>The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.</p>
 <div id="background" class="section level3">
 <h3>Background</h3>
 <p>Directional changes in climate factors, such as <strong>increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates,</strong> are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed changes, in addition to ecological theory, allow us to generate hypotheses on how these changes may play out. As noted in a [previous sections] (link to Modeling perspectives), all models are a simplification of reality, and there are many different aspects of climate change that you might be interested in exploring with a model.</p>
@@ -427,7 +432,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <div id="climate-change-and-bps-models" class="section level2">
 <h2>Climate change and BpS models</h2>
-<p>As described here (link to a section on model structure), LANDFIRE BpS models are comprised of a set of states and transitions. Each state is a recognizable seral stage or “condition” of a particular vegetation type, and these states are linked by deterministic transitions (usually representing growth towards an older, taller age class), and stochastic transitions representing disturbances such as fire (with an associated probability land intensity), windthrow, insect outbreak, etc. These transitions describe how one vegetation state is changed to a different state. In the montane sagebrush steppe ecosystem example below, the dominant species is “X” and the growth and response to disturbances are reflected in that species’ biology. Common to this ecosystem would be disturbances such as wildfire and invasive species (i.e. cheatgrass).</p>
+<p>As described here (link to a section on model structure), LANDFIRE BpS models are comprised of a set of <strong>states</strong> and <strong>transitions</strong>. Each state is a recognizable seral stage or “condition” of a particular vegetation type, and these states are linked by deterministic transitions (usually representing growth towards an older, taller age class), and stochastic transitions representing disturbances such as fire (with an associated probability land intensity), windthrow, insect outbreak, etc. These transitions describe how one vegetation state is changed to a different state. In the montane sagebrush steppe ecosystem example below, the dominant species is “X” and the growth and response to disturbances are reflected in that species’ biology. Common to this ecosystem would be disturbances such as wildfire and invasive species (i.e. cheatgrass).</p>
 <p><img src="images/STSMex.jpg" /> In other vegetation classes with higher tree species diversity, such as mixed hardwood forests of the southern Appalachians, transitions represent an average across multiple species that are likely responding to climate drivers in different ways.</p>
 </div>
 <div id="changes-in-disturbance-regime" class="section level2">
@@ -464,12 +469,20 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 <div id="more-intense-fires" class="section level4">
 <h4>More intense fires</h4>
 <p>Increases in the intensity of fires, a trend that has been observed in forests with high vegetation density, often in combination with drought. To represent this process, you would <strong>increase the probablility of high intensity fires</strong> in your model – or potentially add this type of disturbance if it was not already in the model.</p>
+<center>
+<img src="images/califorina.jpg" width="65%" />
+</center>
+<p><br> Photo: © Ben Jiang, TNC. One of the 2018 California wildfires. <br> <br></p>
 </div>
 <div id="longer-fire-seasons" class="section level4">
 <h4>Longer fire seasons</h4>
 <ul>
 <li><a href="https://doi.org/10.1111/geb.13058">Cattau et al. 2020</a> examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. Looking at this question would involve <strong>increasing the fire return interval</strong> within this modeling platform.</li>
 </ul>
+<center>
+<img src="images/nebraska.jpg" width="65%" />
+</center>
+<p><br> Photo: © Chris Helzer, TNC. Niobrara River near the headquarters of the Nature Conservancy’s Nebraska Niobrara Valley Preserve after the 2012 wildfire. <br> <br></p>
 </div>
 <div id="larger-fires" class="section level4">
 <h4>Larger fires</h4>

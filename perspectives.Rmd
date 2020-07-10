@@ -1,11 +1,11 @@
 ---
 title: "Perspectives"
-author:
-date: 
+author: "null"
+date: "null"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
 ---
 
 *Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS*

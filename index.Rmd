@@ -4,8 +4,9 @@ author:
 date: 
 output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
 ---
 ### On this page you will find: 
 + an introduction to biophysical setting models
@@ -18,7 +19,9 @@ We designed this website as a resource for both new and seasoned BpS users. You 
 
 
 ## Why model?  
-#### Modeling biophysical models provide a framework for:  
+#### Framing the story
+
+Modeling biophysical models provide a framework for:  
 
 1. Simulating disturbances and testing potential management strategies (before allocating time or money in on the ground operations) 
 2. Modeling vegetation characteristics on the landscape  
