@@ -1,9 +1,21 @@
 ---
-title: "References"
+title: "References & FAQ"
 author: 
 date: 
 output: html_document
 ---
+
+#### FAQ
+
+Q: I can't open a state class. What's the problem?
+A: Make sure when you go to open it, you have unchecked the "Read only" box
+
+
+Q: I can't find the transition type. Where is it? 
+A: 
+
+
+#### References
 
 Blankenship, K., L. Frid, J. L. Smith. 2015. [A state-and-transition simulation modeling approach for estimating the historical range of variability](https://www.aimspress.com/article/10.3934/environsci.2015.2.253). AIMS Environmental Science 2:253-268. 
 

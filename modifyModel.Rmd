@@ -10,20 +10,23 @@ output:
 
 *Working, content, graphics, Randy Video: modifying and inserting disturbances into the model*
 
-<<<<<<< HEAD
+### On this page you will find:
++ Guidance on making some key changes to a reference condition model such as adding a state class (e.g., for an "invasives" state) and changing disturbances (e.g., altered fire regime)
++ Detailed information on how our Sage Steppe model was modified to represent current conditions
++ And hopefully some inspiration to try out your own modifications!
 
-=======
-## Why modify?
-As you've learned the Biophysical Settings models represent a time long long ago.  While valuable as a framework and for context, there's much more to management.  Reasons you may want to modify the BpS models include:
+## Modifying a reference condition model
+Within SyncroSim there are a wide range of techniques available to modify a model.  We will not cover all techniques here, but will introduce major ones in separate videos.  We recommend that you download and print the instructions that accompany each video:
 
-* testing
->>>>>>> b47ad71935d7c8db9307907a002ce3e223c71c8e
+* Change the probability of a disturbance in one state class.  https://youtu.be/t3j7aX5os30
+* Change the probability of a disturbance across the entire model
+* Introduce a new disturbance
+* Add a new state 
+* Delete a state
+
+These techniques will get you far in your quest to represent current conditions and/or explore the future.  We also hope that while in the various screens you see other options that catch your eye.
 
 
+ 
 
-*INSERT COLLABORATION OR "CHANGE" IMAGE*
-LANDFIRE reference condition models 
-
-## How to make basic modifications
-
-## Advanced modifications
+## Modifications we made to the Sage Steppe Model

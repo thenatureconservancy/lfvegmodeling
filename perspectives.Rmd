@@ -1,7 +1,7 @@
 ---
 title: "Perspectives"
-author: "null"
-date: "null"
+author: 
+date: 
 output:
   html_document:
     toc: yes
@@ -9,6 +9,10 @@ output:
 ---
 
 *Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS*
+
+### On this page you will find:
++ 
+
 
 ## Models, Models Everywhere
 
@@ -53,7 +57,7 @@ Models such as SIMPPLLE and LANDIS II sit nearer the middle or upper end of the 
 
 <br>
 
-### Understanding the characterstics of the model:
+### Understanding the characterstics of the model
 <br>
 <style>
 div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
