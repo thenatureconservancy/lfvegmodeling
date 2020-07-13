@@ -8,28 +8,53 @@ output:
     toc_depth: 4
     toc_float: yes
 ---
-### On this page you will find: 
-+ an introduction to biophysical setting models
-+ a short video that will provide context for this modeling framework including instructions on registering and downloading SyncroSim
-
 ## Welcome
-Welcome to the LANDFIRE vegetation modeling site. We created this site to help you harness the potential of the modeling framework to accomplish your management and restoration objectives. We recognize the importance of having the best resources to accomplish your goals. The LANDFIRE team is continually improving the LANDFIRE product suite to help you get the right data.
 
-We designed this website as a resource for both new and seasoned BpS users. You can skip ahead to the useful videos and sections, or navitate through each tab and section as it suites you. We stuck with one example in these tutorials to remain consistent and help you follow our model “story”. We’ll be exploring the Montane Sagebush Steppe Ecosystem throughout this site.
-
-
-## Why model?  
-#### Framing the story
-
-Modeling biophysical models provide a framework for:  
-
-1. Simulating disturbances and testing potential management strategies (before allocating time or money in on the ground operations) 
-2. Modeling vegetation characteristics on the landscape  
-3. Making predictions of future landscape conditions
+Hello and welcome to the LANDFIRE vegetation dynamics modeling site. We created this site to help you harness the potential of the vegetation dynamics modeling framework to accomplish your analysis, management, and restoration objectives. We recognize the importance of having the best resources to accomplish your goals and LANDFIRE is continually improving our products to get you the tools and data that you need.
 <br>
 
+**How to use this website?** We designed this website as a resource for both new and seasoned biophysical setting modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent. 
 
-## Start here
-This video will provide some context about biophysical modeling framework and a discussion of the power of using LANDFIRE historical vegetation models in your work. We'll finish with a short demonstration of how to install SyncroSim on your machine, 
+<center>
+```{r, echo=FALSE, out.width= "75%"} 
+knitr::include_graphics("images/sb.jpg")
+
+```
+</center>
+<br>
+<center>
+Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central California
+</center>
+<br>
+
+## Why integrate this into your current work?
+
+This framework provides a **national baseline** for assessing **current** vegetation conditions while accounting for **historical** ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context. This modeling framework can help you make projections about
+future landscape conditions as management and natural environments evolve. When used within the intended context, BpS modeling can be a powerful tool for managers. 
+
+>Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem **before** allocating time or resources to on the ground operations
+
+
+<center>
+```{r, echo=FALSE, out.width= "75%"} 
+knitr::include_graphics("images/vt.jpg")
+
+```
+</center>
+<br>
+<center>
+Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
+</center>
+<br>
+
+## What will you learn?
+
+1. We demonstrate the SyncroSim modeling framework. SyncroSim is a flexible software environment for exploring and manipulating LANDFIRE vegetation models
+
+2. We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate historical vegetation dynamics and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest
+
+3. We explore options for modifying vegetation models to represent current or projected future landscape conditions
+
+4. We introduce techniques for accounting for impacts from climate change in the LANDFIRE vegetation models
 
 
