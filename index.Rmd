@@ -14,6 +14,7 @@ Hello and welcome to the LANDFIRE vegetation dynamics modeling site. We created 
 <br>
 
 **How to use this website?** We designed this website as a resource for both new and seasoned biophysical setting modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent. 
+<br>
 
 <center>
 ```{r, echo=FALSE, out.width= "75%"} 
@@ -49,12 +50,10 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 
 ## What will you learn?
 
-1. We demonstrate the SyncroSim modeling framework. SyncroSim is a flexible software environment for exploring and manipulating LANDFIRE vegetation models
+1. We demonstrate the flexible software environment, [**SyncroSim**](https://syncrosim.com/) which allows users to explore and manipulate LANDFIRE's vegetation dynamics models
 
-2. We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate historical vegetation dynamics and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest
+2. We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate **historical vegetation dynamics** and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest
 
-3. We explore options for modifying vegetation models to represent current or projected future landscape conditions
+3. We explore options for **modifying vegetation models** to represent current or projected future landscape conditions
 
-4. We introduce techniques for accounting for impacts from climate change in the LANDFIRE vegetation models
-
-
+4. We introduce techniques for accounting for **climate change impacts** in the LANDFIRE vegetation models
