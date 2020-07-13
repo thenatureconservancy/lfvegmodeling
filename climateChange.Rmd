@@ -8,7 +8,7 @@ output:
     toc_depth: 4
     toc_float: yes
 ---
-### On this page you will find:
+### This page:
 + context about climate change and ecosystem impacts
 + ways that BpS models can enhance understanding of ecosystems when accounting for climate change
 + examples of how to alter disturbances and states to mimic climate change in the BpS modeling framework 
