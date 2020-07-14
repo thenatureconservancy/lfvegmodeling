@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
 
 
 <title>Modifying a Model for Your Use</title>
 
+<script src="site_libs/header-attrs-2.2/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -355,10 +355,10 @@ div.tocify {
   <a href="BpSmodels.html">BpSmodels</a>
 </li>
 <li>
-  <a href="ReviewYourLFmodels.html">Reviewing</a>
+  <a href="GetModels.html">Get Models</a>
 </li>
 <li>
-  <a href="modifyModel.html">Modifying</a>
+  <a href="modifyModel.html">Modify Models</a>
 </li>
 <li>
   <a href="climateChange.html">Climate Change</a>
@@ -385,6 +385,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Modifying a Model for Your Use</h1>
+<h4 class="author"></h4>
 
 </div>
 
@@ -400,15 +401,28 @@ div.tocify {
 </div>
 <div id="modifying-a-reference-condition-model" class="section level2">
 <h2>Modifying a reference condition model</h2>
-<p>Within SyncroSim there are a wide range of techniques available to modify a model. We will not cover all techniques here, but will introduce major ones in separate videos. We recommend that you download and print the instructions that accompany each video:</p>
-<ul>
-<li>Change the probability of a disturbance in one state class. <a href="https://youtu.be/t3j7aX5os30" class="uri">https://youtu.be/t3j7aX5os30</a></li>
-<li>Change the probability of a disturbance across the entire model</li>
-<li>Introduce a new disturbance</li>
-<li>Add a new state</li>
-<li>Delete a state</li>
-</ul>
+<p>Within SyncroSim there are a wide range of techniques available to modify a model. We will not cover all techniques here, but will introduce some of the main ones, while working through the sage steppe example model that you obtained previously while on the “Get Models” page.</p>
 <p>These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.</p>
+<div id="change-the-probability-of-a-disturbance-in-one-state-class" class="section level3">
+<h3>Change the probability of a disturbance in one state class</h3>
+<p>A key starting point in modifying a model is to change disturbances. There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the replacement fire probability in one class.</p>
+</div>
+<div id="change-the-probability-of-a-disturbance-across-the-entire-model" class="section level3">
+<h3>Change the probability of a disturbance across the entire model</h3>
+<p>While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to various changes. That said, there are times where you want to make “global” changes to the model. An example of this would be to essentially “turn off” all fires as a way to explore impacts of fire suppression. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use “Transition Multipliers” to modify a type of transition everywhere it occurs in the model in a few easy steps.</p>
+</div>
+<div id="introduce-a-new-disturbance" class="section level3">
+<h3>Introduce a new disturbance</h3>
+<p>There are many new transitions on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new probabilistic transition.</p>
+</div>
+<div id="add-a-new-state" class="section level3">
+<h3>Add a new state</h3>
+<p>New and/or altered transitions often result in new states. For example, in the Great Lakes combinations of modern transitions have resulted in what some call “maple monocultures”. These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. We believe that you will want to know how to add a state, and will show you how here.</p>
+</div>
+<div id="delete-a-state" class="section level3">
+<h3>Delete a state</h3>
+<p>Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to delete an entire state. Here we will show you how to do that.</p>
+</div>
 </div>
 <div id="modifications-we-made-to-the-sage-steppe-model" class="section level2">
 <h2>Modifications we made to the Sage Steppe Model</h2>

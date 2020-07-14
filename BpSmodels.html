@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
 
 
 <title>BpS Models</title>
 
+<script src="site_libs/header-attrs-2.2/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -355,10 +355,10 @@ div.tocify {
   <a href="BpSmodels.html">BpSmodels</a>
 </li>
 <li>
-  <a href="ReviewYourLFmodels.html">Reviewing</a>
+  <a href="GetModels.html">Get Models</a>
 </li>
 <li>
-  <a href="modifyModel.html">Modifying</a>
+  <a href="modifyModel.html">Modify Models</a>
 </li>
 <li>
   <a href="climateChange.html">Climate Change</a>
@@ -385,6 +385,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">BpS Models</h1>
+<h4 class="author"></h4>
 
 </div>
 
@@ -418,7 +419,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </ul>
 <p><strong>VDep vs. Interagency Fire Regime Condition Class Guidebook approach</strong></p>
 <ul>
-<li>[LANDFIRE VDep]](<a href="https://www.landfire.gov/vdep.php" class="uri">https://www.landfire.gov/vdep.php</a>) is based only on departure of current vegetation conditions from reference vegetation conditions</li>
+<li><a href="https://www.landfire.gov/vdep.php">LANDFIRE VDep</a> is based only on departure of current vegetation conditions from reference vegetation conditions</li>
 <li><a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf">IFRCC Guidebook</a> approach includes departure of current fire regimes from those of the reference period</li>
 </ul>
 </div>
@@ -469,118 +470,33 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </ul>
 </div>
 <p><br></p>
+<p>These were originally delivered as PDF documents (or in an Access Database). These descriptions are now delivered as Microsoft Word documents.</p>
 </div>
 <div id="models" class="section level4">
 <h4>Models</h4>
-<p>When we refer to “models” we are essentially talking about the information contained in SyncroSim libraries. What? We’ll get to the SyncroSim and library parts soon, but in the meantime models are collections of information on: 1. The “states” or succession classes of each BpS. This information is derived from the descriptions 2.</p>
-<ul>
-<li>covers all lands in the United States including the insular islands</li>
-<li>delivers products covering “historical” (just prior to major European settlement) and “current” time periods.<br />
-</li>
-<li>not all products cover both time periods-which is why you are here! The LANDFIRE models only cover historical. Bringing them up to current might be one of your tasks.</li>
-<li>Some products are delivered by “Map Zone” (see map).</li>
-</ul>
+<p>When we refer to “models” we are essentially talking about the information contained in SyncroSim libraries.</p>
 <p><br></p>
-</div>
-</div>
-<div id="what-do-the-models-represent-historic" class="section level3">
-<h3>What do the models represent (historic)</h3>
+<p>What?</p>
 <p><br></p>
+<p>We’ll get to the SyncroSim and library parts in the coming pages, but in the meantime models are collections of information on: 1. The “States” or succession classes of each BpS <strong>AND</strong> 2. The Transitions: * Deterministic which essentially represents succession * Probabilitic which represents disturbances</p>
+<p>Once the models are run you can obtain information on (among many other things): 1. Amounts of succession classes at the end of each year, in acres or proportion 2. How much disturbance happens over time, in acres or proportion</p>
 </div>
-<div id="what-are-they-and-how-are-they-linked-model-and-description" class="section level3">
-<h3>What are they and how are they linked (model and description)</h3>
-<p><br></p>
 </div>
 <div id="application-scale-of-the-models" class="section level3">
 <h3>Application scale of the models</h3>
-<p><br></p>
-<p>Can use: * <a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" class="uri">https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s</a> which is a Kori/Randy intro, 5 minutes * How to Alter and Run a LANDFIRE Model in ST-Sim, <a href="https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s" class="uri">https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s</a></p>
-<hr />
-<p>(old - Megan retained all the code below in case something needs to be retrieved) ## Background</p>
-<p>Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models. These products represent ecosystems under natural disturbance regimes, capturing how they “looked” (e.g., structure and composition) and “functioned” (e.g., succession and disturbances). The descriptions are text; the models are in the software SyncroSim (<a href="https://syncrosim.com/" class="uri">https://syncrosim.com/</a>).</p>
-<p><br></p>
-</div>
-<div id="what-is-landfire-and-why-did-they-create-these-models" class="section level3">
-<h3>What is LANDFIRE and why did they create these models?</h3>
-<p>LANDFIRE is a multi-partner program that “provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas” (from www.landfire.gov).</p>
-<p>One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called “Vegetation Departure” (VDep), which generally compares current vegetation structure and composition to “reference” structure and composition (see blue Vegetation Departure box below).</p>
-<p>Development of reference conditions had these general steps:</p>
-<ol style="list-style-type: decimal">
-<li>Classify and define the ecosystems. LANDFIRE calls the historic ecosystems “Biophysical Settings”, and used NatureServe’s Ecological Systems classification as the “list”.</li>
-<li>Hold expert workshops to:
+<p>Importantly, these models and descriptions were designed for use over large areas-not your back yard. How large you ask? It depends on many factors:</p>
 <ul>
-<li>Describe the BpSs, including their nested Succession Classes, up to 5 for each BpS including their canopy height, composition and percent cover.</li>
-<li>Use state and transition modeling techniques to get an estimate of how much of each succession class would have been on the landscape historically, i.e., just prior to European settlement. The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into the modeling software (just like you will be doing soon!).</li>
-</ul></li>
-</ol>
-<p>Recently, TNC’s LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.</p>
-<p>We are happy to walk you through the history and methods at any time.</p>
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class="blue">
-<p>Vegetation Departure (VDep), from www.landfire.gov: Vegetation Departure (VDep) indicates how different current vegetation on a landscape is from estimated historical conditions. VDep is based on changes to species composition, structural stage, and canopy closure using methods originally described in the Interagency Fire Regime Condition Class Guidebook (<a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf" class="uri">https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf</a>), but is not identical to those methods. LANDFIRE (LF) VDep is based only on departure of current vegetation conditions from reference vegetation conditions, whereas the Guidebook approach includes departure of current fire regimes from those of the reference period.</p>
-</div>
-<p><br></p>
-</div>
-<div id="so-what-are-these-descriptions-and-models" class="section level3">
-<h3>So what are these descriptions and models?</h3>
-<p>Each BpS (e.g., North Central Interior Dry-Mesic Oak Forest and Woodland) has 3 associated products:</p>
-<ol style="list-style-type: decimal">
-<li>Description</li>
-<li>State and transition model</li>
-<li>Spatial data (not described here)</li>
-</ol>
-<p><br></p>
-<div id="descriptions-1" class="section level4">
-<h4>Descriptions</h4>
-<p>As you will soon see, a model without a description is rather mysterious. We generally started the BpS modeling process with collecting information on each BpS including:</p>
-<style>
-  .col2 {
-    columns: 2 200px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 200px; /* chrome, safari */
-    -moz-columns: 2 200px;    /* firefox */
-  }
-
-</style>
-<div class="col2">
-<ul>
-<li>Biophysical Setting Name and Number</li>
-<li>Map Zones the description covers</li>
-<li>Descriptive Geographic Range text</li>
-<li>Biophysical Site Description</li>
-<li>Disturbance description</li>
-<li>Descriptions of each succession class</li>
-<li>Relevant literature</li>
-</ul>
-</div>
-<p><br></p>
-</div>
-<div id="models-1" class="section level4">
-<h4>Models</h4>
-<p>When we refer to “models” we are essentially talking about the information contained in SyncroSim libraries. What? We’ll get to the SyncroSim and library parts soon, but in the meantime models are collections of information on: 1. The “states” or succession classes of each BpS. This information is derived from the descriptions 2.</p>
-<ul>
-<li>covers all lands in the United States including the insular islands</li>
-<li>delivers products covering “historical” (just prior to major European settlement) and “current” time periods.<br />
-</li>
-<li>not all products cover both time periods-which is why you are here! The LANDFIRE models only cover historical. Bringing them up to current might be one of your tasks.</li>
-<li>Some products are delivered by “Map Zone” (see map).</li>
+<li>How much review, and how comfortable users are with the information included in the models</li>
+<li>How important the decisions are, and how much risk is involved</li>
+<li>How much supporting information there is</li>
 </ul>
 <p><br></p>
 </div>
-</div>
-<div id="what-do-the-models-represent-historic-1" class="section level3">
-<h3>What do the models represent (historic)</h3>
-<p><br></p>
-</div>
-<div id="what-are-they-and-how-are-they-linked-model-and-description-1" class="section level3">
-<h3>What are they and how are they linked (model and description)</h3>
-<p><br></p>
-</div>
-<div id="application-scale-of-the-models-1" class="section level3">
-<h3>Application scale of the models</h3>
-<p><br></p>
-<p>Can use: * <a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" class="uri">https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s</a> which is a Kori/Randy intro, 5 minutes * How to Alter and Run a LANDFIRE Model in ST-Sim, <a href="https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s" class="uri">https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s</a></p>
+<div id="for-more-information" class="section level3">
+<h3>For more information</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" class="uri">https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s</a> which is a Kori/Randy intro, 5 minutes. Some features of SyncroSim may be different than what you see in the video based due to versioning.</li>
+</ul>
 </div>
 </div>
 

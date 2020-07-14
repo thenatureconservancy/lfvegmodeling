@@ -1,11 +1,13 @@
 ---
 title: "BpS Models"
-author: 
-date: 
+author: ""
+date: ""
 output:
+  word_document:
+    toc: yes
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
 ---
 ### This page:
 + what is a LANDFIRE? What is a LANDFIRE BpS model?
@@ -36,7 +38,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 
 **VDep vs. Interagency Fire Regime Condition Class Guidebook approach**
 
-* [LANDFIRE VDep]](https://www.landfire.gov/vdep.php) is based only on departure of current vegetation conditions from reference vegetation conditions
+* [LANDFIRE VDep](https://www.landfire.gov/vdep.php) is based only on departure of current vegetation conditions from reference vegetation conditions
 * [IFRCC Guidebook](https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf) approach includes departure of current fire regimes from those of the reference period
 </div>
 <br>
@@ -88,151 +90,39 @@ Each BpS has an extensive description including information on:
 </div>
  <br>
 
+These were originally delivered as PDF documents (or in an Access Database).  These descriptions are now delivered as Microsoft Word documents.  
+
 #### Models
 
-When we refer to "models" we are essentially talking about the information contained in SyncroSim libraries.  What? 
-We'll get to the SyncroSim and library parts soon, but in the meantime models are collections of information on:
-1.  The "states" or succession classes of each BpS.  This information is derived from the descriptions
-2.  
+When we refer to "models" we are essentially talking about the information contained in SyncroSim libraries. 
 
+<br> 
 
-
-
-* covers all lands in the United States including the insular islands
-* delivers products covering "historical" (just prior to major European settlement) and "current" time periods.  
-* not all products cover both time periods-which is why you are here!  The LANDFIRE models only cover historical.  Bringing them up to current might be one of your tasks.
-* Some products are delivered by "Map Zone" (see map).
-
+What? 
 
 <br>
 
-### What do the models represent (historic)
-
-<br>
-
-### What are they and how are they linked (model and description)
-
-<br>
-
-### Application scale of the models
-
-<br>
-
-
-Can use:
-*  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes
-*  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
-
-------
-(old - Megan retained all the code below in case something needs to be retrieved)
-## Background
-
-Starting in 2005 the LANDFIRE program (www.landfire.gov) started the development of Biophysical Settings and models. These products represent ecosystems under natural disturbance regimes, capturing how they "looked" (e.g., structure and composition) and "functioned" (e.g., succession and disturbances).  The descriptions are text; the models are in the software SyncroSim (https://syncrosim.com/).
-
-<br>
-
-### What is LANDFIRE and why did they create these models?  
-LANDFIRE is a multi-partner program that "provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas" (from www.landfire.gov).  
-
-One of the goals of LANDFIRE was to understand the condition of our ecosystems.  The metric they created for this is called "Vegetation Departure" (VDep), which generally compares current vegetation structure and composition to "reference" structure and composition (see blue Vegetation Departure box below).
-
-Development of reference conditions had these general steps:
-
-1. Classify and define the ecosystems.  LANDFIRE calls the historic ecosystems "Biophysical Settings", and used NatureServe's Ecological Systems classification as the "list".
-2. Hold expert workshops to:
-    * Describe the BpSs, including their nested Succession Classes, up to 5 for each BpS including their canopy height, composition and percent cover. 
-    * Use state and transition modeling techniques to get an estimate of how much of each succession class would have been on the landscape historically, i.e., just prior to European settlement.  The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into the modeling software (just like you will be doing soon!).
+We'll get to the SyncroSim and library parts in the coming pages, but in the meantime models are collections of information on:
+1.  The "States" or succession classes of each BpS **AND**
+2.  The Transitions:
+    * Deterministic which essentially represents succession
+    * Probabilitic which represents disturbances
     
-Recently, TNC's LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.  
+Once the models are run you can obtain information on (among many other things):
+1. Amounts of succession classes at the end of each year, in acres or proportion
+2. How much disturbance happens over time, in acres or proportion
 
-
-We are happy to walk you through the history and methods at any time.  
-
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-
-Vegetation Departure (VDep), from www.landfire.gov:
-Vegetation Departure (VDep) indicates how different current vegetation on a landscape is from estimated historical conditions. VDep is based on changes to species composition, structural stage, and canopy closure using methods originally described in the Interagency Fire Regime Condition Class Guidebook (https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf), but is not identical to those methods. LANDFIRE (LF) VDep is based only on departure of current vegetation conditions from reference vegetation conditions, whereas the Guidebook approach includes departure of current fire regimes from those of the reference period.
-
-
-</div>
-
-<br>
-
-###  So what are these descriptions and models?
-
-Each BpS (e.g., North Central Interior Dry-Mesic Oak Forest and Woodland) has 3 associated products:
-
-1. Description
-2. State and transition model
-3. Spatial data (not described here)
-
- <br>
-
-#### Descriptions
-As you will soon see, a model without a description is rather mysterious.  We generally started the BpS modeling process with collecting information on each BpS including:
-
-<style>
-  .col2 {
-    columns: 2 200px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 200px; /* chrome, safari */
-    -moz-columns: 2 200px;    /* firefox */
-  }
-
-</style>
-
-
-<div class="col2">
-* Biophysical Setting Name and Number
-* Map Zones the description covers
-* Descriptive Geographic Range text
-* Biophysical Site Description
-* Disturbance description
-* Descriptions of each succession class
-* Relevant literature
-
-</div>
- <br>
-
-#### Models
-
-When we refer to "models" we are essentially talking about the information contained in SyncroSim libraries.  What? 
-We'll get to the SyncroSim and library parts soon, but in the meantime models are collections of information on:
-1.  The "states" or succession classes of each BpS.  This information is derived from the descriptions
-2.  
-
-
-
-
-* covers all lands in the United States including the insular islands
-* delivers products covering "historical" (just prior to major European settlement) and "current" time periods.  
-* not all products cover both time periods-which is why you are here!  The LANDFIRE models only cover historical.  Bringing them up to current might be one of your tasks.
-* Some products are delivered by "Map Zone" (see map).
-
-
-<br>
-
-### What do the models represent (historic)
-
-<br>
-
-### What are they and how are they linked (model and description)
-
-<br>
 
 ### Application scale of the models
 
+Importantly, these models and descriptions were designed for use over large areas-not your back yard.  How large you ask?  It depends on many factors:
+
+* How much review, and how comfortable users are with the information included in the models
+* How important the decisions are, and how much risk is involved
+* How much supporting information there is
+
 <br>
 
-
-Can use:
-*  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes
-*  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
-
-
-
-
-
+### For more information
+*  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes.  Some features of SyncroSim may be different than what you see in the video based due to versioning.
 
