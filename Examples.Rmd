@@ -1,11 +1,20 @@
 ---
-title: "Examples"
+title: "Model Examples"
 author: 
 date: 
 output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
 ---
-----
-*Working, needs content and graphics, use one continuous example using the Slick? https://kenwheeler.github.io/slick/* 
+
+
+Example 1: Central Mixed Grass Prairie
+(insert outline of Jim's example)
+
+Example 2: 
+(insert outline of Randy's example)
+
+Example 3: 
+(insert outline of Kori's example)
