@@ -6,9 +6,9 @@ navbar:
     href: stms.html
   - text: BpSmodels 
     href: BpSmodels.html
-  - text: Reviewing
-    href: ReviewYourLFmodels.html
-  - text: Modifying
+  - text: Get Models
+    href: GetModels.html
+  - text: Modify Models
     href: modifyModel.html
   - text: Climate Change
     href: climateChange.html

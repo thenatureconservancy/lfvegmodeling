@@ -15,14 +15,13 @@ Our hope is that LANDFIRE Biophysical Settings models help jumpstart your modeli
 
 1. Figure out which Map Zone your ecosystem is in
 2. Get three things: 
-  a. the model description  
-  b. software (see STSMs tab)
-  c. the LANDFIRE model
+    a. the model description  
+    b. the LANDFIRE model
 3. Review the description
 4. Run and explore the model
-5. Start to document how you need to modify the refernce condition model so that it better represents the ecological and management processes of today (e.g., add fire suppression and thinning)
+5. Start to document how you need to modify the reference condition model so that it better represents the ecological and management processes of today (e.g., add fire suppression and thinning)
 
-We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.  
+We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.  **This ecosystem will be the subject of later tutorials**. 
 
 ### 1. Find your Map Zone of interest here:
 
@@ -45,12 +44,17 @@ We have a website (http://landfirereview.org/search.php) where you can go to sea
 
 **For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).**
 
-### 2b. Get the software if you haven't already
-Please see STSMs page for software information.  
-
-### 2c. Get the model of interest
+### 2b. Get the model of interest
 Now that you have the software installed, we will walk you through getting the model(s) of interest in the video below
 
+
+INSERT VIDEO OR OTHER INTRUCTIONAL MATERIALS HERE.
+
+### For more information
+
+*  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
+
+Some features of SyncroSim may be different than what you see in the video due to versioning.
 
 
 .
