@@ -14,11 +14,10 @@ navbar:
     href: climateChange.html
   - text: Perpectives
     href: perspectives.html
-  - text: Resources
+  - text: Model Examples
+    href: modelexamples.html
+  - text: Resources & FAQs
     href: contactsResources.html
-  - text: References & FAQ
-    href: References.html
-
 
 
     
