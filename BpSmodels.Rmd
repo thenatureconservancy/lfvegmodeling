@@ -10,16 +10,22 @@ output:
     toc_float: yes
 ---
 ### This page:
-+ what is a LANDFIRE? What is a LANDFIRE BpS model?
-+ 
++ Short introduction to the LANDFIRE program
++ Description of the Biophysical Settings, plus associated models and descriptions
++ Discussion of application scale
 
 ## LANDFIRE
 [LANDFIRE](www.landfire.gov) is a multi-partner program that *"provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas".*  
 
 #### LANDFIRE BpS
 
-Starting in 2005 the [LANDFIRE](www.landfire.gov) program initiated the development of **Biophysical Settings** and models. These products represent ecosystems under natural disturbance regimes, capturing how they "looked" (e.g., structure and composition) and "functioned" (e.g., succession and disturbances). The descriptions are text; the models are in the software SyncroSim (https://syncrosim.com/).
-<br>
+[LANDFIRE Biophysical Settings ](https://www.landfire.gov/bps.php) represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement.  They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states).  Biophysical Settings are:
+
+1. Mapped.  For more information on the spatial data visit https://www.landfire.gov/bps.php.
+2. Described
+3. Modeled
+
+
 
 One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called **"Vegetation Departure" (VDep)**. 
 
