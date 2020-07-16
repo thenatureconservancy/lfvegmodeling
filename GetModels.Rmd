@@ -41,7 +41,9 @@ We have a website (http://landfirereview.org/search.php) where you can go to sea
 **For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).**
 
 ### Load your model
-Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with.  **You can view and print the instructions [here](./isolateModel.html).**
+Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 
+
+**You can view and print the instructions [here](./isolateModel.html).**
 
 ***
 
