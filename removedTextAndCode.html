@@ -9,10 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
+<meta name="author" content="TNC’s LANDFIRE team" />
 
 
-<title>Review Your Models</title>
+<title>removed text and code</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +20,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -252,69 +249,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -322,16 +256,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -384,56 +308,40 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Review Your Models</h1>
+<h1 class="title toc-ignore">removed text and code</h1>
+<h4 class="author">TNC’s LANDFIRE team</h4>
+<h4 class="date">7/16/2020</h4>
 
 </div>
 
 
-<p><em>Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model</em></p>
-<div id="this-page" class="section level3">
-<h3>This page:</h3>
+<div id="from-bps-models" class="section level2">
+<h2>From BpS Models</h2>
+<p>One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called <strong>“Vegetation Departure” (VDep)</strong>.</p>
+<blockquote>
+<p><strong>Vegetation departure</strong> compares current vegetation structure and composition to “reference” structure and composition.</p>
+</blockquote>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="blue">
+<p><a href="https://www.landfire.gov/vdep.php"><strong>LANDFIRE Vegetation Departure (VDep)</strong></a> indicates how different current vegetation on a landscape is from estimated reference conditions. VDep is based on:</p>
 <ul>
-<li>Get a description and model by:
-<ul>
-<li>understanding and finding your Map Zone</li>
-<li>downloading a BpS description</li>
-<li>loading a model into SyncroSim</li>
-</ul></li>
+<li>changes to species composition</li>
+<li>structural stage,</li>
+<li>canopy closure (using methods originally described in the <a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf">Interagency Fire Regime Condition Class Guidebook (IFRCC))</a>.</li>
 </ul>
-<p>We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States. <strong>This ecosystem will be the subject of later tutorials</strong>.</p>
-</div>
-<div id="understand-and-find-your-map-zone" class="section level3">
-<h3>Understand and find your Map Zone</h3>
-<p>First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It’s basically a product delivery and summary polygon. The polygons are from the National Landcover Database Program (see <a href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016" class="uri">https://www.mrlc.gov/national-land-cover-database-nlcd-2016</a>).</p>
-<p>Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step.</p>
-<p><strong>For our ecosystem of interest we are looking in eastern Oregon, or Map Zone 9.</strong></p>
-<p><br></p>
-<iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="400"></iframe>
-<p><br></p>
-</div>
-<div id="download-a-bps-description" class="section level3">
-<h3>Download a BpS Description</h3>
-<p>We have a website (<a href="http://landfirereview.org/search.php" class="uri">http://landfirereview.org/search.php</a>) where you can go to search for and retrieve LANDFIRE BpS model descriptions.</p>
-<p><strong>For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).</strong></p>
-</div>
-<div id="load-your-model" class="section level3">
-<h3>Load your model</h3>
-<p>Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. <strong>You can view and print the instructions <a href="./isolateModel.html">here</a>.</strong></p>
-<hr />
-</div>
-<div id="for-more-information" class="section level3">
-<h3>For more information</h3>
+<p><strong>VDep vs. Interagency Fire Regime Condition Class Guidebook approach</strong></p>
 <ul>
-<li>How to Alter and Run a LANDFIRE Model in ST-Sim, <a href="https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s" class="uri">https://www.youtube.com/watch?v=XUUm-RG4eK0&amp;list=PLDFF9036BBFE46CE6&amp;index=7&amp;t=0s</a></li>
+<li><a href="https://www.landfire.gov/vdep.php">LANDFIRE VDep</a> is based only on departure of current vegetation conditions from reference vegetation conditions</li>
+<li><a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf">IFRCC Guidebook</a> approach includes departure of current fire regimes from those of the reference period</li>
 </ul>
-<p>Some features of SyncroSim may be different than what you see in the video due to versioning.</p>
-<p>.</p>
+</div>
+<p><br></p>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -466,32 +374,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

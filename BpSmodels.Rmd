@@ -11,45 +11,20 @@ output:
 ---
 ### This page:
 + Short introduction to the LANDFIRE program
-+ Description of the Biophysical Settings, plus associated models and descriptions
++ Description of the Biophysical Settings, plus reference conditions delivered in the BpS descriptions and models
 + Discussion of application scale
 
 ## LANDFIRE
 [LANDFIRE](www.landfire.gov) is a multi-partner program that *"provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas".*  
 
-#### LANDFIRE BpS
+### LANDFIRE BpS
 
-[LANDFIRE Biophysical Settings ](https://www.landfire.gov/bps.php) represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement.  They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states).  Biophysical Settings are:
-
-1. Mapped.  For more information on the spatial data visit https://www.landfire.gov/bps.php.
-2. Described
-3. Modeled
+[LANDFIRE Biophysical Settings ](https://www.landfire.gov/bps.php) represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement.  They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states).  Biophysical Settings are: 1) Mapped (for more information on the spatial data visit https://www.landfire.gov/bps.php, 2) described and 3) modeled.  The descriptions and models are the focus of our work here.
 
 
+### Reference conditions:
 
-One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called **"Vegetation Departure" (VDep)**. 
-
->**Vegetation departure** compares current vegetation structure and composition to "reference" structure and composition. 
-
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-
-[**LANDFIRE Vegetation Departure (VDep)**](https://www.landfire.gov/vdep.php) indicates how different current vegetation on a landscape is from estimated reference conditions. VDep is based on:
-
-* changes to species composition
-* structural stage, 
-* canopy closure (using methods originally described in the [Interagency Fire Regime Condition Class Guidebook (IFRCC))](https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf). 
-
-**VDep vs. Interagency Fire Regime Condition Class Guidebook approach**
-
-* [LANDFIRE VDep](https://www.landfire.gov/vdep.php) is based only on departure of current vegetation conditions from reference vegetation conditions
-* [IFRCC Guidebook](https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf) approach includes departure of current fire regimes from those of the reference period
-</div>
-<br>
-
-#### Steps to developing reference conditions:
+Understanding how our ecosystems looked and worked prior to European Settlement is a focus of the Biophysical Settings body of work.  The basic process was to:
 
 1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used NatureServe's Ecological Systems classification as the "list".
 2. The LANDFIRE team held expert workshops to:
@@ -60,16 +35,6 @@ From 2018 to 2019, TNC's LANDFIRE team led a review of these models and descript
 
 
 <br>
-
-###  Parts of a BpS
-
-Each BpS (e.g., Montane Sagebrush Steppe) has 3 associated products:
-
-1. Description 
-2. State and transition model
-3. Spatial data (not described here)
-
- <br>
 
 #### Descriptions
 Each BpS has an extensive description including information on:
@@ -121,7 +86,7 @@ Once the models are run you can obtain information on (among many other things):
 
 ### Application scale of the models
 
-Importantly, these models and descriptions were designed for use over large areas-not your back yard.  How large you ask?  It depends on many factors:
+Importantly, these models and descriptions were designed for use over large areas-not your back yard.  How large you ask?  They were developed for use at the LANDFIRE Map Zone level (hundreds of thousands of acres, see "Get Models" page).  That said, people do use them for smaller areas.  Success of downscaling depends on factors such as:
 
 * How much review, and how comfortable users are with the information included in the models
 * How important the decisions are, and how much risk is involved

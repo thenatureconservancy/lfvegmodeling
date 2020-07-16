@@ -10,20 +10,16 @@ output:
 ---
 *Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model*
 
-## The basic process
-Our hope is that LANDFIRE Biophysical Settings models help jumpstart your modeling work.  When we work with landscapes we often modify a LANDFIRE reference condition model instead of starting from scratch.  To do this (and to learn about the LANDFIRE modeling approach) you will:
-
-1. Figure out which Map Zone your ecosystem is in
-2. Get three things: 
-    a. the model description  
-    b. the LANDFIRE model
-3. Review the description
-4. Run and explore the model
-5. Start to document how you need to modify the reference condition model so that it better represents the ecological and management processes of today (e.g., add fire suppression and thinning)
-
+### This page:
++ Get a description and model by:
+    + understanding and finding your Map Zone
+    + downloading a BpS description
+    + loading a model into SyncroSim
+    
 We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.  **This ecosystem will be the subject of later tutorials**. 
 
-### 1. Find your Map Zone of interest here:
+
+### Understand and find your Map Zone
 
 First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone.  What is a Map Zone?  It's basically a product delivery and summary polygon.  The polygons are from the National Landcover Database Program (see https://www.mrlc.gov/national-land-cover-database-nlcd-2016).  
 
@@ -34,21 +30,20 @@ Pan, zoom, scroll to your area of interest, then hover over the Map Zone you nee
 <br>
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "80%", height="400")
+htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "100%", height="400")
 ```
 
 <br>
 
-### 2a. Get a LANDFIRE description 
+### Download a BpS Description
 We have a website (http://landfirereview.org/search.php) where you can go to search for and retrieve LANDFIRE BpS model descriptions.  
 
 **For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).**
 
-### 2b. Get the model of interest
-Now that you have the software installed, we will walk you through getting the model(s) of interest in the video below
+### Load your model
+Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with.  **You can view and print the instructions [here](./isolateModel.html).**
 
-
-INSERT VIDEO OR OTHER INTRUCTIONAL MATERIALS HERE.
+***
 
 ### For more information
 
