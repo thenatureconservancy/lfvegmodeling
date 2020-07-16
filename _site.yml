@@ -15,9 +15,9 @@ navbar:
   - text: Perpectives
     href: perspectives.html
   - text: Model Examples
-    href: modelexamples.html
+    href: Examples.html
   - text: Resources & FAQs
-    href: Resources.html
+    href: contactsResources.html
 
 
     
