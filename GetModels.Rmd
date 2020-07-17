@@ -1,5 +1,5 @@
 ---
-title: "Review Your Models"
+title: "Get Models"
 author: 
 date:
 output:
@@ -8,10 +8,8 @@ output:
     toc_float: true
     toc_depth: 4
 ---
-*Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model*
-
 ### This page:
-+ Get a description and model by:
+* Get a description and model by:
     + understanding and finding your Map Zone
     + downloading a BpS description
     + loading a model into SyncroSim
@@ -21,11 +19,11 @@ We will walk through the process with the Inter-Mountain Basins Montane Sagebrus
 
 ### Understand and find your Map Zone
 
-First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone.  What is a Map Zone?  It's basically a product delivery and summary polygon.  The polygons are from the National Landcover Database Program (see https://www.mrlc.gov/national-land-cover-database-nlcd-2016).  
+First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It's basically a product delivery and summary polygon. The polygons are from the [National Landcover Database Program](see https://www.mrlc.gov/national-land-cover-database-nlcd-2016).  
 
-Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for.  A tooltip will pop up with that info.  Take note of it for the next step. 
+Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. 
 
-**For our ecosystem of interest we are looking in eastern Oregon, or Map Zone 9.**
+**For our Montane Sagebrush Steppe ecosystem example we are looking in eastern Oregon, or Map Zone 9.**
 
 <br>
 
@@ -36,9 +34,9 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-We have a website (http://landfirereview.org/search.php) where you can go to search for and retrieve LANDFIRE BpS model descriptions.  
+Visit the [site description page](http://landfirereview.org/search.php) to search for and retrieve LANDFIRE BpS model descriptions.  
 
-**For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).**
+Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1) from [www.http://landfirereview.org/search.php](http://landfirereview.org/search.php). This ecosystem covers Map Zone 9.
 
 ### Load your model
 Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 

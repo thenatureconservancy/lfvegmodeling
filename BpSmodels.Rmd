@@ -3,10 +3,9 @@ title: "BpS Models"
 author: ""
 date: ""
 output:
-  word_document:
-    toc: yes
   html_document:
     toc: yes
+    toc_depth: 4
     toc_float: yes
 ---
 ### This page:
@@ -17,19 +16,39 @@ output:
 ## LANDFIRE
 [LANDFIRE](www.landfire.gov) is a multi-partner program that *"provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas".*  
 
+<style>
+div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 ### LANDFIRE BpS
+The **[LANDFIRE](www.landfire.gov)** Program, in collaboration with experts around the country, created a set of over 900 STSMs for ecosystems in the United States. Each LANDFIRE STSM represents a **Biophysical Setting** – a vegetation concept that describes the vegetation community likely to have been dominant on the landscape prior to European American settlement given an approximation of historical disturbance regimes and the current biophysical environment. 
 
-[LANDFIRE Biophysical Settings ](https://www.landfire.gov/bps.php) represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement.  They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states).  Biophysical Settings are: 1) Mapped (for more information on the spatial data visit https://www.landfire.gov/bps.php, 2) described and 3) modeled.  The descriptions and models are the focus of our work here.
+**[LANDFIRE BpS models](https://www.landfire.gov/bps-models.php)** are **reference condition models** that define natural vegetation communities and their historical disturbance regimes. 
+</div>
+<br>
 
+**[LANDFIRE Biophysical Settings](https://www.landfire.gov/bps.php)** represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states). 
+**Biophysical Settings** are mapped (for more information on the spatial data visit [this site](https://www.landfire.gov/bps.php)), described below, and modeled using SyncroSim.  
 
-### Reference conditions:
+The **descriptions and models** are the focus of our work here.
 
-Understanding how our ecosystems looked and worked prior to European Settlement is a focus of the Biophysical Settings body of work.  The basic process was to:
+<br>
 
-1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used NatureServe's Ecological Systems classification as the "list".
+### Reference conditions
+
+```{r, echo=FALSE, fig.cap = "Photo: © Ian Shive, TNC, \n Independence Lake, Nevada", out.width='65%', out.extra='style="float:right; padding:10px"'} 
+knitr::include_graphics("images/independence-lake.jpg")
+
+```
+
+<br>
+Understanding how ecosystems looked and worked prior to Euro-American settlement is a focus of the biophysical settings body of work. The process was to:
+
+1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states)
+
 2. The LANDFIRE team held expert workshops to:
-    * **Describe the BpSs**, including their nested Succession Classes, up to 5 for each BpS including their canopy height, composition and percent cover. 
-    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (just prior to European settlement). The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into the modeling software (just like you will be doing soon!).
+    * **Describe the BpSs**, including their nested **[succession classes](https://www.landfire.gov/sclass.php),** up to 5 for each BpS including their canopy height, composition and percent cover. 
+    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to Euro-American settlement). The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
     
 From 2018 to 2019, TNC's LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.  
 
@@ -37,7 +56,7 @@ From 2018 to 2019, TNC's LANDFIRE team led a review of these models and descript
 <br>
 
 #### Descriptions
-Each BpS has an extensive description including information on:
+Each BpS has an [extensive description](http://landfirereview.org/search.php) See the description from the [Montane Sagebrush Steppe Ecosystem](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1) example. Included in each description:
 
 <style>
   .col2 {
@@ -61,39 +80,29 @@ Each BpS has an extensive description including information on:
 </div>
  <br>
 
-These were originally delivered as PDF documents (or in an Access Database).  These descriptions are now delivered as Microsoft Word documents.  
-
 #### Models
 
-When we refer to "models" we are essentially talking about the information contained in SyncroSim libraries. 
+Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created and analyzed by our team. 
 
-<br> 
+<center>
+```{r, echo=FALSE, out.width= "75%"} 
+knitr::include_graphics("images/virginia.jpg")
 
-What? 
+```
 
+Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
+</center>
 <br>
-
-We'll get to the SyncroSim and library parts in the coming pages, but in the meantime models are collections of information on:
-1.  The "States" or succession classes of each BpS **AND**
-2.  The Transitions:
-    * Deterministic which essentially represents succession
-    * Probabilitic which represents disturbances
-    
-Once the models are run you can obtain information on (among many other things):
-1. Amounts of succession classes at the end of each year, in acres or proportion
-2. How much disturbance happens over time, in acres or proportion
-
 
 ### Application scale of the models
 
-Importantly, these models and descriptions were designed for use over large areas-not your back yard.  How large you ask?  They were developed for use at the LANDFIRE Map Zone level (hundreds of thousands of acres, see "Get Models" page).  That said, people do use them for smaller areas.  Success of downscaling depends on factors such as:
+Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [LANDFIRE Map Zone](http://landfirereview.org/IMG/USmapzones-v1_July2015.jpg) level (hundreds of thousands of acres, see "Get Models" page). That said, people do use them for smaller areas.  Success of downscaling depends on factors such as:
 
-* How much review, and how comfortable users are with the information included in the models
-* How important the decisions are, and how much risk is involved
-* How much supporting information there is
++ How much review, and how comfortable are users with the information included in the models?
++ How important are the decisions and how much risk is involved?
++ How much supporting information is there?
 
-<br>
 
 ### For more information
-*  https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s which is a Kori/Randy intro, 5 minutes.  Some features of SyncroSim may be different than what you see in the video based due to versioning.
+*  [Watch an introduction to SyncroSim](https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s) Note: some features of SyncroSim may be different than what you see in the video due to versioning.
 

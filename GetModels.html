@@ -12,7 +12,7 @@
 <meta name="author" content="" />
 
 
-<title>Review Your Models</title>
+<title>Get Models</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -384,12 +384,11 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Review Your Models</h1>
+<h1 class="title toc-ignore">Get Models</h1>
 
 </div>
 
 
-<p><em>Working, formatting needs consistency Randy Videos: 1)getting the models, putting them in syncrosim 2) how to review the model</em></p>
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
@@ -404,17 +403,17 @@ div.tocify {
 </div>
 <div id="understand-and-find-your-map-zone" class="section level3">
 <h3>Understand and find your Map Zone</h3>
-<p>First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It’s basically a product delivery and summary polygon. The polygons are from the National Landcover Database Program (see <a href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016" class="uri">https://www.mrlc.gov/national-land-cover-database-nlcd-2016</a>).</p>
+<p>First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It’s basically a product delivery and summary polygon. The polygons are from the <a href="see%20https://www.mrlc.gov/national-land-cover-database-nlcd-2016">National Landcover Database Program</a>.</p>
 <p>Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step.</p>
-<p><strong>For our ecosystem of interest we are looking in eastern Oregon, or Map Zone 9.</strong></p>
+<p><strong>For our Montane Sagebrush Steppe ecosystem example we are looking in eastern Oregon, or Map Zone 9.</strong></p>
 <p><br></p>
 <iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="400"></iframe>
 <p><br></p>
 </div>
 <div id="download-a-bps-description" class="section level3">
 <h3>Download a BpS Description</h3>
-<p>We have a website (<a href="http://landfirereview.org/search.php" class="uri">http://landfirereview.org/search.php</a>) where you can go to search for and retrieve LANDFIRE BpS model descriptions.</p>
-<p><strong>For this exercise please search for and retrieve the description for Inter-Mountain Basins Montane Sagebrush Steppe that covers Map Zone 9 (may cover multiple Map Zones).</strong></p>
+<p>Visit the <a href="http://landfirereview.org/search.php">site description page</a> to search for and retrieve LANDFIRE BpS model descriptions.</p>
+<p>Download the <a href="http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;is_v=1">Montane Sagebrush Steppe Ecosystem description</a> from <a href="http://landfirereview.org/search.php">www.http://landfirereview.org/search.php</a>. This ecosystem covers Map Zone 9.</p>
 </div>
 <div id="load-your-model" class="section level3">
 <h3>Load your model</h3>
@@ -481,7 +480,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
