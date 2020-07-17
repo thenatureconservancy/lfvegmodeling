@@ -367,10 +367,10 @@ div.tocify {
   <a href="perspectives.html">Perpectives</a>
 </li>
 <li>
-  <a href="modelexamples.html">Model Examples</a>
+  <a href="Examples.html">Model Examples</a>
 </li>
 <li>
-  <a href="Resources.html">Resources &amp; FAQs</a>
+  <a href="contactsResources.html">Resources and FAQs</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -392,40 +392,21 @@ div.tocify {
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
-<li>what is a LANDFIRE? What is a LANDFIRE BpS model?</li>
-<li></li>
+<li>Short introduction to the LANDFIRE program</li>
+<li>Description of the Biophysical Settings, plus reference conditions delivered in the BpS descriptions and models</li>
+<li>Discussion of application scale</li>
 </ul>
 </div>
 <div id="landfire" class="section level2">
 <h2>LANDFIRE</h2>
 <p><a href="www.landfire.gov">LANDFIRE</a> is a multi-partner program that <em>“provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas”.</em></p>
-<div id="landfire-bps" class="section level4">
-<h4>LANDFIRE BpS</h4>
-<p>Starting in 2005 the <a href="www.landfire.gov">LANDFIRE</a> program initiated the development of <strong>Biophysical Settings</strong> and models. These products represent ecosystems under natural disturbance regimes, capturing how they “looked” (e.g., structure and composition) and “functioned” (e.g., succession and disturbances). The descriptions are text; the models are in the software SyncroSim (<a href="https://syncrosim.com/" class="uri">https://syncrosim.com/</a>). <br></p>
-<p>One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called <strong>“Vegetation Departure” (VDep)</strong>.</p>
-<blockquote>
-<p><strong>Vegetation departure</strong> compares current vegetation structure and composition to “reference” structure and composition.</p>
-</blockquote>
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class="blue">
-<p><a href="https://www.landfire.gov/vdep.php"><strong>LANDFIRE Vegetation Departure (VDep)</strong></a> indicates how different current vegetation on a landscape is from estimated reference conditions. VDep is based on:</p>
-<ul>
-<li>changes to species composition</li>
-<li>structural stage,</li>
-<li>canopy closure (using methods originally described in the <a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf">Interagency Fire Regime Condition Class Guidebook (IFRCC))</a>.</li>
-</ul>
-<p><strong>VDep vs. Interagency Fire Regime Condition Class Guidebook approach</strong></p>
-<ul>
-<li><a href="https://www.landfire.gov/vdep.php">LANDFIRE VDep</a> is based only on departure of current vegetation conditions from reference vegetation conditions</li>
-<li><a href="https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf">IFRCC Guidebook</a> approach includes departure of current fire regimes from those of the reference period</li>
-</ul>
+<div id="landfire-bps" class="section level3">
+<h3>LANDFIRE BpS</h3>
+<p><a href="https://www.landfire.gov/bps.php">LANDFIRE Biophysical Settings</a> represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on <a href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states">NatureServe’s Ecological Systems</a>. Biophysical Settings are: 1) Mapped (for more information on the spatial data visit <a href="https://www.landfire.gov/bps.php" class="uri">https://www.landfire.gov/bps.php</a>, 2) described and 3) modeled. The descriptions and models are the focus of our work here.</p>
 </div>
-<p><br></p>
-</div>
-<div id="steps-to-developing-reference-conditions" class="section level4">
-<h4>Steps to developing reference conditions:</h4>
+<div id="reference-conditions" class="section level3">
+<h3>Reference conditions:</h3>
+<p>Understanding how our ecosystems looked and worked prior to European Settlement is a focus of the Biophysical Settings body of work. The basic process was to:</p>
 <ol style="list-style-type: decimal">
 <li><strong>Classify and define the ecosystems.</strong> LANDFIRE calls the historic ecosystems “Biophysical Settings”, and used NatureServe’s Ecological Systems classification as the “list”.</li>
 <li>The LANDFIRE team held expert workshops to:
@@ -435,16 +416,6 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </ul></li>
 </ol>
 <p>From 2018 to 2019, TNC’s LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.</p>
-<p><br></p>
-</div>
-<div id="parts-of-a-bps" class="section level3">
-<h3>Parts of a BpS</h3>
-<p>Each BpS (e.g., Montane Sagebrush Steppe) has 3 associated products:</p>
-<ol style="list-style-type: decimal">
-<li>Description</li>
-<li>State and transition model</li>
-<li>Spatial data (not described here)</li>
-</ol>
 <p><br></p>
 <div id="descriptions" class="section level4">
 <h4>Descriptions</h4>
@@ -483,7 +454,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </div>
 <div id="application-scale-of-the-models" class="section level3">
 <h3>Application scale of the models</h3>
-<p>Importantly, these models and descriptions were designed for use over large areas-not your back yard. How large you ask? It depends on many factors:</p>
+<p>Importantly, these models and descriptions were designed for use over large areas-not your back yard. How large you ask? They were developed for use at the LANDFIRE Map Zone level (hundreds of thousands of acres, see “Get Models” page). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:</p>
 <ul>
 <li>How much review, and how comfortable users are with the information included in the models</li>
 <li>How important the decisions are, and how much risk is involved</li>
@@ -549,7 +520,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

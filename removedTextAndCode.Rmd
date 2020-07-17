@@ -1,0 +1,31 @@
+---
+title: "removed text and code"
+author: "TNC's LANDFIRE team"
+date: "7/16/2020"
+output: html_document
+---
+
+
+## From BpS Models
+
+One of the goals of LANDFIRE was to understand the condition of our ecosystems. The metric they created for this is called **"Vegetation Departure" (VDep)**. 
+
+>**Vegetation departure** compares current vegetation structure and composition to "reference" structure and composition. 
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+[**LANDFIRE Vegetation Departure (VDep)**](https://www.landfire.gov/vdep.php) indicates how different current vegetation on a landscape is from estimated reference conditions. VDep is based on:
+
+* changes to species composition
+* structural stage, 
+* canopy closure (using methods originally described in the [Interagency Fire Regime Condition Class Guidebook (IFRCC))](https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf). 
+
+**VDep vs. Interagency Fire Regime Condition Class Guidebook approach**
+
+* [LANDFIRE VDep](https://www.landfire.gov/vdep.php) is based only on departure of current vegetation conditions from reference vegetation conditions
+* [IFRCC Guidebook](https://www.landfire.gov/frcc/documents/FRCC_Guidebook_2010_final.pdf) approach includes departure of current fire regimes from those of the reference period
+</div>
+<br>

@@ -10,10 +10,16 @@ output:
 
 *Working, content, graphics, Randy Video: modifying and inserting disturbances into the model*
 
-### On this page you will find:
-+ Guidance on making some key changes to a reference condition model such as adding a state class (e.g., for an "invasives" state) and changing disturbances (e.g., altered fire regime)
-+ Detailed information on how our Sage Steppe model was modified to represent current conditions
-+ And hopefully some inspiration to try out your own modifications!
+### This page:
+
++ Introduces some basic changes you can make to a model
+    + change probability in one state
+    + make a "global" change to one disturbance
+    + add or delete a state
+    + add a disturbance
++ Sets the stage for climate change and other modeling
+
+
 
 ## Modifying a reference condition model
 Within SyncroSim there are a wide range of techniques available to modify a model.  We will not cover all techniques here, but will introduce some of the main ones, while working through the sage steppe example model that you obtained previously while on the "Get Models" page.  
@@ -35,7 +41,3 @@ New and/or altered transitions often result in new states.  For example, in the 
 ### Delete a state
 Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to delete an entire state.  Here we will show you how to do that.  
 
-
- 
-
-## Modifications we made to the Sage Steppe Model
