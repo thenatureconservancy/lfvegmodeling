@@ -34,9 +34,7 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-Visit the [site description page](http://landfirereview.org/search.php) to search for and retrieve LANDFIRE BpS model descriptions.  
-
-Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1) from [www.http://landfirereview.org/search.php](http://landfirereview.org/search.php). This ecosystem covers Map Zone 9.
+Visit the [site description page](http://landfirereview.org/search.php) to search for and retrieve LANDFIRE BpS model descriptions. Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1). This ecosystem covers Map Zone 9.
 
 ### Load your model
 Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 
@@ -51,5 +49,6 @@ Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go 
 
 Some features of SyncroSim may be different than what you see in the video due to versioning.
 
-
-.
+#### What's next?
++ learn the basics of [changing disturbance probabilities across states and entire models](./modifyModel.html)
++ learn the basics of [adding and deleting states](./modifyModel.html)

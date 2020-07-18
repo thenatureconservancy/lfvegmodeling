@@ -153,3 +153,6 @@ Representing variations in climate change exposure, or adaptive capacity within 
 
 ## BpS models are not spatial models
 The structure of the BpS models provides a clear indication of the ecological level at which they operate, and can be applied to address questions about climate change. While range shifts are some of the most studied aspects of climate change responses, these models are not spatial, and tend to “lump” all species within a vegetation class together within a series of states. **This is because it would be impossible to use this modeling platform to model the mechanistic relationships between all species within all types of ecosystems...** If you are interested in exploring vegetation responses within what the BpS models consider a “state” – for example, exploring changes in species composition that might occur as a result of changes in tree competitive ability as growing seasons lengthen due to a warming climate – BpS models are likely not the best hammer for that nail! 
+
+#### What's next?
++ understanding the [characteristics of the model](./perspectives.html) and taking a bird's eye view when considering BpS models

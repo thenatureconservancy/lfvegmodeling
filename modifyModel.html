@@ -405,27 +405,33 @@ div.tocify {
 </div>
 <div id="modifying-a-reference-condition-model" class="section level2">
 <h2>Modifying a reference condition model</h2>
-<p>Within SyncroSim there are a wide range of techniques available to modify a model. We will not cover all techniques here, but will introduce some of the main ones, while working through the sage steppe example model that you obtained previously while on the “Get Models” page.</p>
+<p>Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the montane sagebrush steppe example obtained from the <a href="./Getmodels.html">Get Models</a> page.</p>
 <p>These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.</p>
 <div id="change-the-probability-of-a-disturbance-in-one-state-class" class="section level3">
 <h3>Change the probability of a disturbance in one state class</h3>
-<p>A key starting point in modifying a model is to change disturbances. There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the replacement fire probability in one class.</p>
+<p>A key starting point in modifying a model is to <strong>change disturbances</strong>. There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the <strong>replacement fire probability</strong> in one class.</p>
 </div>
 <div id="change-the-probability-of-a-disturbance-across-the-entire-model" class="section level3">
 <h3>Change the probability of a disturbance across the entire model</h3>
-<p>While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to various changes. That said, there are times where you want to make “global” changes to the model. An example of this would be to essentially “turn off” all fires as a way to explore impacts of fire suppression. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use “Transition Multipliers” to modify a type of transition everywhere it occurs in the model in a few easy steps.</p>
+<p>While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to adjust to various changes. That said, there are times where you may make “global” changes to the model. For example, you may “turn off” all fires as a way to explore impacts of <strong>fire suppression</strong>. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use <strong>transition multipliers</strong> to modify a type of transition everywhere it occurs in the model in a few easy steps.</p>
 </div>
 <div id="introduce-a-new-disturbance" class="section level3">
 <h3>Introduce a new disturbance</h3>
-<p>There are many new transitions on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new probabilistic transition.</p>
+<p>There are many new <strong>transitions</strong> on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new <strong>probabilistic transition</strong>.</p>
 </div>
 <div id="add-a-new-state" class="section level3">
 <h3>Add a new state</h3>
-<p>New and/or altered transitions often result in new states. For example, in the Great Lakes combinations of modern transitions have resulted in what some call “maple monocultures”. These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. We believe that you will want to know how to add a state, and will show you how here.</p>
+<p>New and/or altered transitions often result in <strong>new states</strong>. For example, in the Great Lakes combinations of modern transitions have resulted in what some call “maple monocultures”. These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. Here we demonstrate how to <strong>add a state</strong>.</p>
 </div>
 <div id="delete-a-state" class="section level3">
 <h3>Delete a state</h3>
-<p>Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to delete an entire state. Here we will show you how to do that.</p>
+<p>Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to <strong>delete an entire state</strong>. Here we will show you how to do that.</p>
+<div id="whats-next" class="section level4">
+<h4>What’s next?</h4>
+<ul>
+<li>learn how to incorporate impacts from <a href="./climateChange.html">climate change</a> into BpS models</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -475,7 +481,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2,h3,h4",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

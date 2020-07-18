@@ -106,3 +106,6 @@ Importantly, these models and descriptions were designed for use over large area
 ### For more information
 *  [Watch an introduction to SyncroSim](https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s) Note: some features of SyncroSim may be different than what you see in the video due to versioning.
 
+#### What's next?
++ [locate](./GetModels.html), download, import a model
++ make sense of the parts of model description

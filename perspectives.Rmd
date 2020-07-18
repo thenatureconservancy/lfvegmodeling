@@ -98,7 +98,14 @@ Key considerations:
 
 5. LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.
 
-**insert Map Zone Map**
+<br>
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "100%", height="400")
+```
+
+<br>
+
 
 ### Current Condition Model Guide
 
@@ -117,7 +124,6 @@ Key considerations:
 6. Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.
 
 
-
-
-
-
+#### What's next?
++ explore [3 real-life model examples](./Examples.html) that have undergone scrutiny and analysis by the LANDFIRE team
++ learn the intricacies of examining each model description
