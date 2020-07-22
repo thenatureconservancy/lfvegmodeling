@@ -7,11 +7,136 @@ output:
     toc: yes
     toc_float: yes
 ---
-
-*Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS*
-
 ### This page:
-+ 
++ Introduction to general modeling principles
++ Modeling advice for using BpS models
+
+
+## Models, Models Everywhere
+<center>
+```{r, echo=FALSE, out.width= "85%"} 
+knitr::include_graphics("images/models.png")
+
+```
+</center>
+<br>
+
+Models are everywhere—sometimes behind the scenes and sometimes right out front. Common examples of models:
+
++ weather forecasts
++ measuring the state of the economy
++ assessing the condition of a landscape 
++ forecasting a pandemic
++ maps
+
+<center>
+```{r, echo=FALSE, out.width= "45%"} 
+knitr::include_graphics("images/model-simple-vs-complex1.jpg")
+
+```
+</center>
+<br>
+Regardless of their complexity, all models are by definition a **simplification of reality**. Like the model airplane above - it “flies” like an airplane but it cannot carry cargo or passengers.
+
+<br>
+
+>"All models are wrong, so why do we create and use them?" - George Box
+
+<br>
+We create and use models because (as Box _also_ said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. **Balance and relevance** are what can make a model illuminating.
+
+<center>
+```{r, echo=FALSE, out.width= "55%"} 
+knitr::include_graphics("images/balance-relevance.jpg")
+
+```
+</center>
+<br>
+
+## Developers vs Users: Key Considerations
+
+For the model developer, the key is to balance **precision and bias** of the outputs with the relevance of the model. The goal is to hit your application sweet spot.
+
+<br>
+
+<center>
+
+```{r, echo=FALSE, out.width= "65%"} 
+knitr::include_graphics("images/model-complexity.png")
+
+```
+
+</center>
+<center>
+Image courtesy: [Francesco Pochetti](francescopochetti.com){target='blank'}
+</center>
+<br>
+
+The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity. 
+
+**Complex models:**
+
++ typically require more input information
++ are more difficult to develop and de-bug
++ take longer to run 
+
+>[LANDFIRE BpS models](./BpSmodels.html), with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use. 
+
+Models such as [SIMPPLLE](https://www.fs.usda.gov/treesearch/pubs/40241){target='blank'} and [LANDIS II](http://www.landis-ii.org/){target='blank'} sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.
+
+<br>
+
+### Understanding the characterstics of any model:
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+- What factors/inputs does it include? 
+- What factors/inputs does it not include? 
+- Can you provide the inputs at the level of accuracy required? 
+- What modeling technique was used? 
+- How was the model intended to be applied? 
+- What is the “scale” of the model?
+</div>
+<br>
+
+### Advice for using BpS models
+
+1. Adhere to established modeling standards.
+
+2. Have a goal and a plan. Don’t just wing it!
+
+3. Work through the model changes in a stepwise fashion. Add **states and transitions** one at a time.
+
+4. Review the results and plan the next steps.
+
+5. Keep it **simple.** The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.
+
+6. Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.
+
+***
+
+#### What's next?
++ explore [3 real-life model examples](./Examples.html) that have undergone scrutiny and analysis by the LANDFIRE team
++ learn the intricacies of examining each model description
+
+
+EVERYTHING BELOW IS BEING KEPT JUST FOR "NOW"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Models, Models Everywhere
@@ -99,13 +224,6 @@ Key considerations:
 5. LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.
 
 <br>
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "100%", height="400")
-```
-
-<br>
-
 
 ### Current Condition Model Guide
 

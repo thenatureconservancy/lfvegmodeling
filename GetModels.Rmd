@@ -41,13 +41,14 @@ Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go 
 
 **You can view and print the instructions [here](./isolateModel.html).**
 
-***
 
 ### For more information
 
 *  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
 
 Some features of SyncroSim may be different than what you see in the video due to versioning.
+
+***
 
 #### What's next?
 + learn the basics of [changing disturbance probabilities across states and entire models](./modifyModel.html)

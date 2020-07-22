@@ -372,6 +372,9 @@ div.tocify {
 <li>
   <a href="contactsResources.html">Resources and FAQs</a>
 </li>
+<li>
+  <a href="References.html">References</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -389,14 +392,104 @@ div.tocify {
 </div>
 
 
-<p><em>Working - needs graphics, formatting, I SUGGEST DELETING TEXT IN ITALICS</em></p>
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
-<li></li>
+<li>Introduction to general modeling principles</li>
+<li>Modeling advice for using BpS models</li>
 </ul>
 </div>
 <div id="models-models-everywhere" class="section level2">
+<h2>Models, Models Everywhere</h2>
+<center>
+<img src="images/models.png" width="85%" />
+</center>
+<p><br></p>
+<p>Models are everywhere—sometimes behind the scenes and sometimes right out front. Common examples of models:</p>
+<ul>
+<li>weather forecasts</li>
+<li>measuring the state of the economy</li>
+<li>assessing the condition of a landscape</li>
+<li>forecasting a pandemic</li>
+<li>maps</li>
+</ul>
+<center>
+<img src="images/model-simple-vs-complex1.jpg" width="45%" />
+</center>
+<p><br> Regardless of their complexity, all models are by definition a <strong>simplification of reality</strong>. Like the model airplane above - it “flies” like an airplane but it cannot carry cargo or passengers.</p>
+<p><br></p>
+<blockquote>
+<p>“All models are wrong, so why do we create and use them?” - George Box</p>
+</blockquote>
+<p><br> We create and use models because (as Box <em>also</em> said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. <strong>Balance and relevance</strong> are what can make a model illuminating.</p>
+<center>
+<img src="images/balance-relevance.jpg" width="55%" />
+</center>
+<p><br></p>
+</div>
+<div id="developers-vs-users-key-considerations" class="section level2">
+<h2>Developers vs Users: Key Considerations</h2>
+<p>For the model developer, the key is to balance <strong>precision and bias</strong> of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
+<p><br></p>
+<center>
+<p><img src="images/model-complexity.png" width="65%" /></p>
+</center>
+<center>
+Image courtesy: <a href="francescopochetti.com" target="blank">Francesco Pochetti</a>
+</center>
+<p><br></p>
+<p>The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity.</p>
+<p><strong>Complex models:</strong></p>
+<ul>
+<li>typically require more input information</li>
+<li>are more difficult to develop and de-bug</li>
+<li>take longer to run</li>
+</ul>
+<blockquote>
+<p><a href="./BpSmodels.html">LANDFIRE BpS models</a>, with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use.</p>
+</blockquote>
+<p>Models such as <a href="https://www.fs.usda.gov/treesearch/pubs/40241" target="blank">SIMPPLLE</a> and <a href="http://www.landis-ii.org/" target="blank">LANDIS II</a> sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.</p>
+<p><br></p>
+<div id="understanding-the-characterstics-of-any-model" class="section level3">
+<h3>Understanding the characterstics of any model:</h3>
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="blue">
+<ul>
+<li>What factors/inputs does it include?</li>
+<li>What factors/inputs does it not include?</li>
+<li>Can you provide the inputs at the level of accuracy required?</li>
+<li>What modeling technique was used?</li>
+<li>How was the model intended to be applied?</li>
+<li>What is the “scale” of the model?</li>
+</ul>
+</div>
+<p><br></p>
+</div>
+<div id="advice-for-using-bps-models" class="section level3">
+<h3>Advice for using BpS models</h3>
+<ol style="list-style-type: decimal">
+<li><p>Adhere to established modeling standards.</p></li>
+<li><p>Have a goal and a plan. Don’t just wing it!</p></li>
+<li><p>Work through the model changes in a stepwise fashion. Add <strong>states and transitions</strong> one at a time.</p></li>
+<li><p>Review the results and plan the next steps.</p></li>
+<li><p>Keep it <strong>simple.</strong> The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
+<li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
+</ol>
+<hr />
+<div id="whats-next" class="section level4">
+<h4>What’s next?</h4>
+<ul>
+<li>explore <a href="./Examples.html">3 real-life model examples</a> that have undergone scrutiny and analysis by the LANDFIRE team</li>
+<li>learn the intricacies of examining each model description</li>
+</ul>
+<p>EVERYTHING BELOW IS BEING KEPT JUST FOR “NOW”</p>
+</div>
+</div>
+</div>
+<div id="models-models-everywhere-1" class="section level2">
 <h2>Models, Models Everywhere</h2>
 <p><img src="images/models.png" /></p>
 <p>Models are everywhere—sometimes behind the scenes and sometimes right out front. Weather forecasts are models. Measuring the state of the economy is a model. Assessing the condition of a landscape is a model. Forecasting almost anything (a pandemic for example) is a model. Many things we call “measurements” are actually models, such as Site Index, and on and on and on. Even a “map” is a model.</p>
@@ -408,7 +501,7 @@ div.tocify {
 <p>We create and use models because (as George Box also said) they can be useful. In fact, Box used the better word “illuminating”. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. Balance and relevance are what can make a model illuminating.</p>
 <p><img src="images/balance-relevance.jpg" width="55%" /></p>
 </div>
-<div id="developers-vs-users-key-considerations" class="section level2">
+<div id="developers-vs-users-key-considerations-1" class="section level2">
 <h2>Developers vs Users: Key Considerations</h2>
 <p>For the model developer, the key is to balance precision and bias of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
 <p><img src="images/model-complexity.png" width="55%" /></p>
@@ -454,8 +547,6 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 <li><p>LF Biophysical Settings models were developed to reflect the average historical dynamics of an Ecological System across an entire NLCD map zone or set of NLCD Map Zones (see graphic). That is their “scale”, which may or may not be appropriate for you and your work. If your area of interest is significantly larger or smaller that may require adjustments to the model.</p></li>
 </ol>
 <p><br></p>
-<iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="400"></iframe>
-<p><br></p>
 </div>
 <div id="current-condition-model-guide" class="section level3">
 <h3>Current Condition Model Guide</h3>
@@ -468,7 +559,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 <li><p>Keep the model as simple as possible. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
 <li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
 </ol>
-<div id="whats-next" class="section level4">
+<div id="whats-next-1" class="section level4">
 <h4>What’s next?</h4>
 <ul>
 <li>explore <a href="./Examples.html">3 real-life model examples</a> that have undergone scrutiny and analysis by the LANDFIRE team</li>

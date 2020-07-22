@@ -18,6 +18,8 @@ navbar:
     href: Examples.html
   - text: Resources and FAQs
     href: contactsResources.html
+  - text: References
+    href: References.html
 
 
     

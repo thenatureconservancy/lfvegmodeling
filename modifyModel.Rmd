@@ -42,5 +42,8 @@ New and/or altered transitions often result in **new states**. For example, in t
 ### Delete a state
 Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to **delete an entire state**. Here we will show you how to do that.  
 
+________________
+
+
 #### What's next?
 + learn how to incorporate impacts from [climate change](./climateChange.html) into BpS models
