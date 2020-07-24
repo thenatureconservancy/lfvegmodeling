@@ -113,7 +113,7 @@ Photo: © Ben Jiang, TNC. One of the 2018 California wildfires.
 
 #### Longer fire seasons
 
-* [Cattau et al. 2020](https://doi.org/10.1111/geb.13058) examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. Looking at this question would involve **increasing the fire return interval** within this modeling platform. 
+* [Cattau et al. 2020](https://doi.org/10.1111/geb.13058){target='blank'} examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. Looking at this question would involve **increasing the fire return interval** within this modeling platform. 
 
 <center>
 ```{r, echo=FALSE, out.width= "65%"} 
