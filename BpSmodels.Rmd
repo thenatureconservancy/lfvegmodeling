@@ -96,7 +96,7 @@ Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
 
 ### Application scale of the models
 
-Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [LANDFIRE Map Zone](https://www.landfire.gov/national_veg_models_op2.php){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html)). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
+Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [National Land Cover Database](https://www.landfire.gov/national_veg_models_op2.php){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html)). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
 
 + How much review, and how comfortable are users with the information included in the models?
 + How important are the decisions and how much risk is involved?
