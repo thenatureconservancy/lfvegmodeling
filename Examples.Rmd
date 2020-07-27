@@ -55,29 +55,27 @@ Evaluate the impact of common management practices aimed at restoring this ecosy
 LINK TO FULL DOCUMENT
 
 **Model Identifier**
-This is a current condition model based on the LANDFIRE 11260_1_7_8_9_10_19BpS model and description and modified based on several sources to represent current conditions. The primary source was an unpublished model by Miles Hemstrom created for the Blue Mtns. and representing Mountain Big Sagebrush –With Juniper. A similar model was created and documented in Creutzburget al. 2012. The initial conditions are based on LANDFIRE 2014 sclass geospatial data for the Blue Mtns. Ecoregion.
+This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mtns. 
 
 **Original Model Description**
-The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US.  It typically occurs as elevations ranging from  3,250 to 10,000ft depending partially on the geography.
+The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography.
+Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.
 
-Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.  
 
 **Model Modification Steps**
 
-* Added 4 new states:
-    * **Encroachment** represents Juniper encroachment into the late seral native shrubland
-    * **Grazing** represents the impact of moderate livestock grazing and does not cause a state change
-    * **GrazeDegrade** represents the combined effects of heavy livestock grazing within two years post-fire disturbance which causes a transition to an exotic state
-    * **Recovery** represents natural recovery of native vegetation from exotic vegetation 
+* Added three new states to represent invasion of juniper into sagebrush and the presence of invasive annual grasses with and without tress. 
+* Added 4 new transitions:
+    *	**Encroachment represents** Juniper encroachment into the late seral native shrubland
+    *	**Grazing** represents the impact of moderate livestock grazing and does not cause a state change
+    *	**GrazeDegrade** represents the combined effects of heavy livestock grazing within two years post-fire disturbance which causes a transition to an exotic state
+    *	Recovery represents natural recovery of native vegetation from exotic vegetation
 * Added new transitions to and from the new states (see full description for details)
 * Added mixed fire to native sage states
 * Updated replacement fire probabilities
-* Used initial conditions from LANDFIRE 2014 succession class data
-* Set run conditions: 
-    * 209,224 cells, each representing 10ac to cover the 2,092,238 acres of this type.  Setting cell size to 10 reduced run times.
-    * 20 year run time 
-    * 40 simulations
-* Added parameters to Time Since Transition settings
+* Used initial conditions based on LANDFIRE 2014 succession class data
+* Adjusted the Run and Time Since Transition settings
+
 
 
 ### Laurentian-Acadian Northern Hardwoods Forest - Hemlock by Randy Swaty
