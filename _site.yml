@@ -10,11 +10,13 @@ navbar:
     href: GetModels.html
   - text: Modify Models
     href: modifyModel.html
+  - text: Advanced Models
+    href: advancedmodels.html
   - text: Climate Change
     href: climateChange.html
   - text: Perpectives
     href: perspectives.html
-  - text: Model Examples
+  - text: Examples
     href: Examples.html
   - text: Resources and FAQs
     href: contactsResources.html
