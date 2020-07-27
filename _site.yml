@@ -11,7 +11,7 @@ navbar:
   - text: Modify Models
     href: modifyModel.html
   - text: Advanced Models
-    href: advancedmodels.html
+    href: advancedmodeling.html
   - text: Climate Change
     href: climateChange.html
   - text: Perpectives
