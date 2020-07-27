@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+
+<title>Model Examples</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">HOME</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="stms.html">STSMs</a>
+</li>
+<li>
+  <a href="BpSmodels.html">BpSmodels</a>
+</li>
+<li>
+  <a href="GetModels.html">Get Models</a>
+</li>
+<li>
+  <a href="modifyModel.html">Modify Models</a>
+</li>
+<li>
+  <a href="advancedmodeling.html">Advanced Models</a>
+</li>
+<li>
+  <a href="climateChange.html">Climate Change</a>
+</li>
+<li>
+  <a href="perspectives.html">Perpectives</a>
+</li>
+<li>
+  <a href="Examples.html">Examples</a>
+</li>
+<li>
+  <a href="contactsResources.html">Resources and FAQs</a>
+</li>
+<li>
+  <a href="References.html">References</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Model Examples</h1>
+
+</div>
+
+
+<div id="this-page" class="section level3">
+<h3>This page:</h3>
+<ul>
+<li>See how Jim Smith, Kori Blankenship and Randy Swaty attempted to modernize some BpS models</li>
+<li>Explore example models–then ask yourself “did they do a good job?”</li>
+</ul>
+</div>
+<div id="context-time" class="section level2">
+<h2>Context time</h2>
+<p>The models below are example models aimed at illustrating modification methods. They are not intended to be realistic ecological models…they are for illustration purposes. We hope that users will primarily use our models to learn, but also assume some people could be tempted to use them as “starter models”. We’d rather they not do that as we are not experts in the actual ecosystems. We hope they serve to say “wow, these models are highly customizable”.</p>
+</div>
+<div id="as-you-explore-these-models" class="section level2">
+<h2>As you explore these models…</h2>
+<p>Ask yourself questions such as:</p>
+<ul>
+<li>Do these model modifications apply to my ecosystems?</li>
+<li>Could there be unintended consequences from these changes that trickle through the model?</li>
+<li>Do these modifications make the model more “realistic” or do they more serve to document new transitions that need more research or ???</li>
+</ul>
+</div>
+<div id="three-examples" class="section level2">
+<h2>Three examples</h2>
+<div id="ozark-ouachita-shortleaf-pine-oak-forest-and-woodland-by-jim-smith" class="section level3">
+<h3>Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland by Jim Smith</h3>
+<p>LINK TO FULL DOCUMENT</p>
+<p><strong>Model Identifier</strong> Note that the modifications illustrated in this example were applied to a locally-modified LANDFIRE BpS model 13670_32_44, Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland. You do not have to begin the modification process with a LANDFIRE model. You can utilize any model that serves as a useful starting point for your project.</p>
+<p><strong>Original Model Description</strong> This BpS is found on drier sites primarily on south and west aspects or ridgetops. It is dominated by shortleaf pine (Pinus echinata), oaks (Quercus spp.), and hickories (Carya spp.).</p>
+<p><strong>Modification Goal</strong> Evaluate the impact of common management practices aimed at restoring this ecosystem to a more native state within the context of today’s management and climate environment.</p>
+<p><strong>Model Modification Steps</strong> * Began with the Shlisky Pine/Oak model (not a LANDFIRE Reference Condition Model) * Runs = 100 because it is a management scenario (left as is) * Initial conditions = LF Reference Conditions (left as is). They used actual acreage of the type divided by number of cells to create a cell size of interest * No difference in prob transitions between Ref Con and Working Model x/c additional management added with no probability. * Added these management actions * 2% seed tree in Late Closed 1 and Late Open 1 (both to Early All 1) to mimic 50 year seed tree regeneration cut * 4% commercial thin in Mid Closed 1 to Mid Open 1 and Late Closed 1 to Late Open 1 to mimic 25 year commercial thin * Reduced Replacement Fire occurrence using a 0.5 multiplier to mimic increased fire suppression/reduced fire occurrence * Using 2.0 multiplier to for Wind/Weather/Stress to double the impact of ice, wind susceptibility in current climate * Reduced Surface Fire occurrence using a 0.4 multiplier to mimic reduced fire management</p>
+</div>
+<div id="montane-sage-steppe-by-kori-blankenship" class="section level3">
+<h3>Montane Sage Steppe by Kori Blankenship</h3>
+<p>LINK TO FULL DOCUMENT</p>
+<p><strong>Model Identifier</strong> This is a current condition model based on the LANDFIRE 11260_1_7_8_9_10_19BpS model and description and modified based on several sources to represent current conditions. The primary source was an unpublished model by Miles Hemstrom created for the Blue Mtns. and representing Mountain Big Sagebrush –With Juniper. A similar model was created and documented in Creutzburget al. 2012. The initial conditions are based on LANDFIRE 2014 sclass geospatial data for the Blue Mtns. Ecoregion.</p>
+<p><strong>Original Model Description</strong> The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography.</p>
+<p>Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.</p>
+<p><strong>Model Modification Steps</strong></p>
+<ul>
+<li>Added 4 new states:
+<ul>
+<li><strong>Encroachment</strong> represents Juniper encroachment into the late seral native shrubland</li>
+<li><strong>Grazing</strong> represents the impact of moderate livestock grazing and does not cause a state change</li>
+<li><strong>GrazeDegrade</strong> represents the combined effects of heavy livestock grazing within two years post-fire disturbance which causes a transition to an exotic state</li>
+<li><strong>Recovery</strong> represents natural recovery of native vegetation from exotic vegetation</li>
+</ul></li>
+<li>Added new transitions to and from the new states (see full description for details)</li>
+<li>Added mixed fire to native sage states</li>
+<li>Updated replacement fire probabilities</li>
+<li>Used initial conditions from LANDFIRE 2014 succession class data</li>
+<li>Set run conditions:
+<ul>
+<li>209,224 cells, each representing 10ac to cover the 2,092,238 acres of this type. Setting cell size to 10 reduced run times.</li>
+<li>20 year run time</li>
+<li>40 simulations</li>
+</ul></li>
+<li>Added parameters to Time Since Transition settings</li>
+</ul>
+</div>
+<div id="laurentian-acadian-northern-hardwoods-forest---hemlock-by-randy-swaty" class="section level3">
+<h3>Laurentian-Acadian Northern Hardwoods Forest - Hemlock by Randy Swaty</h3>
+<p>LINK TO DOCUMENT</p>
+<p><strong>Model Identifier</strong> The starter model for this example was 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.</p>
+<p><strong>Original Model Description</strong> These uneven-aged forests occur on coarse-textured ground and end moraines lying predominantly north of the tension zone and were dominated by a mix of sugar maple, hemlock, yellow birch, eastern white pine, balsam fir, quaking aspen and paper birch depending on the location (e.g., beech is restricted to eastern part of the range).</p>
+<p><strong>Model Modification Steps</strong> * Added 2 new states * “Maple Monoculture” * Beech resprout * Added new transitions * single tree selection–leads to maple monoculture * clearcut * deer * beech bark disease * ecological harvest * Set initial conditions to match current dominance by the Maple Monoculture class</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
