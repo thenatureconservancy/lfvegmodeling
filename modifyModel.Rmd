@@ -33,6 +33,7 @@ A key starting point in modifying a model is to **change disturbances**.  There 
 </center>
 
 <br>
+<br>
 
 ### Change the probability of a disturbance across the entire model
 While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to adjust to various changes. That said, there are times where you may make "global" changes to the model. For example, you may "turn off" all fires as a way to explore impacts of **fire suppression**. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use **transition multipliers** to modify a type of transition everywhere it occurs in the model in a few easy steps. 
@@ -41,6 +42,8 @@ While getting to know your models we recommend changing one parameter at a time.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+<br>
+<br>
 
 ### Introduce a new disturbance
 There are many new **transitions** on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
