@@ -398,7 +398,7 @@ div.tocify {
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
-<li>See how Jim Smith, Kori Blankenship and Randy Swaty attempted to modernize some BpS models</li>
+<li>See how Jim Smith, Kori Blankenship and Randy Swaty attempted to modernize some BpS models, with a focus on the Sage-Steppe</li>
 <li>Explore example models–then ask yourself “did they do a good job?”</li>
 </ul>
 </div>
@@ -422,7 +422,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class="blue">
 <h3 id="montane-sage-steppe-by-kori-blankenship">Montane Sage Steppe by Kori Blankenship</h3>
-<p>LINK TO FULL DOCUMENT</p>
+<p><a href="https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx">Download Kori’s notes here</a></p>
 <p><strong>Model Identifier</strong> This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mtns.</p>
 <p><strong>Original Model Description</strong> The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography. Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.</p>
 <p><strong>Model Modification Steps</strong></p>
@@ -443,20 +443,51 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </ul>
 </div>
 <p><br></p>
-<div id="ozark-ouachita-shortleaf-pine-oak-forest-and-woodland-by-jim-smith" class="section level3">
-<h3>Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland by Jim Smith</h3>
-<p>LINK TO FULL DOCUMENT</p>
-<p><strong>Model Identifier</strong> Note that the modifications illustrated in this example were applied to a locally-modified LANDFIRE BpS model 13670_32_44, Ozark-Ouachita Shortleaf Pine-Oak Forest and Woodland. You do not have to begin the modification process with a LANDFIRE model. You can utilize any model that serves as a useful starting point for your project.</p>
-<p><strong>Original Model Description</strong> This BpS is found on drier sites primarily on south and west aspects or ridgetops. It is dominated by shortleaf pine (Pinus echinata), oaks (Quercus spp.), and hickories (Carya spp.).</p>
-<p><strong>Modification Goal</strong> Evaluate the impact of common management practices aimed at restoring this ecosystem to a more native state within the context of today’s management and climate environment.</p>
-<p><strong>Model Modification Steps</strong> * Began with the Shlisky Pine/Oak model (not a LANDFIRE Reference Condition Model) * Runs = 100 because it is a management scenario (left as is) * Initial conditions = LF Reference Conditions (left as is). They used actual acreage of the type divided by number of cells to create a cell size of interest * No difference in prob transitions between Ref Con and Working Model x/c additional management added with no probability. * Added these management actions * 2% seed tree in Late Closed 1 and Late Open 1 (both to Early All 1) to mimic 50 year seed tree regeneration cut * 4% commercial thin in Mid Closed 1 to Mid Open 1 and Late Closed 1 to Late Open 1 to mimic 25 year commercial thin * Reduced Replacement Fire occurrence using a 0.5 multiplier to mimic increased fire suppression/reduced fire occurrence * Using 2.0 multiplier to for Wind/Weather/Stress to double the impact of ice, wind susceptibility in current climate * Reduced Surface Fire occurrence using a 0.4 multiplier to mimic reduced fire management</p>
+<div id="central-mixed-grass-prairie-by-jim-smith" class="section level3">
+<h3>Central Mixed Grass Prairie by Jim Smith</h3>
+<p><strong>Model Identifier</strong> Note that the modifications illustrated in this example were applied to a locally-modified LANDFIRE BpS model 11320_32_34_35-Central Mixed Grass Prairie . You do not have to begin the modification process with a LANDFIRE model. You can utilize any model that serves as a useful starting point for your project.</p>
+<p><strong>Original Model Description</strong> This type occurs on sandy loam, loamy, or clayey upland sites of the southern Great Plains. It is dominated by midgrasses with some mix of tall and short grass.</p>
+<p><strong>Modification Goal</strong> Investigate how grazing management may have changed landscape conditions since pre-European settlement.</p>
+<p><strong>Model Modification Steps</strong></p>
+<ul>
+<li>Adjust Run Parameters
+<ul>
+<li>The LANDFIRE Reference Condition model as downloaded had 0% pixels in Early Open class so we used 1% (100 acres) as the initial condition for this class and lowered the highest class by 1% to keep the total at 100%.</li>
+<li>Change timesteps to 100 years (assuming grazing practices changed approximately 100 years ago).</li>
+<li>Changed number of iterations to 5 to increase turnaround time for runs, but would likely increase that number to 10 or more operationally.</li>
+<li>Changed the number of cells to 10,000 and cell size to 1 acre to represent a 10,000 landscape.</li>
+</ul></li>
+<li>Altered transitions
+<ul>
+<li>Added a prairie Restoration treatment transition to the Late 3 All state class to represent restarting overgrazed lands at the Early * Open regeneration succession state using management techniques such as plowing, seeding, fertilizing, etc. Budget constrains this treatment to a 5% frequency.</li>
+<li>Added a Livestock grazing transition to the Late 2 Closed state class that moves pixels to the Late 3 All state class at 10% frequency. This transition represents overgrazing a mature prairie.</li>
+<li>Added a Livestock grazing transition to the Late 1 Closed state class that moves pixels to the Late 3 All state class at a lower frequency (5%) because the Late 1 Closed state is more difficult to overgraze. This transition represents overgrazing a mature prairie.</li>
+<li>Added a Livestock Grazing transition to the Late 3 All overgrazed succession state that maintains that succession state by continuing to overgraze at a frequency of 20%.</li>
+</ul></li>
+</ul>
+<p><br></p>
 </div>
 <div id="laurentian-acadian-northern-hardwoods-forest---hemlock-by-randy-swaty" class="section level3">
 <h3>Laurentian-Acadian Northern Hardwoods Forest - Hemlock by Randy Swaty</h3>
-<p>LINK TO DOCUMENT</p>
 <p><strong>Model Identifier</strong> The starter model for this example was 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.</p>
 <p><strong>Original Model Description</strong> These uneven-aged forests occur on coarse-textured ground and end moraines lying predominantly north of the tension zone and were dominated by a mix of sugar maple, hemlock, yellow birch, eastern white pine, balsam fir, quaking aspen and paper birch depending on the location (e.g., beech is restricted to eastern part of the range).</p>
-<p><strong>Model Modification Steps</strong> * Added 2 new states * “Maple Monoculture” * Beech resprout * Added new transitions * single tree selection–leads to maple monoculture * clearcut * deer * beech bark disease * ecological harvest * Set initial conditions to match current dominance by the Maple Monoculture class</p>
+<p><strong>Model Modification Steps</strong></p>
+<ul>
+<li>Added 2 new states
+<ul>
+<li>“Maple Monoculture”</li>
+<li>Beech resprout</li>
+</ul></li>
+<li>Added new transitions
+<ul>
+<li>single tree selection–leads to maple monoculture</li>
+<li>clearcut</li>
+<li>deer</li>
+<li>beech bark disease</li>
+<li>ecological harvest</li>
+</ul></li>
+<li>Set initial conditions to match current dominance by the Maple Monoculture class</li>
+</ul>
 </div>
 </div>
 
