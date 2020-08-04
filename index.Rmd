@@ -15,7 +15,7 @@ Hello and welcome to the LANDFIRE vegetation dynamics modeling site. We created 
 
 **How to use this website?** We designed this website as a resource for both new and seasoned biophysical setting modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent. 
 
-If you are alredy familiar with this modeling framework and ready to **get started,** skip ahead to [get your models](./GetModels.html).
+If you are already familiar with this modeling framework and ready to **get started,** skip ahead to [get your models](./GetModels.html).
 
 <br>
 

@@ -20,9 +20,21 @@ We will skim the surface of the possibilities to begin working in the [ST-Sim](h
 Visit the websites above to ensure you are seeing the latest version of the software. We encourage you to explore other advanced modeling options once you are familiar with the platform, but to not jump too quickly into advanced modeling options or complex models. This can cause confusion and slow progress.
 
 **Ecosystems management is complex**. As you model you will most likely ask “*what if I could (fill in the blank) in the model*?"
-(Caption to be inserted: Photo: © TNC. Controlled burn in Shawnee County, Kansas)
-<br>
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+
+
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+
+```{r, echo=FALSE, fig.cap="Photo: © TNC. Controlled burn in Shawnee County, Kansas"} 
 knitr::include_graphics("images/kansas.jpg")
 
 ```

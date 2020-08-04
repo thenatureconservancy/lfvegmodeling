@@ -7,6 +7,8 @@ output:
     toc: yes
     toc_depth: 4
     toc_float: yes
+    fig_caption: true
+
 ---
 ### This page:
 + Short introduction to the LANDFIRE program
@@ -36,7 +38,19 @@ The **descriptions and models** are the focus of our work here.
 
 ### Reference conditions
 
-```{r, echo=FALSE, fig.cap = "Photo: © Ian Shive, TNC, \n Independence Lake, Nevada", out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+
+```{r, echo=FALSE, fig.cap = "Photo: © Ian Shive, TNC, \n Independence Lake, Nevada"} 
 knitr::include_graphics("images/independence-lake.jpg")
 
 ```

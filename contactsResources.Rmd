@@ -13,18 +13,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#### FAQ
-
-Q: **I can't open a state class. What's the problem?**
-
-A: Make sure when you go to open it, you have unchecked the "Read only" box
-
 <br>
 
-Q: **I can't find the transition type. Where is it?**
+#### FAQ
 
-A: 
-
+We will be building up a Frequently Asked Questions section as soon as we recieve questions from YOU! Please e-mail your questions to [The Nature Conservancy's LANDFIRE e-mail.](mailto:landfire@tnc.org)  
 
 
 
