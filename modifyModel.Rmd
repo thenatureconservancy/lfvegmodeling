@@ -9,15 +9,15 @@ output:
     toc_depth: 4
 ---
 
-*Working, content, graphics, Randy Video: modifying and inserting disturbances into the model*
+
 
 ### This page:
 
 + Introduces some basic changes you can make to a model
-    + change probability in one state
-    + make a "global" change to one disturbance
-    + add or delete a state
-    + add a disturbance
+    + Change probability in one state
+    + Make a "global" change to one disturbance
+    + Add or delete a state
+    + Add a disturbance
 + Sets the stage for climate change and other modeling
 
 These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.

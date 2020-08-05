@@ -9,10 +9,10 @@ output:
 ---
 
 ### This page:
-+ introduction to state-and-transition simulation models (STSM)
-+ explanation of LANDFIRE biophysical settings (BpS) models
-+ example of an STSM  
-+ getting started with [SyncroSim](https://syncrosim.com/){target='blank'}
++ Introduction to state-and-transition simulation models (STSM)
++ Explanation of LANDFIRE biophysical settings (BpS) models
++ Example of an STSM  
++ Getting started with [SyncroSim](https://syncrosim.com/){target='blank'}
 
 ### State-and-transition models
 

@@ -11,9 +11,9 @@ output:
 
 ---
 ### This page
-+ describe the advanced modeling options available in [ST-Sim](https://syncrosim.com/packages/){target='blank'}
-+ explore ways to manipulate transition targets, multipliers, and state and transition attributes 
-+ investigate the + and - of using spatial models
++ Describe the advanced modeling options available in [ST-Sim](https://syncrosim.com/packages/){target='blank'}
++ Explore ways to manipulate transition targets, multipliers, and state and transition attributes 
++ Investigate the + and - of using spatial models
 
 We have only skimmed the surface of the possibilities to begin working in the  [ST-Sim](https://syncrosim.com/packages/){target='blank'} platform thus far. Below we will briefly describe a few more advanced modeling options to whet your appetite. More advanced modeling options and more detailed descriptions of these and other advanced modeling options can be viewed at the [Apex website](http://www.apexrms.com/){target='blank'} and documentation specific to ST-Sim can be found [here](http://docs.stsim.net/){target='blank'}. Several videos linked below were developed by Apex as a part of their training materials so they are considerably longer and more detailed than other videos on this website.
 

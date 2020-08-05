@@ -10,9 +10,9 @@ output:
 ---
 ### This page:
 * Get a description and model by:
-    + understanding and finding your Map Zone
-    + downloading a BpS description
-    + loading a model into SyncroSim
+    + Understanding and finding your Map Zone
+    + Downloading a BpS description
+    + Loading a model into SyncroSim
     
 We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the Northwestern United States.  **This ecosystem will be the subject of later tutorials**. 
 
