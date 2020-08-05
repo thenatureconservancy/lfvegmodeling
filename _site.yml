@@ -10,7 +10,7 @@ navbar:
     href: GetModels.html
   - text: Modify Models
     href: modifyModel.html
-  - text: Advanced Models
+  - text: Advanced Options
     href: advancedModeling.html
   - text: Climate Change
     href: climateChange.html
